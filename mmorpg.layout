@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_layout_file>
+	<ActiveTarget name="Release Server" />
+	<File name="client.cpp" open="0" top="0" tabpos="3">
+		<Cursor position="239" topLine="0" />
+	</File>
+	<File name="include\core.hpp" open="0" top="0" tabpos="28">
+		<Cursor position="77" topLine="0" />
+	</File>
+	<File name="include\governor.hpp" open="0" top="0" tabpos="12">
+		<Cursor position="472" topLine="15" />
+	</File>
+	<File name="include\mayor.hpp" open="0" top="0" tabpos="11">
+		<Cursor position="2156" topLine="56" />
+	</File>
+	<File name="include\misc\astar\stlastar.h" open="0" top="0" tabpos="21">
+		<Cursor position="3146" topLine="94" />
+	</File>
+	<File name="include\misc\irrlicht.hpp" open="0" top="0" tabpos="29">
+		<Cursor position="122" topLine="0" />
+	</File>
+	<File name="include\misc\otlv4.h" open="0" top="0" tabpos="0">
+		<Cursor position="639219" topLine="25233" />
+	</File>
+	<File name="include\misc\registry.hpp" open="0" top="0" tabpos="0">
+		<Cursor position="212" topLine="9" />
+	</File>
+	<File name="include\network\client.hpp" open="0" top="0" tabpos="9">
+		<Cursor position="620" topLine="0" />
+	</File>
+	<File name="include\network\connection.hpp" open="0" top="0" tabpos="6">
+		<Cursor position="1068" topLine="29" />
+	</File>
+	<File name="include\network\message.hpp" open="0" top="0" tabpos="3">
+		<Cursor position="661" topLine="15" />
+	</File>
+	<File name="include\network\network.hpp" open="0" top="0" tabpos="0">
+		<Cursor position="349" topLine="0" />
+	</File>
+	<File name="include\network\proto\client.proto" open="0" top="0" tabpos="0">
+		<Cursor position="370" topLine="0" />
+	</File>
+	<File name="include\network\proto\db.proto" open="1" top="0" tabpos="6">
+		<Cursor position="71" topLine="0" />
+	</File>
+	<File name="include\network\proto\msg.pb.cc" open="0" top="0" tabpos="0">
+		<Cursor position="8027" topLine="251" />
+	</File>
+	<File name="include\network\proto\msg.pb.h" open="0" top="0" tabpos="0">
+		<Cursor position="2235" topLine="45" />
+	</File>
+	<File name="include\network\proto\msg.proto" open="1" top="0" tabpos="5">
+		<Cursor position="101" topLine="0" />
+	</File>
+	<File name="include\network\proto\server.proto" open="1" top="0" tabpos="4">
+		<Cursor position="192" topLine="0" />
+	</File>
+	<File name="include\network\server.hpp" open="0" top="0" tabpos="10">
+		<Cursor position="495" topLine="1" />
+	</File>
+	<File name="include\ui\eventreceiver.hpp" open="0" top="0" tabpos="5">
+		<Cursor position="387" topLine="0" />
+	</File>
+	<File name="include\ui\graphics.hpp" open="0" top="0" tabpos="24">
+		<Cursor position="758" topLine="0" />
+	</File>
+	<File name="include\ui\render.hpp" open="0" top="0" tabpos="16">
+		<Cursor position="81" topLine="0" />
+	</File>
+	<File name="include\ui\windows\window.hpp" open="0" top="0" tabpos="17">
+		<Cursor position="387" topLine="0" />
+	</File>
+	<File name="include\world\actions.hpp" open="0" top="0" tabpos="18">
+		<Cursor position="91" topLine="0" />
+	</File>
+	<File name="include\world\container.hpp" open="0" top="0" tabpos="21">
+		<Cursor position="110" topLine="0" />
+	</File>
+	<File name="include\world\database.cpp" open="1" top="0" tabpos="1">
+		<Cursor position="1354" topLine="17" />
+	</File>
+	<File name="include\world\database.hpp" open="1" top="0" tabpos="2">
+		<Cursor position="609" topLine="0" />
+	</File>
+	<File name="include\world\entity.hpp" open="0" top="0" tabpos="23">
+		<Cursor position="201" topLine="0" />
+	</File>
+	<File name="include\world\factory.hpp" open="0" top="0" tabpos="32">
+		<Cursor position="174" topLine="0" />
+	</File>
+	<File name="include\world\items.hpp" open="0" top="0" tabpos="22">
+		<Cursor position="693" topLine="15" />
+	</File>
+	<File name="include\world\library.hpp" open="0" top="0" tabpos="14">
+		<Cursor position="151" topLine="9" />
+	</File>
+	<File name="include\world\livingobject.hpp" open="0" top="0" tabpos="34">
+		<Cursor position="1431" topLine="46" />
+	</File>
+	<File name="include\world\locatable.hpp" open="0" top="0" tabpos="20">
+		<Cursor position="1303" topLine="3" />
+	</File>
+	<File name="include\world\lua\manager.hpp" open="0" top="0" tabpos="0">
+		<Cursor position="5744" topLine="131" />
+	</File>
+	<File name="include\world\map.hpp" open="0" top="0" tabpos="8">
+		<Cursor position="560" topLine="8" />
+	</File>
+	<File name="include\world\object.hpp" open="0" top="0" tabpos="19">
+		<Cursor position="273" topLine="0" />
+	</File>
+	<File name="include\world\player.hpp" open="0" top="0" tabpos="21">
+		<Cursor position="310" topLine="0" />
+	</File>
+	<File name="include\world\position.hpp" open="0" top="0" tabpos="0">
+		<Cursor position="410" topLine="0" />
+	</File>
+	<File name="include\world\tile.hpp" open="0" top="0" tabpos="8">
+		<Cursor position="346" topLine="0" />
+	</File>
+	<File name="lua\potions.lua" open="0" top="0" tabpos="35">
+		<Cursor position="527" topLine="0" />
+	</File>
+	<File name="server.cpp" open="0" top="0" tabpos="33">
+		<Cursor position="21" topLine="0" />
+	</File>
+	<File name="src\governor.cpp" open="1" top="0" tabpos="3">
+		<Cursor position="5701" topLine="161" />
+	</File>
+	<File name="src\mayor.cpp" open="0" top="0" tabpos="26">
+		<Cursor position="1133" topLine="206" />
+	</File>
+	<File name="src\misc\registry.cpp" open="0" top="0" tabpos="0">
+		<Cursor position="90" topLine="0" />
+	</File>
+	<File name="src\network\client.cpp" open="0" top="0" tabpos="1">
+		<Cursor position="2393" topLine="67" />
+	</File>
+	<File name="src\network\connection.cpp" open="0" top="0" tabpos="5">
+		<Cursor position="705" topLine="21" />
+	</File>
+	<File name="src\network\proxies.cpp" open="0" top="0" tabpos="0">
+		<Cursor position="1018" topLine="0" />
+	</File>
+	<File name="src\network\server.cpp" open="0" top="0" tabpos="2">
+		<Cursor position="2430" topLine="37" />
+	</File>
+	<File name="src\ui\eventreceiver.cpp" open="0" top="0" tabpos="4">
+		<Cursor position="1027" topLine="0" />
+	</File>
+	<File name="src\ui\graphics.cpp" open="0" top="0" tabpos="25">
+		<Cursor position="99" topLine="0" />
+	</File>
+	<File name="src\ui\render.cpp" open="0" top="0" tabpos="15">
+		<Cursor position="4136" topLine="97" />
+	</File>
+	<File name="src\world\actions.cpp" open="0" top="0" tabpos="17">
+		<Cursor position="560" topLine="0" />
+	</File>
+	<File name="src\world\client\actions\move.cpp" open="0" top="0" tabpos="0">
+		<Cursor position="741" topLine="0" />
+	</File>
+	<File name="src\world\entity.cpp" open="0" top="0" tabpos="0">
+		<Cursor position="16" topLine="0" />
+	</File>
+	<File name="src\world\library.cpp" open="0" top="0" tabpos="16">
+		<Cursor position="134" topLine="0" />
+	</File>
+	<File name="src\world\livingobject.cpp" open="0" top="0" tabpos="6">
+		<Cursor position="4299" topLine="114" />
+	</File>
+	<File name="src\world\locatable.cpp" open="0" top="0" tabpos="7">
+		<Cursor position="653" topLine="12" />
+	</File>
+	<File name="src\world\lua\manager.cpp" open="0" top="0" tabpos="0">
+		<Cursor position="5777" topLine="136" />
+	</File>
+	<File name="src\world\map.cpp" open="0" top="0" tabpos="8">
+		<Cursor position="3657" topLine="130" />
+	</File>
+	<File name="src\world\objects.cpp" open="0" top="0" tabpos="0">
+		<Cursor position="13" topLine="0" />
+	</File>
+	<File name="src\world\player.cpp" open="0" top="0" tabpos="0">
+		<Cursor position="15" topLine="0" />
+	</File>
+	<File name="src\world\position.cpp" open="0" top="0" tabpos="0">
+		<Cursor position="104" topLine="0" />
+	</File>
+	<File name="src\world\tile.cpp" open="0" top="0" tabpos="9">
+		<Cursor position="552" topLine="0" />
+	</File>
+</CodeBlocks_layout_file>

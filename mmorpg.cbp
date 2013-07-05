@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="mmorpg" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="Release">
+				<Option output="client" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj\Release\" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-O2" />
+					<Add option="-Wall" />
+					<Add option="-g" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+				</Linker>
+			</Target>
+			<Target title="Release Server">
+				<Option output="server" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj\Server" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Option use_console_runner="0" />
+				<Compiler>
+					<Add option="-DENNOVIA_SERVER" />
+				</Compiler>
+				<Linker>
+					<Add library="C:\xampp\mysql\lib\libmysql.dll" />
+					<Add library="C:\xampp\mysql\lib\libmysql.lib" />
+					<Add library="C:\xampp\mysql\lib\libmysqld.dll" />
+					<Add library="C:\xampp\mysql\lib\libmysqld.lib" />
+				</Linker>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="-Wall" />
+			<Add option="-fexceptions" />
+			<Add directory="include" />
+		</Compiler>
+		<Linker>
+			<Add library="luabind" />
+			<Add library="Irrlicht" />
+			<Add library="freetype" />
+			<Add library="ws2_32" />
+			<Add library="mswsock" />
+			<Add library="boost_system-mgw44-mt-1_53" />
+			<Add library="boost_serialization-mgw44-mt-1_53" />
+			<Add library="C:\libs\lua\lib\lua5.1.dll" />
+			<Add library="protobuf" />
+			<Add directory="src" />
+		</Linker>
+		<Unit filename="client.cpp">
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="include\core.hpp" />
+		<Unit filename="include\governor.hpp">
+			<Option target="Release Server" />
+		</Unit>
+		<Unit filename="include\mayor.hpp">
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="include\misc\CGUITTFont.h" />
+		<Unit filename="include\misc\astar\fsa.h" />
+		<Unit filename="include\misc\astar\stlastar.h" />
+		<Unit filename="include\misc\irrlicht.hpp" />
+		<Unit filename="include\misc\otlv4.h">
+			<Option target="Release Server" />
+		</Unit>
+		<Unit filename="include\misc\registry.hpp" />
+		<Unit filename="include\misc\switch.hpp" />
+		<Unit filename="include\misc\switch_impl.hpp" />
+		<Unit filename="include\network\client.hpp" />
+		<Unit filename="include\network\connection.hpp" />
+		<Unit filename="include\network\message.hpp" />
+		<Unit filename="include\network\network.hpp" />
+		<Unit filename="include\network\proto\client.pb.cc" />
+		<Unit filename="include\network\proto\client.pb.h" />
+		<Unit filename="include\network\proto\client.proto" />
+		<Unit filename="include\network\proto\db.proto">
+			<Option target="Release Server" />
+		</Unit>
+		<Unit filename="include\network\proto\msg.pb.cc" />
+		<Unit filename="include\network\proto\msg.pb.h" />
+		<Unit filename="include\network\proto\msg.proto" />
+		<Unit filename="include\network\proto\server.pb.cc" />
+		<Unit filename="include\network\proto\server.pb.h" />
+		<Unit filename="include\network\proto\server.proto" />
+		<Unit filename="include\network\server.hpp" />
+		<Unit filename="include\neural\layer.hpp" />
+		<Unit filename="include\neural\network.hpp" />
+		<Unit filename="include\neural\sigmoid.hpp" />
+		<Unit filename="include\plugins\Chest.hpp" />
+		<Unit filename="include\plugins\GUIPlugin.hpp" />
+		<Unit filename="include\ui\eventreceiver.hpp" />
+		<Unit filename="include\ui\graphics.hpp" />
+		<Unit filename="include\ui\render.hpp">
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="include\ui\windows\window.hpp">
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="include\world\actions.hpp" />
+		<Unit filename="include\world\container.hpp" />
+		<Unit filename="include\world\database.cpp">
+			<Option target="Release Server" />
+		</Unit>
+		<Unit filename="include\world\database.hpp">
+			<Option target="Release Server" />
+		</Unit>
+		<Unit filename="include\world\entity.hpp" />
+		<Unit filename="include\world\factory.hpp" />
+		<Unit filename="include\world\items.hpp" />
+		<Unit filename="include\world\library.hpp">
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="include\world\livingobject.hpp" />
+		<Unit filename="include\world\locatable.hpp" />
+		<Unit filename="include\world\lua\manager.hpp" />
+		<Unit filename="include\world\map.hpp" />
+		<Unit filename="include\world\object.hpp" />
+		<Unit filename="include\world\objects.hpp" />
+		<Unit filename="include\world\player.hpp" />
+		<Unit filename="include\world\position.hpp" />
+		<Unit filename="include\world\tile.hpp" />
+		<Unit filename="lua\actions.lua">
+			<Option target="Release Server" />
+		</Unit>
+		<Unit filename="lua\containers.lua">
+			<Option target="Release Server" />
+		</Unit>
+		<Unit filename="lua\core.lua">
+			<Option target="Release Server" />
+		</Unit>
+		<Unit filename="lua\items.lua">
+			<Option target="Release Server" />
+		</Unit>
+		<Unit filename="lua\maps.lua">
+			<Option target="Release Server" />
+		</Unit>
+		<Unit filename="lua\modules.lua">
+			<Option target="Release Server" />
+		</Unit>
+		<Unit filename="lua\objects.lua">
+			<Option target="Release Server" />
+		</Unit>
+		<Unit filename="lua\potions.lua">
+			<Option target="Release Server" />
+		</Unit>
+		<Unit filename="server.cpp">
+			<Option target="Release Server" />
+		</Unit>
+		<Unit filename="src\governor.cpp">
+			<Option target="Release Server" />
+		</Unit>
+		<Unit filename="src\mayor.cpp">
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="src\misc\CGUITTFont.cpp" />
+		<Unit filename="src\misc\registry.cpp" />
+		<Unit filename="src\network\client.cpp">
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="src\network\connection.cpp" />
+		<Unit filename="src\network\proxies.cpp" />
+		<Unit filename="src\network\server.cpp">
+			<Option target="Release Server" />
+		</Unit>
+		<Unit filename="src\ui\eventreceiver.cpp">
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="src\ui\graphics.cpp" />
+		<Unit filename="src\ui\guiinventory.cpp">
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="src\ui\render.cpp">
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="src\world\actions.cpp" />
+		<Unit filename="src\world\client\actions\move.cpp">
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="src\world\client\locatable.cpp">
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="src\world\entity.cpp" />
+		<Unit filename="src\world\inventory.cpp" />
+		<Unit filename="src\world\items.cpp" />
+		<Unit filename="src\world\library.cpp" />
+		<Unit filename="src\world\livingobject.cpp" />
+		<Unit filename="src\world\locatable.cpp" />
+		<Unit filename="src\world\lua\manager.cpp" />
+		<Unit filename="src\world\map.cpp" />
+		<Unit filename="src\world\objects.cpp" />
+		<Unit filename="src\world\optionlist.cpp" />
+		<Unit filename="src\world\optionproxy.cpp">
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="src\world\player.cpp" />
+		<Unit filename="src\world\position.cpp" />
+		<Unit filename="src\world\server\actions\move.cpp">
+			<Option target="Release Server" />
+		</Unit>
+		<Unit filename="src\world\server\locatable.cpp">
+			<Option target="Release Server" />
+		</Unit>
+		<Unit filename="src\world\tile.cpp" />
+		<Extensions>
+			<code_completion />
+			<debugger />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>
