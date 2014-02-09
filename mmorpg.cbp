@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="mmorpg" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="Release">
+				<Option output="client" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Release/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-O2" />
+					<Add option="-Wall" />
+					<Add option="-g" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+				</Linker>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="-Wall" />
+			<Add option="-fexceptions" />
+			<Add directory="include" />
+		</Compiler>
+		<Linker>
+			<Add library="Irrlicht.dll" />
+			<Add library="freetype6" />
+			<Add library="ws2_32" />
+			<Add library="mswsock" />
+			<Add library="boost_system-mgw48-mt-1_55" />
+			<Add library="boost_serialization-mgw48-mt-1_55" />
+			<Add library="protobuf" />
+			<Add directory="src" />
+			<Add directory="." />
+		</Linker>
+		<Unit filename="client.cpp" />
+		<Unit filename="include/core.hpp">
+			<Option target="&lt;{~None~}&gt;" />
+		</Unit>
+		<Unit filename="include/mayor.hpp">
+			<Option target="&lt;{~None~}&gt;" />
+		</Unit>
+		<Unit filename="include/misc/CGUITTFont.h">
+			<Option target="&lt;{~None~}&gt;" />
+		</Unit>
+		<Unit filename="include/misc/astar/fsa.h">
+			<Option target="&lt;{~None~}&gt;" />
+		</Unit>
+		<Unit filename="include/misc/astar/stlastar.h">
+			<Option target="&lt;{~None~}&gt;" />
+		</Unit>
+		<Unit filename="include/misc/irrlicht.hpp">
+			<Option target="&lt;{~None~}&gt;" />
+		</Unit>
+		<Unit filename="include/misc/otlv4.h">
+			<Option target="&lt;{~None~}&gt;" />
+		</Unit>
+		<Unit filename="include/misc/registry.hpp">
+			<Option target="&lt;{~None~}&gt;" />
+		</Unit>
+		<Unit filename="include/misc/switch.hpp">
+			<Option target="&lt;{~None~}&gt;" />
+		</Unit>
+		<Unit filename="include/misc/switch_impl.hpp">
+			<Option target="&lt;{~None~}&gt;" />
+		</Unit>
+		<Unit filename="include/network/client.hpp">
+			<Option target="&lt;{~None~}&gt;" />
+		</Unit>
+		<Unit filename="include/network/connection.hpp">
+			<Option target="&lt;{~None~}&gt;" />
+		</Unit>
+		<Unit filename="include/network/message.hpp">
+			<Option target="&lt;{~None~}&gt;" />
+		</Unit>
+		<Unit filename="include/network/network.hpp">
+			<Option target="&lt;{~None~}&gt;" />
+		</Unit>
+		<Unit filename="include/network/proto/client.pb.cc" />
+		<Unit filename="include/network/proto/client.pb.h">
+			<Option target="&lt;{~None~}&gt;" />
+		</Unit>
+		<Unit filename="include/network/proto/client.proto">
+			<Option target="&lt;{~None~}&gt;" />
+		</Unit>
+		<Unit filename="include/network/proto/db.proto">
+			<Option target="&lt;{~None~}&gt;" />
+		</Unit>
+		<Unit filename="include/network/proto/msg.pb.cc" />
+		<Unit filename="include/network/proto/msg.pb.h">
+			<Option target="&lt;{~None~}&gt;" />
+		</Unit>
+		<Unit filename="include/network/proto/msg.proto">
+			<Option target="&lt;{~None~}&gt;" />
+		</Unit>
+		<Unit filename="include/network/proto/server.pb.cc" />
+		<Unit filename="include/network/proto/server.pb.h">
+			<Option target="&lt;{~None~}&gt;" />
+		</Unit>
+		<Unit filename="include/network/proto/server.proto">
+			<Option target="&lt;{~None~}&gt;" />
+		</Unit>
+		<Unit filename="include/neural/layer.hpp">
+			<Option target="&lt;{~None~}&gt;" />
+		</Unit>
+		<Unit filename="include/neural/network.hpp">
+			<Option target="&lt;{~None~}&gt;" />
+		</Unit>
+		<Unit filename="include/neural/sigmoid.hpp">
+			<Option target="&lt;{~None~}&gt;" />
+		</Unit>
+		<Unit filename="include/plugins/Chest.hpp">
+			<Option target="&lt;{~None~}&gt;" />
+		</Unit>
+		<Unit filename="include/plugins/GUIPlugin.hpp">
+			<Option target="&lt;{~None~}&gt;" />
+		</Unit>
+		<Unit filename="include/ui/eventreceiver.hpp">
+			<Option target="&lt;{~None~}&gt;" />
+		</Unit>
+		<Unit filename="include/ui/graphics.hpp">
+			<Option target="&lt;{~None~}&gt;" />
+		</Unit>
+		<Unit filename="include/ui/render.hpp">
+			<Option target="&lt;{~None~}&gt;" />
+		</Unit>
+		<Unit filename="include/ui/windows/window.hpp">
+			<Option target="&lt;{~None~}&gt;" />
+		</Unit>
+		<Unit filename="include/world/actions.hpp">
+			<Option target="&lt;{~None~}&gt;" />
+		</Unit>
+		<Unit filename="include/world/container.hpp">
+			<Option target="&lt;{~None~}&gt;" />
+		</Unit>
+		<Unit filename="include/world/database.cpp">
+			<Option target="&lt;{~None~}&gt;" />
+		</Unit>
+		<Unit filename="include/world/database.hpp">
+			<Option target="&lt;{~None~}&gt;" />
+		</Unit>
+		<Unit filename="include/world/entity.hpp">
+			<Option target="&lt;{~None~}&gt;" />
+		</Unit>
+		<Unit filename="include/world/factory.hpp">
+			<Option target="&lt;{~None~}&gt;" />
+		</Unit>
+		<Unit filename="include/world/items.hpp">
+			<Option target="&lt;{~None~}&gt;" />
+		</Unit>
+		<Unit filename="include/world/library.hpp">
+			<Option target="&lt;{~None~}&gt;" />
+		</Unit>
+		<Unit filename="include/world/livingobject.hpp">
+			<Option target="&lt;{~None~}&gt;" />
+		</Unit>
+		<Unit filename="include/world/locatable.hpp">
+			<Option target="&lt;{~None~}&gt;" />
+		</Unit>
+		<Unit filename="include/world/map.hpp">
+			<Option target="&lt;{~None~}&gt;" />
+		</Unit>
+		<Unit filename="include/world/object.hpp">
+			<Option target="&lt;{~None~}&gt;" />
+		</Unit>
+		<Unit filename="include/world/objects.hpp">
+			<Option target="&lt;{~None~}&gt;" />
+		</Unit>
+		<Unit filename="include/world/player.hpp">
+			<Option target="&lt;{~None~}&gt;" />
+		</Unit>
+		<Unit filename="include/world/position.hpp">
+			<Option target="&lt;{~None~}&gt;" />
+		</Unit>
+		<Unit filename="include/world/tile.hpp">
+			<Option target="&lt;{~None~}&gt;" />
+		</Unit>
+		<Unit filename="lua/actions.lua">
+			<Option target="&lt;{~None~}&gt;" />
+		</Unit>
+		<Unit filename="lua/containers.lua">
+			<Option target="&lt;{~None~}&gt;" />
+		</Unit>
+		<Unit filename="lua/core.lua">
+			<Option target="&lt;{~None~}&gt;" />
+		</Unit>
+		<Unit filename="lua/items.lua">
+			<Option target="&lt;{~None~}&gt;" />
+		</Unit>
+		<Unit filename="lua/maps.lua">
+			<Option target="&lt;{~None~}&gt;" />
+		</Unit>
+		<Unit filename="lua/modules.lua">
+			<Option target="&lt;{~None~}&gt;" />
+		</Unit>
+		<Unit filename="lua/objects.lua">
+			<Option target="&lt;{~None~}&gt;" />
+		</Unit>
+		<Unit filename="lua/potions.lua">
+			<Option target="&lt;{~None~}&gt;" />
+		</Unit>
+		<Unit filename="src/mayor.cpp" />
+		<Unit filename="src/misc/CGUITTFont.cpp" />
+		<Unit filename="src/misc/registry.cpp" />
+		<Unit filename="src/network/client.cpp" />
+		<Unit filename="src/network/connection.cpp" />
+		<Unit filename="src/network/proxies.cpp" />
+		<Unit filename="src/ui/eventreceiver.cpp" />
+		<Unit filename="src/ui/graphics.cpp" />
+		<Unit filename="src/ui/guiinventory.cpp" />
+		<Unit filename="src/ui/render.cpp" />
+		<Unit filename="src/world/actions.cpp" />
+		<Unit filename="src/world/actions/move.cpp" />
+		<Unit filename="src/world/entity.cpp" />
+		<Unit filename="src/world/inventory.cpp" />
+		<Unit filename="src/world/items.cpp" />
+		<Unit filename="src/world/library.cpp" />
+		<Unit filename="src/world/livingobject.cpp" />
+		<Unit filename="src/world/locatable.cpp" />
+		<Unit filename="src/world/map.cpp" />
+		<Unit filename="src/world/objects.cpp" />
+		<Unit filename="src/world/optionlist.cpp" />
+		<Unit filename="src/world/optionproxy.cpp" />
+		<Unit filename="src/world/player.cpp" />
+		<Unit filename="src/world/position.cpp" />
+		<Unit filename="src/world/tile.cpp" />
+		<Extensions>
+			<code_completion />
+			<debugger />
+			<envvars />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>
