@@ -610,6 +610,7 @@
 1360412340 source:c:\users\david jablonski\workspace\ennovia\src\misc\registry.cpp
 	"misc/registry.hpp"
 
+<<<<<<< HEAD
 1391516904 source:c:\development\ennovia\src\network\proxies.cpp
 	"network/network.hpp"
 
@@ -619,6 +620,18 @@
 	"network/client.hpp"
 
 1391516904 c:\development\ennovia\include\network\connection.hpp
+=======
+1360503833 source:c:\development\ennovia\src\network\proxies.cpp
+	"network/network.hpp"
+
+1360928820 c:\development\ennovia\include\network\network.hpp
+	"network/connection.hpp"
+	"network/message.hpp"
+	"network/server.hpp"
+	"network/client.hpp"
+
+1369822430 c:\development\ennovia\include\network\connection.hpp
+>>>>>>> a9d8ab817077a0990fd2bc0567d420b12405c664
 	<boost/bind.hpp>
 	<boost/shared_ptr.hpp>
 	<boost/tuple/tuple.hpp>
@@ -631,11 +644,16 @@
 	"misc/registry.hpp"
 	"network/proto/msg.pb.h"
 
+<<<<<<< HEAD
 1391516904 c:\development\ennovia\include\core.hpp
+=======
+1368686373 c:\development\ennovia\include\core.hpp
+>>>>>>> a9d8ab817077a0990fd2bc0567d420b12405c664
 	"misc/irrlicht.hpp"
 	<boost/shared_ptr.hpp>
 	<sstream>
 
+<<<<<<< HEAD
 1391516904 c:\development\ennovia\include\misc\irrlicht.hpp
 	<boost/asio.hpp>
 	<irrlicht.h>
@@ -651,20 +669,47 @@
 	"world/locatable.hpp"
 
 1391516904 c:\development\ennovia\include\world\locatable.hpp
+=======
+1355870913 c:\development\ennovia\include\misc\irrlicht.hpp
+	<boost/asio.hpp>
+	<irrlicht.h>
+
+1368685250 c:\development\ennovia\include\world\player.hpp
+	"world/livingobject.hpp"
+	"world/items.hpp"
+
+1362989404 c:\development\ennovia\include\world\livingobject.hpp
+	"world/locatable.hpp"
+
+1360657955 c:\development\ennovia\include\world\object.hpp
+	"world/locatable.hpp"
+
+1369821414 c:\development\ennovia\include\world\locatable.hpp
+>>>>>>> a9d8ab817077a0990fd2bc0567d420b12405c664
 	<deque>
 	"world/entity.hpp"
 	"world/position.hpp"
 	"world/actions.hpp"
 	"world/inventory.hpp"
 
+<<<<<<< HEAD
 1391516904 c:\development\ennovia\include\world\entity.hpp
 
 1391516904 c:\development\ennovia\include\world\actions.hpp
+=======
+1368019166 c:\development\ennovia\include\world\entity.hpp
+
+1369820962 c:\development\ennovia\include\world\actions.hpp
+>>>>>>> a9d8ab817077a0990fd2bc0567d420b12405c664
 	<set>
 	"core.hpp"
 	"world/position.hpp"
 
+<<<<<<< HEAD
 1391516904 c:\development\ennovia\include\misc\registry.hpp
+=======
+1368686994 c:\development\ennovia\include\misc\registry.hpp
+>>>>>>> a9d8ab817077a0990fd2bc0567d420b12405c664
 	<map>
 	<cstdlib>
 	<cstdio>
@@ -673,14 +718,24 @@
 	<boost/bimap.hpp>
 	"misc/registry_forw.hpp"
 
+<<<<<<< HEAD
 1391516904 c:\development\ennovia\include\world\position.hpp
 
 1391516904 c:\development\ennovia\include\world\items.hpp
+=======
+1368029087 c:\development\ennovia\include\world\position.hpp
+
+1368712666 c:\development\ennovia\include\world\items.hpp
+>>>>>>> a9d8ab817077a0990fd2bc0567d420b12405c664
 	"world/entity.hpp"
 	"world/actions.hpp"
 	"misc/registry.hpp"
 
+<<<<<<< HEAD
 1369818697 c:\development\ennovia\include\network\server.hpp
+=======
+1369822297 c:\development\ennovia\include\network\server.hpp
+>>>>>>> a9d8ab817077a0990fd2bc0567d420b12405c664
 	<boost/tuple/tuple.hpp>
 	"network/connection.hpp"
 
@@ -706,7 +761,11 @@
 	<boost/preprocessor/repetition/repeat.hpp>
 	<boost/preprocessor/control/expr_if.hpp>
 
+<<<<<<< HEAD
 1391516904 c:\development\ennovia\include\network\message.hpp
+=======
+1362927430 c:\development\ennovia\include\network\message.hpp
+>>>>>>> a9d8ab817077a0990fd2bc0567d420b12405c664
 	"network/proto/client.pb.h"
 	"network/proto/server.pb.h"
 
@@ -719,10 +778,17 @@
 	<google/protobuf/extension_set.h>
 	<google/protobuf/unknown_field_set.h>
 
+<<<<<<< HEAD
 1391516904 c:\development\ennovia\include\network\client.hpp
 	"network/connection.hpp"
 
 1391870446 source:c:\development\ennovia\client.cpp
+=======
+1362387845 c:\development\ennovia\include\network\client.hpp
+	"network/connection.hpp"
+
+1368114440 source:c:\development\ennovia\client.cpp
+>>>>>>> a9d8ab817077a0990fd2bc0567d420b12405c664
 	<iostream>
 	<boost/asio.hpp>
 	<boost/shared_ptr.hpp>
@@ -738,14 +804,22 @@
 	"world/player.hpp"
 	"world/database.hpp"
 
+<<<<<<< HEAD
 1369822415 c:\development\ennovia\include\governor.hpp
+=======
+1369826015 c:\development\ennovia\include\governor.hpp
+>>>>>>> a9d8ab817077a0990fd2bc0567d420b12405c664
 	<fstream>
 	"network/network.hpp"
 	"world/library.hpp"
 	"world/lua/manager.hpp"
 	"world/actions.hpp"
 
+<<<<<<< HEAD
 1391516904 source:c:\development\ennovia\src\network\connection.cpp
+=======
+1362835155 source:c:\development\ennovia\src\network\connection.cpp
+>>>>>>> a9d8ab817077a0990fd2bc0567d420b12405c664
 	"network/connection.hpp"
 
 1360574339 source:c:\development\ennovia\src\network\message_client.cpp
@@ -779,31 +853,54 @@
 	"world/optionlist.hpp"
 	"misc/registry.hpp"
 
+<<<<<<< HEAD
 1391516904 source:c:\development\ennovia\src\misc\cguittfont.cpp
 	<irrlicht.h>
 	"misc/CGUITTFont.h"
 
 1391516904 c:\development\ennovia\include\misc\cguittfont.h
+=======
+1360415931 source:c:\development\ennovia\src\misc\cguittfont.cpp
+	<irrlicht.h>
+	"misc/CGUITTFont.h"
+
+1355307744 c:\development\ennovia\include\misc\cguittfont.h
+>>>>>>> a9d8ab817077a0990fd2bc0567d420b12405c664
 	<iostream>
 	<ft2build.h>
 	<freetype/freetype.h>
 	<irrlicht.h>
 
+<<<<<<< HEAD
 1391516904 source:c:\development\ennovia\src\misc\registry.cpp
 	"misc/registry.hpp"
 
 1368682125 source:c:\development\ennovia\src\network\server.cpp
+=======
+1368117942 source:c:\development\ennovia\src\misc\registry.cpp
+	"misc/registry.hpp"
+
+1368685725 source:c:\development\ennovia\src\network\server.cpp
+>>>>>>> a9d8ab817077a0990fd2bc0567d420b12405c664
 	"network/server.hpp"
 	"network/message.hpp"
 	"world/player.hpp"
 	"governor.hpp"
 
+<<<<<<< HEAD
 1391516904 source:c:\development\ennovia\src\ui\eventreceiver.cpp
+=======
+1365751490 source:c:\development\ennovia\src\ui\eventreceiver.cpp
+>>>>>>> a9d8ab817077a0990fd2bc0567d420b12405c664
 	"ui/eventreceiver.hpp"
 	"ui/render.hpp"
 	"mayor.hpp"
 
+<<<<<<< HEAD
 1391516904 c:\development\ennovia\include\ui\eventreceiver.hpp
+=======
+1364063796 c:\development\ennovia\include\ui\eventreceiver.hpp
+>>>>>>> a9d8ab817077a0990fd2bc0567d420b12405c664
 	"misc/irrlicht.hpp"
 	<iostream>
 	<sstream>
@@ -825,13 +922,21 @@
 	"world/entity.hpp"
 	"world/items.hpp"
 
+<<<<<<< HEAD
 1391516904 c:\development\ennovia\include\ui\graphics.hpp
+=======
+1368689323 c:\development\ennovia\include\ui\graphics.hpp
+>>>>>>> a9d8ab817077a0990fd2bc0567d420b12405c664
 	"misc/irrlicht.hpp"
 	<map>
 	<vector>
 	<string>
 
+<<<<<<< HEAD
 1391516904 c:\development\ennovia\include\world\map.hpp
+=======
+1368029000 c:\development\ennovia\include\world\map.hpp
+>>>>>>> a9d8ab817077a0990fd2bc0567d420b12405c664
 	<boost/multi_array.hpp>
 	<vector>
 	<sstream>
@@ -840,7 +945,11 @@
 	"world/position.hpp"
 	"world/object.hpp"
 
+<<<<<<< HEAD
 1391516904 c:\development\ennovia\include\misc\astar\stlastar.h
+=======
+1355307557 c:\development\ennovia\include\misc\astar\stlastar.h
+>>>>>>> a9d8ab817077a0990fd2bc0567d420b12405c664
 	<iostream>
 	<stdio.h>
 	<assert.h>
@@ -848,11 +957,19 @@
 	<vector>
 	"fsa.h"
 
+<<<<<<< HEAD
 1391516904 c:\development\ennovia\include\misc\astar\fsa.h
 	<string.h>
 	<stdio.h>
 
 1368003293 c:\development\ennovia\include\world\lua\manager.hpp
+=======
+1354956610 c:\development\ennovia\include\misc\astar\fsa.h
+	<string.h>
+	<stdio.h>
+
+1368006893 c:\development\ennovia\include\world\lua\manager.hpp
+>>>>>>> a9d8ab817077a0990fd2bc0567d420b12405c664
 	<lua.hpp>
 	<luabind/luabind.hpp>
 	<luabind/operator.hpp>
@@ -860,7 +977,11 @@
 	<luabind/adopt_policy.hpp>
 	<luabind/return_reference_to_policy.hpp>
 
+<<<<<<< HEAD
 1391516904 c:\development\ennovia\include\world\tile.hpp
+=======
+1368018958 c:\development\ennovia\include\world\tile.hpp
+>>>>>>> a9d8ab817077a0990fd2bc0567d420b12405c664
 	<set>
 	"world/locatable.hpp"
 
@@ -870,6 +991,7 @@
 	<boost/tuple/tuple.hpp>
 	"mayor.hpp"
 
+<<<<<<< HEAD
 1391516904 source:c:\development\ennovia\src\ui\graphics.cpp
 	<cmath>
 	"ui/graphics.hpp"
@@ -887,15 +1009,39 @@
 	"world/map.hpp"
 
 1391516904 source:c:\development\ennovia\src\world\locatable.cpp
+=======
+1368029350 source:c:\development\ennovia\src\ui\graphics.cpp
+	<cmath>
+	"ui/graphics.hpp"
+
+1369820947 source:c:\development\ennovia\src\world\actions.cpp
+	"world/actions.hpp"
+	"world/locatable.hpp"
+
+1368019021 source:c:\development\ennovia\src\world\entity.cpp
+	"world/entity.hpp"
+	"world/optionlist.hpp"
+
+1363026290 source:c:\development\ennovia\src\world\livingobject.cpp
+	"world/livingobject.hpp"
+	"world/map.hpp"
+
+1369825446 source:c:\development\ennovia\src\world\locatable.cpp
+>>>>>>> a9d8ab817077a0990fd2bc0567d420b12405c664
 	"world/locatable.hpp"
 	"world/tile.hpp"
 	"world/map.hpp"
 	"world/optionlist.hpp"
 	"misc/irrlicht.hpp"
+<<<<<<< HEAD
 	"world/library.hpp"
 	"mayor.hpp"
 
 1391516904 source:c:\development\ennovia\src\world\map.cpp
+=======
+
+1368110754 source:c:\development\ennovia\src\world\map.cpp
+>>>>>>> a9d8ab817077a0990fd2bc0567d420b12405c664
 	"world/map.hpp"
 	"world/tile.hpp"
 	"world/player.hpp"
@@ -904,6 +1050,7 @@
 1360500723 source:c:\development\ennovia\src\world\object.cpp
 	"world/object.hpp"
 
+<<<<<<< HEAD
 1391516904 source:c:\development\ennovia\src\world\objects.cpp
 
 1391516904 source:c:\development\ennovia\src\world\player.cpp
@@ -915,13 +1062,30 @@
 	"world/map.hpp"
 
 1391516904 source:c:\development\ennovia\src\world\tile.cpp
+=======
+1362682931 source:c:\development\ennovia\src\world\objects.cpp
+
+1368687327 source:c:\development\ennovia\src\world\player.cpp
+	"world/player.hpp"
+	"world/optionlist.hpp"
+
+1368029094 source:c:\development\ennovia\src\world\position.cpp
+	"world/position.hpp"
+	"world/map.hpp"
+
+1368113687 source:c:\development\ennovia\src\world\tile.cpp
+>>>>>>> a9d8ab817077a0990fd2bc0567d420b12405c664
 	"world/tile.hpp"
 	"world/map.hpp"
 	"world/optionlist.hpp"
 
 1360502274 c:\development\ennovia\include\network\proto\msg.proto
 
+<<<<<<< HEAD
 1391516904 c:\development\ennovia\include\network\proto\msg.pb.h
+=======
+1362989185 c:\development\ennovia\include\network\proto\msg.pb.h
+>>>>>>> a9d8ab817077a0990fd2bc0567d420b12405c664
 	<string>
 	<google/protobuf/stubs/common.h>
 	<google/protobuf/generated_message_util.h>
@@ -930,7 +1094,11 @@
 	<google/protobuf/extension_set.h>
 	<google/protobuf/unknown_field_set.h>
 
+<<<<<<< HEAD
 1391516904 source:c:\development\ennovia\include\network\proto\msg.pb.cc
+=======
+1362989185 source:c:\development\ennovia\include\network\proto\msg.pb.cc
+>>>>>>> a9d8ab817077a0990fd2bc0567d420b12405c664
 	"msg.pb.h"
 	<algorithm>
 	<google/protobuf/stubs/common.h>
@@ -942,28 +1110,44 @@
 	<google/protobuf/reflection_ops.h>
 	<google/protobuf/wire_format.h>
 
+<<<<<<< HEAD
 1391516904 c:\development\ennovia\include\mayor.hpp
+=======
+1369821199 c:\development\ennovia\include\mayor.hpp
+>>>>>>> a9d8ab817077a0990fd2bc0567d420b12405c664
 	<fstream>
 	"world/library.hpp"
 	"ui/render.hpp"
 	"network/client.hpp"
 	"world/actions.hpp"
 
+<<<<<<< HEAD
 1391516904 source:c:\development\ennovia\src\mayor.cpp
+=======
+1369821297 source:c:\development\ennovia\src\mayor.cpp
+>>>>>>> a9d8ab817077a0990fd2bc0567d420b12405c664
 	"mayor.hpp"
 	"core.hpp"
 	"world/map.hpp"
 	"world/player.hpp"
 	"network/network.hpp"
 
+<<<<<<< HEAD
 1391516904 source:c:\development\ennovia\src\network\client.cpp
+=======
+1368113959 source:c:\development\ennovia\src\network\client.cpp
+>>>>>>> a9d8ab817077a0990fd2bc0567d420b12405c664
 	"network/client.hpp"
 	"network/message.hpp"
 	"world/player.hpp"
 	"world/optionlist.hpp"
 	"mayor.hpp"
 
+<<<<<<< HEAD
 1391516904 c:\development\ennovia\include\network\proto\client.pb.h
+=======
+1362989185 c:\development\ennovia\include\network\proto\client.pb.h
+>>>>>>> a9d8ab817077a0990fd2bc0567d420b12405c664
 	<string>
 	<google/protobuf/stubs/common.h>
 	<google/protobuf/generated_message_util.h>
@@ -972,7 +1156,11 @@
 	<google/protobuf/extension_set.h>
 	<google/protobuf/unknown_field_set.h>
 
+<<<<<<< HEAD
 1391516904 c:\development\ennovia\include\network\proto\server.pb.h
+=======
+1362989185 c:\development\ennovia\include\network\proto\server.pb.h
+>>>>>>> a9d8ab817077a0990fd2bc0567d420b12405c664
 	<string>
 	<google/protobuf/stubs/common.h>
 	<google/protobuf/generated_message_util.h>
@@ -981,7 +1169,11 @@
 	<google/protobuf/extension_set.h>
 	<google/protobuf/unknown_field_set.h>
 
+<<<<<<< HEAD
 1391516904 source:c:\development\ennovia\include\network\proto\client.pb.cc
+=======
+1362989185 source:c:\development\ennovia\include\network\proto\client.pb.cc
+>>>>>>> a9d8ab817077a0990fd2bc0567d420b12405c664
 	"client.pb.h"
 	<algorithm>
 	<google/protobuf/stubs/common.h>
@@ -993,7 +1185,11 @@
 	<google/protobuf/reflection_ops.h>
 	<google/protobuf/wire_format.h>
 
+<<<<<<< HEAD
 1391516904 source:c:\development\ennovia\include\network\proto\server.pb.cc
+=======
+1362989185 source:c:\development\ennovia\include\network\proto\server.pb.cc
+>>>>>>> a9d8ab817077a0990fd2bc0567d420b12405c664
 	"server.pb.h"
 	<algorithm>
 	<google/protobuf/stubs/common.h>
@@ -1005,11 +1201,19 @@
 	<google/protobuf/reflection_ops.h>
 	<google/protobuf/wire_format.h>
 
+<<<<<<< HEAD
 1391516904 c:\development\ennovia\include\world\library.hpp
 	"misc/registry.hpp"
 	"core.hpp"
 
 1391516904 source:c:\development\ennovia\src\world\library.cpp
+=======
+1368028846 c:\development\ennovia\include\world\library.hpp
+	"misc/registry.hpp"
+	"core.hpp"
+
+1368120282 source:c:\development\ennovia\src\world\library.cpp
+>>>>>>> a9d8ab817077a0990fd2bc0567d420b12405c664
 	"world/library.hpp"
 	"world/locatable.hpp"
 	"world/livingobject.hpp"
@@ -1017,7 +1221,11 @@
 	"world/map.hpp"
 	"world/optionlist.hpp"
 
+<<<<<<< HEAD
 1391516904 c:\development\ennovia\include\ui\render.hpp
+=======
+1369821557 c:\development\ennovia\include\ui\render.hpp
+>>>>>>> a9d8ab817077a0990fd2bc0567d420b12405c664
 	"misc/registry.hpp"
 	"misc/irrlicht.hpp"
 	"misc/CGUITTFont.h"
@@ -1026,7 +1234,11 @@
 	"world/position.hpp"
 	"world/optionlist.hpp"
 
+<<<<<<< HEAD
 1391870974 source:c:\development\ennovia\src\ui\render.cpp
+=======
+1369821969 source:c:\development\ennovia\src\ui\render.cpp
+>>>>>>> a9d8ab817077a0990fd2bc0567d420b12405c664
 	"ui/render.hpp"
 	"world/optionlist.hpp"
 	"world/player.hpp"
@@ -1039,24 +1251,40 @@
 	<boost/function.hpp>
 	"world/locatable.hpp"
 
+<<<<<<< HEAD
 1391516904 c:\development\ennovia\include\world\optionlist.hpp
+=======
+1369821539 c:\development\ennovia\include\world\optionlist.hpp
+>>>>>>> a9d8ab817077a0990fd2bc0567d420b12405c664
 	<string>
 	<vector>
 	"core.hpp"
 
+<<<<<<< HEAD
 1391516904 source:c:\development\ennovia\src\world\items.cpp
+=======
+1368019043 source:c:\development\ennovia\src\world\items.cpp
+>>>>>>> a9d8ab817077a0990fd2bc0567d420b12405c664
 	"world/items.hpp"
 	"world/optionlist.hpp"
 	"world/livingobject.hpp"
 
+<<<<<<< HEAD
 1391516904 source:c:\development\ennovia\src\world\optionlist.cpp
+=======
+1368024359 source:c:\development\ennovia\src\world\optionlist.cpp
+>>>>>>> a9d8ab817077a0990fd2bc0567d420b12405c664
 	"world/optionlist.hpp"
 
 1368006311 c:\development\ennovia\include\world\lua\map.hpp
 	<luabind/luabind.hpp>
 	"world/map.hpp"
 
+<<<<<<< HEAD
 1368025026 source:c:\development\ennovia\src\world\lua\manager.cpp
+=======
+1368028626 source:c:\development\ennovia\src\world\lua\manager.cpp
+>>>>>>> a9d8ab817077a0990fd2bc0567d420b12405c664
 	"world/lua/manager.hpp"
 	"world/tile.hpp"
 	"world/map.hpp"
@@ -1064,19 +1292,33 @@
 	"world/items.hpp"
 	"world/livingobject.hpp"
 
+<<<<<<< HEAD
 1391516904 c:\development\ennovia\include\misc\registry_forw.hpp
 
 1391516904 c:\development\ennovia\include\world\inventory.hpp
+=======
+1368014157 c:\development\ennovia\include\misc\registry_forw.hpp
+
+1368635593 c:\development\ennovia\include\world\inventory.hpp
+>>>>>>> a9d8ab817077a0990fd2bc0567d420b12405c664
 	<boost/multi_array.hpp>
 	"world/items.hpp"
 	"misc/registry_forw.hpp"
 
+<<<<<<< HEAD
 1391516904 source:c:\development\ennovia\src\world\inventory.cpp
+=======
+1368692867 source:c:\development\ennovia\src\world\inventory.cpp
+>>>>>>> a9d8ab817077a0990fd2bc0567d420b12405c664
 	"world/inventory.hpp"
 	"world/locatable.hpp"
 	"misc/registry.hpp"
 
+<<<<<<< HEAD
 1391516904 source:c:\development\ennovia\src\world\optionproxy.cpp
+=======
+1368024364 source:c:\development\ennovia\src\world\optionproxy.cpp
+>>>>>>> a9d8ab817077a0990fd2bc0567d420b12405c664
 	"world/optionlist.hpp"
 	"mayor.hpp"
 
@@ -1097,7 +1339,11 @@
 	"world/livingobject.hpp"
 	"mayor.hpp"
 
+<<<<<<< HEAD
 1368110620 source:c:\development\ennovia\src\world\client\locatable.cpp
+=======
+1368114220 source:c:\development\ennovia\src\world\client\locatable.cpp
+>>>>>>> a9d8ab817077a0990fd2bc0567d420b12405c664
 	"world/locatable.hpp"
 	"world/position.hpp"
 	"world/map.hpp"
@@ -1119,6 +1365,7 @@
 	"ui/windows/window.hpp"
 	"ui/guientity.hpp"
 
+<<<<<<< HEAD
 1391516904 c:\development\ennovia\include\ui\windows\window.hpp
 	"misc/irrlicht.hpp"
 
@@ -1127,17 +1374,35 @@
 	"misc/irrlicht.hpp"
 
 1368021047 source:c:\development\ennovia\src\world\client\actions\move.cpp
+=======
+1368633836 c:\development\ennovia\include\ui\windows\window.hpp
+	"misc/irrlicht.hpp"
+
+1368688979 c:\development\ennovia\include\ui\guientity.hpp
+	"world/entity.hpp"
+	"misc/irrlicht.hpp"
+
+1368024647 source:c:\development\ennovia\src\world\client\actions\move.cpp
+>>>>>>> a9d8ab817077a0990fd2bc0567d420b12405c664
 	"world/actions.hpp"
 	"world/livingobject.hpp"
 	"mayor.hpp"
 
+<<<<<<< HEAD
 1391516904 source:c:\development\ennovia\src\ui\guiinventory.cpp
+=======
+1368692751 source:c:\development\ennovia\src\ui\guiinventory.cpp
+>>>>>>> a9d8ab817077a0990fd2bc0567d420b12405c664
 	"ui/graphics.hpp"
 	"ui/guiinventory.hpp"
 	"mayor.hpp"
 	"world/inventory.hpp"
 
+<<<<<<< HEAD
 1391516904 c:\development\ennovia\include\ui\guiinventory.hpp
+=======
+1368689013 c:\development\ennovia\include\ui\guiinventory.hpp
+>>>>>>> a9d8ab817077a0990fd2bc0567d420b12405c664
 	"ui/windows/window.hpp"
 	"ui/guientity.hpp"
 
@@ -1191,8 +1456,11 @@
 1369848628 source:c:\development\ennovia\include\world\database.cpp
 	"world/database.hpp"
 
+<<<<<<< HEAD
 1391516904 source:c:\development\ennovia\src\world\actions\move.cpp
 	"world/actions.hpp"
 	"world/livingobject.hpp"
 	"mayor.hpp"
 
+=======
+>>>>>>> a9d8ab817077a0990fd2bc0567d420b12405c664

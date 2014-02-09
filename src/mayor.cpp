@@ -11,7 +11,11 @@ Mayor::Mayor() :
     tick_timer(io_service, boost::posix_time::milliseconds(TICK)),
     frame_timer(io_service, boost::posix_time::milliseconds(FRAME)),
     //client(io_service,std::string("djabby.dlinkddns.com"),PORT_S),
+<<<<<<< HEAD
     client(io_service,std::string("192.168.178.33"),PORT_S),
+=======
+    client(io_service,std::string("127.0.0.1"),PORT_S),
+>>>>>>> a9d8ab817077a0990fd2bc0567d420b12405c664
     connection(client.connection),
     render(1024,768,*this)
 {

@@ -1,6 +1,15 @@
 #ifndef ENNOVIA_LUA_MANAGER_HPP
 #define ENNOVIE_LUA_MANAGER_HPP
 
+<<<<<<< HEAD
+=======
+#include <lua.hpp>
+#include <luabind/luabind.hpp>
+#include <luabind/operator.hpp>
+#include <luabind/dependency_policy.hpp>
+#include <luabind/adopt_policy.hpp>
+#include <luabind/return_reference_to_policy.hpp>
+>>>>>>> a9d8ab817077a0990fd2bc0567d420b12405c664
 
 
 namespace Ennovia {

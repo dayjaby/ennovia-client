@@ -1,0 +1,536 @@
+Mayor.Tick
+<Tick | alive | 1>
+Mayor.Frame
+<Frame | aliveGet position under mouse
+| draw >
+Received message: 3
+[MSG from Server]: Welcome to our server!
+|
+Received message: 200
+|
+Mayor.Tick
+<Tick | alive | 2>
+Mayor.Frame
+<Frame | alive| draw >
+Mayor.Tick
+<Tick | alive | 3>
+Mayor.Frame
+<Frame | alive| draw >
+Mayor.Tick
+<Tick | alive | 4>
+Mayor.Frame
+<Frame | alive| draw >
+Mayor.Tick
+<Tick | alive | 5>
+Mayor.Frame
+<Frame | alive| draw >
+Mayor.Tick
+<Tick | alive | 6>
+Mayor.Frame
+<Frame | alive| draw >
+Mayor.Tick
+<Tick | alive | 7>
+Mayor.Frame
+<Frame | alive| draw >
+Mayor.Tick
+<Tick | alive | 8>
+Mayor.Frame
+<Frame | alive| draw >
+Mayor.Tick
+<Tick | alive | 9>
+Mayor.Frame
+<Frame | alive| draw >
+Mayor.Tick
+<Tick | alive | 10>
+Mayor.Frame
+<Frame | alive| draw >
+Mayor.Tick
+<Tick | alive | 11>
+Mayor.Frame
+<Frame | alive| draw >
+Mayor.Tick
+<Tick | alive | 12>
+Mayor.Frame
+<Frame | alive| draw >
+Mayor.Tick
+<Tick | alive | 13>
+Mayor.Frame
+<Frame | alive| draw >
+Mayor.Tick
+<Tick | alive | 14>
+Mayor.Frame
+<Frame | alive| draw >
+Mayor.Tick
+<Tick | alive | 15>
+Mayor.Frame
+<Frame | alive| draw >
+Mayor.Tick
+<Tick | alive | 16>
+Mayor.Frame
+<Frame | alive| draw >
+Mayor.Tick
+<Tick | alive | 17>
+Mayor.Frame
+<Frame | alive| draw >
+Mayor.Tick
+<Tick | alive | 18>
+Mayor.Frame
+<Frame | alive| draw >
+Mayor.Tick
+<Tick | alive | 19>
+Mayor.Frame
+<Frame | alive| draw >
+Mayor.Tick
+<Tick | alive | 20>
+Mayor.Frame
+<Frame | alive| draw >
+Mayor.Tick
+<Tick | alive | 21>
+Mayor.Frame
+<Frame | alive| draw >
+Mayor.Tick
+<Tick | alive | 22>
+Mayor.Frame
+<Frame | alive| draw >
+Mayor.Tick
+<Tick | alive | 23>
+Mayor.Frame
+<Frame | alive| draw >
+Mayor.Tick
+<Tick | alive | 24>
+Mayor.Frame
+<Frame | alive| draw >
+Mayor.Tick
+<Tick | alive | 25>
+Mayor.Frame
+<Frame | alive| draw >
+Mayor.Tick
+<Tick | alive | 26>
+Mayor.Frame
+<Frame | alive| draw >
+Mayor.Tick
+<Tick | alive | 27>
+Mayor.Frame
+<Frame | alive| draw >
+Mayor.Tick
+<Tick | alive | 28>
+Mayor.Frame
+<Frame | alive| draw >
+Mayor.Tick
+<Tick | alive | 29>
+Mayor.Frame
+<Frame | alive| draw >
+Mayor.Tick
+<Tick | alive | 30>
+Mayor.Frame
+<Frame | alive| draw >
+Mayor.Tick
+<Tick | alive | 31>
+Mayor.Frame
+<Frame | alive| draw >
+Mayor.Tick
+<Tick | alive | 32>
+Mayor.Frame
+<Frame | alive| draw >
+Mayor.Tick
+<Tick | alive | 33>
+Mayor.Frame
+<Frame | alive| draw >
+Mayor.Tick
+<Tick | alive | 34>
+Mayor.Frame
+<Frame | alive| draw >
+Mayor.Tick
+<Tick | alive | 35>
+Mayor.Frame
+<Frame | alive| draw >
+Mayor.Tick
+<Tick | alive | 36>
+Mayor.Frame
+<Frame | alive| draw >
+Mayor.Tick
+<Tick | alive | 37>
+Mayor.Frame
+<Frame | alive| draw >
+Mayor.Tick
+<Tick | alive | 38>
+Mayor.Frame
+<Frame | alive| draw >
+Mayor.Tick
+<Tick | alive | 39>
+Mayor.Frame
+<Frame | alive| draw >
+Mayor.Tick
+<Tick | alive | 40>
+Mayor.Frame
+<Frame | alive| draw >
+Mayor.Tick
+<Tick | alive | 41>
+Mayor.Frame
+<Frame | alive| draw >
+Mayor.Tick
+<Tick | alive | 42>
+Mayor.Frame
+<Frame | alive| draw >
+Mayor.Tick
+<Tick | alive | 43>
+Mayor.Frame
+<Frame | alive| draw >
+Mayor.Tick
+<Tick | alive | 44>
+Mayor.Frame
+<Frame | alive| draw >
+Mayor.Tick
+<Tick | alive | 45>
+Mayor.Frame
+<Frame | alive| draw >
+Mayor.Tick
+<Tick | alive | 46>
+Mayor.Frame
+<Frame | alive| draw >
+Mayor.Tick
+<Tick | alive | 47>
+Mayor.Frame
+<Frame | alive| draw >
+Mayor.Tick
+<Tick | alive | 48>
+Mayor.Frame
+<Frame | alive| draw >
+Mayor.Tick
+<Tick | alive | 49>
+Mayor.Frame
+<Frame | alive| draw >
+Mayor.Tick
+<Tick | alive | 50>
+Mayor.Frame
+<Frame | alive| draw >
+Mayor.Tick
+<Tick | alive | 51>
+Mayor.Frame
+<Frame | alive| draw >
+Mayor.Tick
+<Tick | alive | 52>
+Mayor.Frame
+<Frame | alive| draw >
+Mayor.Tick
+<Tick | alive | 53>
+Mayor.Frame
+<Frame | alive| draw >
+Mayor.Tick
+<Tick | alive | 54>
+Mayor.Frame
+<Frame | alive| draw >
+Mayor.Tick
+<Tick | alive | 55>
+Mayor.Frame
+<Frame | alive| draw >
+Mayor.Tick
+<Tick | alive | 56>
+Mayor.Frame
+<Frame | alive| draw >
+Mayor.Tick
+<Tick | alive | 57>
+Mayor.Frame
+<Frame | alive| draw >
+Mayor.Tick
+<Tick | alive | 58>
+Mayor.Frame
+<Frame | alive| draw >
+Mayor.Tick
+<Tick | alive | 59>
+Mayor.Frame
+<Frame | alive| draw >
+Mayor.Tick
+<Tick | alive | 60>
+Mayor.Frame
+<Frame | alive| draw >
+Mayor.Tick
+<Tick | alive | 61>
+Mayor.Frame
+<Frame | alive| draw >
+Mayor.Tick
+<Tick | alive | 62>
+Mayor.Frame
+<Frame | alive| draw >
+Mayor.Tick
+<Tick | alive | 63>
+Mayor.Frame
+<Frame | alive| draw >
+Mayor.Tick
+<Tick | alive | 64>
+Mayor.Frame
+<Frame | alive| draw >
+Mayor.Tick
+<Tick | alive | 65>
+Mayor.Frame
+<Frame | alive| draw >
+Mayor.Tick
+<Tick | alive | 66>
+Mayor.Frame
+<Frame | alive| draw >
+Mayor.Tick
+<Tick | alive | 67>
+Mayor.Frame
+<Frame | alive| draw >
+Mayor.Tick
+<Tick | alive | 68>
+Mayor.Frame
+<Frame | alive| draw >
+Mayor.Tick
+<Tick | alive | 69>
+Mayor.Frame
+<Frame | alive| draw >
+Mayor.Tick
+<Tick | alive | 70>
+Mayor.Frame
+<Frame | alive| draw >
+Mayor.Tick
+<Tick | alive | 71>
+Mayor.Frame
+<Frame | alive| draw >
+Mayor.Tick
+<Tick | alive | 72>
+Mayor.Frame
+<Frame | alive| draw >
+Mayor.Tick
+<Tick | alive | 73>
+Mayor.Frame
+<Frame | alive| draw >
+Mayor.Tick
+<Tick | alive | 74>
+Mayor.Frame
+<Frame | alive| draw >
+Mayor.Tick
+<Tick | alive | 75>
+Mayor.Frame
+<Frame | alive| draw >
+Mayor.Tick
+<Tick | alive | 76>
+Mayor.Frame
+<Frame | alive| draw >
+Mayor.Tick
+<Tick | alive | 77>
+Mayor.Frame
+<Frame | alive| draw >
+Mayor.Tick
+<Tick | alive | 78>
+Mayor.Frame
+<Frame | alive| draw >
+Mayor.Tick
+<Tick | alive | 79>
+Mayor.Frame
+<Frame | alive| draw >
+Mayor.Tick
+<Tick | alive | 80>
+Mayor.Frame
+<Frame | alive| draw >
+Mayor.Tick
+<Tick | alive | 81>
+Mayor.Frame
+<Frame | alive| draw >
+Mayor.Tick
+<Tick | alive | 82>
+Mayor.Frame
+<Frame | alive| draw >
+Mayor.Tick
+<Tick | alive | 83>
+Mayor.Frame
+<Frame | alive| draw >
+Mayor.Tick
+<Tick | alive | 84>
+Mayor.Frame
+<Frame | alive| draw >
+Mayor.Tick
+<Tick | alive | 85>
+Mayor.Frame
+<Frame | alive| draw >
+Mayor.Tick
+<Tick | alive | 86>
+Mayor.Frame
+<Frame | alive| draw >
+Mayor.Tick
+<Tick | alive | 87>
+Mayor.Frame
+<Frame | alive| draw >
+Mayor.Tick
+<Tick | alive | 88>
+Mayor.Frame
+<Frame | alive| draw >
+Mayor.Tick
+<Tick | alive | 89>
+Mayor.Frame
+<Frame | alive| draw >
+Mayor.Tick
+<Tick | alive | 90>
+Mayor.Frame
+<Frame | alive| draw >
+Mayor.Tick
+<Tick | alive | 91>
+Mayor.Frame
+<Frame | alive| draw >
+Mayor.Tick
+<Tick | alive | 92>
+Mayor.Frame
+<Frame | alive| draw >
+Mayor.Tick
+<Tick | alive | 93>
+Mayor.Frame
+<Frame | alive| draw >
+Mayor.Tick
+<Tick | alive | 94>
+Mayor.Frame
+<Frame | alive| draw >
+Mayor.Tick
+<Tick | alive | 95>
+Mayor.Frame
+<Frame | alive| draw >
+Mayor.Tick
+<Tick | alive | 96>
+Mayor.Frame
+<Frame | alive| draw >
+Mayor.Tick
+<Tick | alive | 97>
+Mayor.Frame
+<Frame | alive| draw >
+Mayor.Tick
+<Tick | alive | 98>
+Mayor.Frame
+<Frame | alive| draw >
+Mayor.Tick
+<Tick | alive | 99>
+Mayor.Frame
+<Frame | alive| draw >
+Mayor.Tick
+<Tick | alive | 100>
+Mayor.Frame
+<Frame | alive| draw >
+Mayor.Tick
+<Tick | alive | 101>
+Mayor.Frame
+<Frame | alive| draw >
+Mayor.Tick
+<Tick | alive | 102>
+Mayor.Frame
+<Frame | alive| draw >
+Mayor.Tick
+<Tick | alive | 103>
+Mayor.Frame
+<Frame | alive| draw >
+Mayor.Tick
+<Tick | alive | 104>
+Mayor.Frame
+<Frame | alive| draw >
+Mayor.Tick
+<Tick | alive | 105>
+Mayor.Frame
+<Frame | alive| draw >
+Mayor.Tick
+<Tick | alive | 106>
+Mayor.Frame
+<Frame | alive| draw >
+Mayor.Tick
+<Tick | alive | 107>
+Mayor.Frame
+<Frame | alive| draw >
+Mayor.Tick
+<Tick | alive | 108>
+Mayor.Frame
+<Frame | alive| draw >
+Mayor.Tick
+<Tick | alive | 109>
+Mayor.Frame
+<Frame | alive| draw >
+Mayor.Tick
+<Tick | alive | 110>
+Mayor.Frame
+<Frame | alive| draw >
+Mayor.Tick
+<Tick | alive | 111>
+Mayor.Frame
+<Frame | alive| draw >
+Mayor.Tick
+<Tick | alive | 112>
+Mayor.Frame
+<Frame | alive| draw >
+Mayor.Tick
+<Tick | alive | 113>
+Mayor.Frame
+<Frame | alive| draw >
+Mayor.Tick
+<Tick | alive | 114>
+Mayor.Frame
+<Frame | alive| draw >
+Mayor.Tick
+<Tick | alive | 115>
+Mayor.Frame
+<Frame | alive| draw >
+Mayor.Tick
+<Tick | alive | 116>
+Mayor.Frame
+<Frame | alive| draw >
+Mayor.Tick
+<Tick | alive | 117>
+Mayor.Frame
+<Frame | alive| draw >
+Mayor.Tick
+<Tick | alive | 118>
+Mayor.Frame
+<Frame | alive| draw >
+Mayor.Tick
+<Tick | alive | 119>
+Mayor.Frame
+<Frame | alive| draw >
+Mayor.Tick
+<Tick | alive | 120>
+Mayor.Frame
+<Frame | alive| draw >
+Mayor.Tick
+<Tick | alive | 121>
+Mayor.Frame
+<Frame | alive| draw >
+Mayor.Tick
+<Tick | alive | 122>
+Mayor.Frame
+<Frame | alive| draw >
+Mayor.Tick
+<Tick | alive | 123>
+Mayor.Frame
+<Frame | alive| draw >
+Mayor.Tick
+<Tick | alive | 124>
+Mayor.Frame
+<Frame | alive| draw >
+Mayor.Tick
+<Tick | alive | 125>
+Mayor.Frame
+<Frame | alive| draw >
+Mayor.Tick
+<Tick | alive | 126>
+Mayor.Frame
+<Frame | alive| draw >
+Mayor.Tick
+<Tick | alive | 127>
+Mayor.Frame
+<Frame | alive| draw >
+Mayor.Tick
+<Tick | alive | 128>
+Mayor.Frame
+<Frame | alive| draw >
+Mayor.Tick
+<Tick | alive | 129>
+Mayor.Frame
+<Frame | alive| draw >
+Mayor.Tick
+<Tick | alive | 130>
+Mayor.Frame
+<Frame | alive| draw >
+Mayor.Tick
+<Tick | alive | 131>
+Mayor.Frame
+<Frame | alive| draw >
+Mayor.Tick
+<Tick | alive | 132>
+Mayor.Frame
+<Frame | alive| draw >
+Mayor.Tick
+<Tick | alive | 133>

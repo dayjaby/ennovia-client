@@ -253,6 +253,10 @@ void Render::loadMap(Map* newmap)
             if(library.isLocatable(target.id())) {
                 mayor.log << "camera target is locatable" << std::endl;
                 reg<Locatable> locatable = library.getLocatable(target.id());
+<<<<<<< HEAD
+=======
+                mayor.log << (int)locatable->getPosition().map << "," << (int)currentMap.get() << std::endl;
+>>>>>>> a9d8ab817077a0990fd2bc0567d420b12405c664
                 if(locatable->getPosition().map == currentMap.get()) {
                     mayor.log << "camera target is on this map" << std::endl;
                     float x = locatable->getPosition().x;
