@@ -1,5 +1,6 @@
 #include "ui/eventreceiver.hpp"
 #include "ui/render.hpp"
+#include "ui/useraction.hpp"
 #include "mayor.hpp"
 
 namespace Ennovia
@@ -11,7 +12,6 @@ EventReceiver::EventReceiver()
 
 bool EventReceiver::OnEvent(const SEvent& event)
 {
-    std::cout << "Receive event" << std::endl;
     Render& render = Mayor::get().getRender();
     switch(event.EventType)
     {
@@ -19,7 +19,8 @@ bool EventReceiver::OnEvent(const SEvent& event)
         switch(event.GUIEvent.EventType)
         {
         case irr::gui::EGET_MENU_ITEM_SELECTED:
-            contextMenuID = ((IGUIContextMenu*)event.GUIEvent.Caller)->getSelectedItem();
+            if(event.GUIEvent.Caller)
+                contextMenuID = ((IGUIContextMenu*)event.GUIEvent.Caller)->getSelectedItem();
             break;
         case irr::gui::EGET_ELEMENT_FOCUSED:
             break;
@@ -49,8 +50,7 @@ bool EventReceiver::OnEvent(const SEvent& event)
         switch(event.MouseInput.Event)
         {
         case EMIE_LMOUSE_LEFT_UP:
-            std::cout << "left mouse click" << std::endl;
-            render.mouseLeftClick(event.MouseInput.X, event.MouseInput.Y);
+            render.mouseLeftClick(event.MouseInput.X, event.MouseInput.Y,event.MouseInput.Control);
 //            mouseState.setButtonDown(MouseState::Left,false);
             break;
         case EMIE_RMOUSE_LEFT_UP:

@@ -33,11 +33,13 @@ namespace Ennovia {
 
         void moveMouse(int x,int y,bool left,bool right);
         void updateOptionList();
-        void mouseLeftClick(int x,int y);
+        void mouseLeftClick(int x,int y,bool ctrl);
         void mouseRightClick(int x,int y);
         void moveCamera(float x,float y,float z);
         irr::gui::IGUIEnvironment* getGUIEnvironment() {return guienv; }
         irr::video::IVideoDriver* getVideoDriver() { return driver; }
+        irr::gui::IGUIContextMenu* getOptionListContextMenu() { return optionListContextMenu; }
+        void setOptionListContextMenu(irr::gui::IGUIContextMenu* olcm) { optionListContextMenu = olcm; }
 
         irr::core::rect<s32> getTopLeftRect(int w,int h);
         irr::core::rect<s32> getTopRightRect(int w,int h);
@@ -49,7 +51,7 @@ namespace Ennovia {
         Position getPositionUnderMouse(int mx,int my);
         void getLocatablesUnderMouse(std::vector<Locatable*>* locatables,int mx,int my);
         void processLeftClick();
-        void processRightClick();
+        void processCtrlLeftClick();
 
         Mayor& mayor;
         Library& library;
@@ -76,7 +78,7 @@ namespace Ennovia {
         irr::gui::IGUIContextMenu* optionListContextMenu;
         std::map<Locatable*,OptionList*> optionLists;
         std::vector<Locatable*> leftClick;
-        std::vector<Locatable*> rightClick;
+        std::vector<Locatable*> ctrlLeftClick;
 
         irr::gui::IGUIWindow* inventory;
 

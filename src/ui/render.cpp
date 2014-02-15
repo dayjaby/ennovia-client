@@ -10,7 +10,7 @@ namespace Ennovia
 {
 
 Render::Render(int width_, int height_,Mayor& mayor_) :
-    width(width_), height(height_), mayor(mayor_), library(mayor_.getLibrary())
+    width(width_), height(height_), mayor(mayor_), library(mayor_.getLibrary()), optionListContextMenu(0)
 {
     device = createDevice(video::EDT_OPENGL, dimension2d<u32>(width,height),16,false,false,false);
 
@@ -77,20 +77,16 @@ bool Render::run()
 void Render::moveMouse(int x,int y,bool left,bool right)
 {
     Position pos = getPositionUnderMouse(x,y);
-    if(!(pos==lastMousePosition))
-        getLocatablesUnderMouse(0,x,y);
+    //if(!(pos==lastMousePosition))
+    //    getLocatablesUnderMouse(0,x,y);
     lastMousePosition = pos;
     lastMouseLocation = core::position2di(x,y);
 }
 
 void Render::updateOptionList() {
-    if(optionListContextMenu) {
-        optionListContextMenu->drop();
-        optionListContextMenu = 0;
-    }
     if(optionList.options.size()>0)
     {
-        optionListContextMenu = guienv->addContextMenu(core::rect<s32>(lastMouseLocation,core::dimension2di(250,200)),0,-1);
+        optionListContextMenu = guienv->addContextMenu(core::rect<s32>(lastMouseLocation,core::dimension2di(250,200)),0,-2);
         for(int i=0; i<optionList.options.size(); i++)
         {
             optionListContextMenu->addItem(core::stringw(optionList.options[i]->getDescription().c_str()).c_str());
@@ -98,7 +94,7 @@ void Render::updateOptionList() {
     }
 }
 
-void Render::mouseLeftClick(int x,int y) {
+void Render::mouseLeftClick(int x,int y,bool ctrl) {
     optionList.options.clear();
     irr::gui::IGUIElement* element = guienv->getRootGUIElement()->getElementFromPoint(irr::core::position2d<s32>(x,y));
     if(element && element->getParent() && element->getID()>0) {
@@ -111,9 +107,24 @@ void Render::mouseLeftClick(int x,int y) {
             updateOptionList();
             break;
         }
+    } else if(element && element->getID()<0) {
+        switch(element->getID()) {
+        case -2:
+            IGUIContextMenu* contextMenu = (IGUIContextMenu*) element;
+            Player* player = mayor.getPlayer();
+            optionList.options[contextMenu->getSelectedItem()]->onChoose(player);
+            leftClick.clear();
+            ctrlLeftClick.clear();
+            break;
+        }
     } else {
-        getLocatablesUnderMouse(&leftClick,x,y);
-        processLeftClick();
+        if(ctrl) {
+            getLocatablesUnderMouse(&ctrlLeftClick,x,y);
+            processCtrlLeftClick();
+        } else {
+            getLocatablesUnderMouse(&leftClick,x,y);
+            processLeftClick();
+        }
     }
 }
 
@@ -188,23 +199,28 @@ Position Render::getPositionUnderMouse(int mx,int my) {
 
 void Render::getLocatablesUnderMouse(std::vector<Locatable*>* locatables,int mx,int my) {
     mayor.log << "Get Locatables under mouse" << std::endl;
-    if(locatables) locatables->clear();
     core::line3df ray =
         collision->getRayFromScreenCoordinates(core::position2di(mx,my),
                                                camera);
     core::vector3df intersection;
     core::triangle3df hitTriangle;
+    std::set<Locatable*> locatableSet;
     while(ISceneNode* node = collision->getSceneNodeAndCollisionPointFromRay(ray,intersection,hitTriangle,2,entityParent))
     {
         reg<ISceneNode> sceneNode = library.getSceneNode(node);
         reg<Locatable> locatable = library.getLocatable(sceneNode.id());
         if(locatable.exists()) {
-            if(locatables)
-                locatables->push_back(locatable);
-            mayor.getLocatableOptionList(locatable.id());
+            if(locatableSet.count(locatable)==0) {
+                mayor.getLocatableOptionList(locatable.id());
+                optionLists.erase(locatable);
+            }
+            locatableSet.insert(locatable);
+
         }
         ray.start = intersection + ROUNDING_ERROR_f32 * (ray.end - ray.start);
     }
+    if(locatables)
+        *locatables = std::vector<Locatable*>(locatableSet.begin(),locatableSet.end());
     if(currentMap.exists()) {
         if(collision->getSceneNodeAndCollisionPointFromRay(ray,intersection,hitTriangle,1))
         {
@@ -253,10 +269,6 @@ void Render::loadMap(Map* newmap)
             if(library.isLocatable(target.id())) {
                 mayor.log << "camera target is locatable" << std::endl;
                 reg<Locatable> locatable = library.getLocatable(target.id());
-<<<<<<< HEAD
-=======
-                mayor.log << (int)locatable->getPosition().map << "," << (int)currentMap.get() << std::endl;
->>>>>>> a9d8ab817077a0990fd2bc0567d420b12405c664
                 if(locatable->getPosition().map == currentMap.get()) {
                     mayor.log << "camera target is on this map" << std::endl;
                     float x = locatable->getPosition().x;
@@ -290,7 +302,7 @@ void Render::processOptionList(Locatable* locatable,OptionList* optionlist) {
     }
 
     if(std::find(leftClick.begin(),leftClick.end(),locatable) != leftClick.end()) processLeftClick();
-    if(std::find(rightClick.begin(),rightClick.end(),locatable) != rightClick.end()) processRightClick();
+    if(std::find(ctrlLeftClick.begin(),ctrlLeftClick.end(),locatable) != ctrlLeftClick.end()) processCtrlLeftClick();
 }
 
 void Render::processLeftClick() {
@@ -306,7 +318,7 @@ void Render::processLeftClick() {
                 Player* player = mayor.getPlayer();
                 optionList->options[0]->onChoose(player);
                 leftClick.clear();
-                rightClick.clear();
+                ctrlLeftClick.clear();
                 return;
             }
         } else {
@@ -315,17 +327,17 @@ void Render::processLeftClick() {
     }
 }
 
-void Render::processRightClick() {
+void Render::processCtrlLeftClick() {
     optionList.options.clear();
     typedef std::vector<Locatable*>::iterator Iterator;
-    mayor.log << "elements=" << leftClick.size() << std::endl;
-    for(Iterator i = rightClick.begin();i != rightClick.end();++i) {
+    mayor.log << "elements=" << ctrlLeftClick.size() << std::endl;
+    for(Iterator i = ctrlLeftClick.begin();i != ctrlLeftClick.end();++i) {
         Locatable* locatable = *i;
         if(optionLists.count(locatable)==0) {
             return;
         }
     }
-    for(Iterator i = rightClick.begin();i != rightClick.end();++i) {
+    for(Iterator i = ctrlLeftClick.begin();i != ctrlLeftClick.end();++i) {
         Locatable* locatable = *i;
         //if(optionLists.count(locatable)>0) {
             mayor.log << "contains optionlist" << std::endl;
@@ -338,7 +350,7 @@ void Render::processRightClick() {
     }
     updateOptionList();
     leftClick.clear();
-    rightClick.clear();
+    ctrlLeftClick.clear();
 
 }
 
@@ -355,7 +367,8 @@ irr::scene::ISceneNode* Render::loadAnimatedMesh(const std::string& path, const 
         }
         mesh->setMD2Animation(scene::EMAT_STAND);
         mesh->setMaterialTexture(0,getTexture(texture));
-        mesh->setScale(vector3df(0.02,0.02,0.02));
+        if(path.compare("faerie.md2")==0)
+            mesh->setScale(vector3df(0.02,0.02,0.02));
         mesh->setMaterialFlag(video::EMF_LIGHTING,false);
         mesh->setTriangleSelector(selector);
         mayor.log << "done" << std::endl;

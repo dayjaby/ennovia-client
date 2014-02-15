@@ -3,11 +3,8 @@
 #include "world/map.hpp"
 #include "world/optionlist.hpp"
 #include "misc/irrlicht.hpp"
-<<<<<<< HEAD
 #include "world/library.hpp"
 #include "mayor.hpp"
-=======
->>>>>>> a9d8ab817077a0990fd2bc0567d420b12405c664
 
 namespace Ennovia
 {
@@ -48,7 +45,6 @@ std::string Locatable::onExamine(LivingObject* o)
     return name;
 }
 
-<<<<<<< HEAD
 OptionList* Locatable::getOptionList(LivingObject* p)
 {
     Library& library = Mayor::get().getLibrary();
@@ -85,8 +81,6 @@ void Locatable::setPosition(const Position& position)
     //    position_.getTile()->enter(this);
 }
 
-=======
->>>>>>> a9d8ab817077a0990fd2bc0567d420b12405c664
 
 
 }

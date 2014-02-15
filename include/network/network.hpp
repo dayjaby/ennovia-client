@@ -3,10 +3,6 @@
 
 #include "network/connection.hpp"
 #include "network/message.hpp"
-<<<<<<< HEAD
-=======
-#include "network/server.hpp"
->>>>>>> a9d8ab817077a0990fd2bc0567d420b12405c664
 #include "network/client.hpp"
 
 namespace Ennovia {

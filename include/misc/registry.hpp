@@ -81,13 +81,7 @@ public:
     typedef Identificator<I> ID;
     typedef Type_ Type;
 
-<<<<<<< HEAD
-    Registry() {
-        std::cout << "Registry created" << std::endl;
-    }
 
-=======
->>>>>>> a9d8ab817077a0990fd2bc0567d420b12405c664
 
     typedef boost::bimap<I,Type> map_type;
     map_type map;

@@ -17,6 +17,7 @@ namespace Ennovia {
     const float cameraYSpeed = 10;
     const float cameraZSpeed = 0.2;
 
+    class UserAction;
     class EventReceiver : public IEventReceiver {
     public:
         virtual bool OnEvent(const SEvent& event);
@@ -25,7 +26,6 @@ namespace Ennovia {
         EventReceiver();
         int contextMenuID;
         IGUIElement* hovered;
-
 
     };
 
