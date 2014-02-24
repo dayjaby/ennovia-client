@@ -1,142 +1,126 @@
 #include "world/library.hpp"
 #include "world/locatable.hpp"
-#include "world/livingobject.hpp"
-#include "world/player.hpp"
 #include "world/map.hpp"
 #include "world/optionlist.hpp"
+namespace Ennovia
+{
 
-namespace Ennovia {
-
-void Deleter<irr::scene::ISceneNode*>::run(irr::scene::ISceneNode* x) {
-    //x->drop();
+SceneNodeContainer::SceneNodeContainer() {}
+int SceneNodeContainer::create(int id,irr::scene::ISceneNode* node) {
+    container.insert(container_type::value_type(id,node));
+    return id;
+}
+irr::scene::ISceneNode* SceneNodeContainer::get(int id) {
+    container_type::left_iterator i = container.left.find(id);
+    if(i!=container.left.end()) {
+        return i->second;
+    } else {
+        return 0;
+    }
+}
+int SceneNodeContainer::get(irr::scene::ISceneNode* node) {
+    container_type::right_iterator i = container.right.find(node);
+    if(i!=container.right.end()) {
+        return i->second;
+    } else {
+        return 0;
+    }
 }
 
-reg<irr::scene::ISceneNode> Library::createSceneNode(int id,irr::scene::ISceneNode* scene) {
-    return reg<irr::scene::ISceneNode>(scene,id);
+bool SceneNodeContainer::exists(int id) {
+    return get(id)!=0;
+}
+bool SceneNodeContainer::exists(irr::scene::ISceneNode* node) {
+    return get(node)!=0;
 }
 
-reg<irr::scene::ISceneNode> Library::getSceneNode(irr::scene::ISceneNode* node) {
-    return reg<irr::scene::ISceneNode>(node);
+LocatableContainer::LocatableContainer() : last_index(0) {}
+int LocatableContainer::create(int id,const std::string& name) {
+    container.insert(container_type::value_type(id,new Locatable(Position(),name)));
+    return id;
+}
+int LocatableContainer::create(const std::string& name) {
+    int new_id = ++last_index;
+    container.insert(container_type::value_type(new_id,new Locatable(Position(),name)));
+    return new_id;
+}
+int LocatableContainer::create(Locatable* loc) {
+    int new_id = ++last_index;
+    container.insert(container_type::value_type(new_id,loc));
+    return new_id;
+}
+Locatable* LocatableContainer::get(int id) {
+    container_type::left_iterator i = container.left.find(id);
+    if(i!=container.left.end()) {
+        return i->second;
+    } else {
+        return 0;
+    }
+}
+int LocatableContainer::get(Locatable* loc) {
+    container_type::right_iterator i = container.right.find(loc);
+    if(i!=container.right.end()) {
+        return i->second;
+    } else {
+        return 0;
+    }
 }
 
-reg<irr::scene::ISceneNode> Library::getSceneNode(int id) {
-    return reg<irr::scene::ISceneNode>(id);
+bool LocatableContainer::exists(int id) {
+    return get(id)!=0;
 }
 
-reg<irr::scene::ISceneNode> Library::getSceneNode(Locatable* loc) {
-    reg<Locatable> locatable(loc);
-    return reg<irr::scene::ISceneNode>(locatable.id());
+MapContainer::MapContainer() {}
+
+int MapContainer::create(int id,Map* map) {
+    container.insert(container_type::value_type(id,map));
+    return id;
+}
+Map* MapContainer::get(int id) {
+    container_type::left_iterator i = container.left.find(id);
+    if(i!=container.left.end()) {
+        return i->second;
+    } else {
+        return 0;
+    }
+}
+int MapContainer::get(Map* map) {
+    container_type::right_iterator i = container.right.find(map);
+    if(i!=container.right.end()) {
+        return i->second;
+    } else {
+        return 0;
+    }
+}
+bool MapContainer::exists(int id) {
+    return get(id)!=0;
 }
 
-bool Library::isSceneNode(int id) {
-    return reg<irr::scene::ISceneNode>(id).exists();
-}
+OptionListContainer::OptionListContainer() {}
 
-bool Library::isSceneNode(irr::scene::ISceneNode* node) {
-    return reg<irr::scene::ISceneNode>::exists(node);
+int OptionListContainer::create(int id,OptionList* ol) {
+    container.insert(container_type::value_type(id,ol));
+    return id;
 }
-
-reg<Locatable> Library::createLocatable(int id,const std::string& name) {
-    Locatable* loc = new Locatable(Position(),name);
-    return reg<Locatable>(loc,id);
+OptionList* OptionListContainer::get(int id) {
+    container_type::left_iterator i = container.left.find(id);
+    if(i!=container.left.end()) {
+        return i->second;
+    } else {
+        return 0;
+    }
 }
-
-reg<Locatable> Library::createLocatable(const std::string& name) {
-    Locatable* loc = new Locatable(Position(),name);
-    return reg<Locatable>(loc);
+int OptionListContainer::get(OptionList* ol) {
+    container_type::right_iterator i = container.right.find(ol);
+    if(i!=container.right.end()) {
+        return i->second;
+    } else {
+        return 0;
+    }
 }
-
-reg<Locatable> Library::createLocatable(Locatable* loc) {
-    return reg<Locatable>(loc);
-}
-
-reg<Locatable> Library::getLocatable(int id) {
-    return reg<Locatable>(id);
-}
-
-bool Library::isLocatable(int id) {
-    return reg<Locatable>(id).exists();
-}
-
-reg<LivingObject> Library::createLivingObject(int id,const std::string& name) {
-    LivingObject* lo = new LivingObject(Position(),name);
-    reg<Locatable>(lo,id);
-    return reg<LivingObject>(lo,id);
-}
-
-reg<LivingObject> Library::createLivingObject(const std::string& name) {
-    LivingObject* lo = new LivingObject(Position(),name);
-    reg<Locatable> loc(lo);
-    return reg<LivingObject>(lo,loc.id());
-}
-
-reg<LivingObject> Library::createLivingObject(LivingObject* living) {
-    reg<Locatable> loc(living);
-    return reg<LivingObject>(living,loc.id());
-}
-
-reg<LivingObject> Library::getLivingObject(int id) {
-    return reg<LivingObject>(id);
-}
-
-bool Library::isLivingObject(int id) {
-    return reg<LivingObject>(id).exists();
-}
-
-reg<Player> Library::createPlayer(int id,const std::string& name) {
-    Player* player = new Player(Position(),name);
-    reg<Locatable>(player,id);
-    reg<LivingObject>(player,id);
-    return reg<Player>(player,id);
-}
-
-reg<Player> Library::createPlayer(const std::string& name) {
-    Player* player = new Player(Position(),name);
-    reg<Locatable> loc(player);
-    reg<LivingObject> living(player,loc.id());
-    return reg<Player>(player,loc.id());
-}
-
-reg<Player> Library::createPlayer(Player* player) {
-    reg<Locatable> loc(player);
-    reg<LivingObject> living(player,loc.id());
-    return reg<Player>(player,loc.id());
-}
-
-reg<Player> Library::getPlayer(int id) {
-    return reg<Player>(id);
-}
-
-bool Library::isPlayer(int id) {
-    return reg<Player>(id).exists();
-}
-
-reg<Map> Library::getMap(int id) {
-    return reg<Map>(id);
-}
-
-reg<Map> Library::getMap(Map* map) {
-    return reg<Map>(map);
-}
-
-reg<Map> Library::createMap(Map* map,int id) {
-    return reg<Map>(map,id);
-}
-
-bool Library::isMap(int id) {
-    return reg<Map>(id).exists();
-}
-
-reg<OptionList> Library::createOptionList(OptionList* optionList,int id) {
-    return reg<OptionList>(optionList,id);
-}
-
-reg<OptionList> Library::getOptionList(int id) {
-    return reg<OptionList>(id);
-}
-
-bool Library::isOptionList(int id) {
-    return reg<OptionList>(id).exists();
+bool OptionListContainer::exists(int id) {
+    return get(id)!=0;
 }
 
 }
+

@@ -12,7 +12,7 @@ namespace Ennovia {
         return desc;
     }
 
-    void OptionProxy::onChoose(LivingObject* lo) {
+    void OptionProxy::onChoose(Locatable* lo) {
         Mayor::get().chooseOption(id,index);
     }
 

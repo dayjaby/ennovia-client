@@ -2,10 +2,11 @@
 #include "ui/guiinventory.hpp"
 #include "mayor.hpp"
 #include "world/inventory.hpp"
+#include "ui/render.hpp"
 
 namespace Ennovia {
 
-    GUIInventory::GUIInventory(irr::gui::IGUIElement* parent, Inventory& inv)
+   /* GUIInventory::GUIInventory(irr::gui::IGUIElement* parent, Inventory& inv)
     : IGUIElement(irr::gui::EGUIET_ELEMENT,RENDER.getGUIEnvironment(),parent,0,irr::core::rect<s32>(0,0,inv.width()*48,inv.height()*48)), inventory(inv) {
         update();
     }
@@ -19,5 +20,5 @@ namespace Ennovia {
                 RENDER.getGUIEnvironment()->addImage(empty,irr::core::position2d<s32>(0,0),true,elem,1);
             }
         }
-    }
+    }*/
 }

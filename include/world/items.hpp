@@ -7,7 +7,7 @@
 
 namespace Ennovia
 {
-
+/*
 class OptionList;
 class Item;
 
@@ -15,7 +15,7 @@ class ItemType
 {
 public:
     ItemType(const std::string& id_,const std::string& name_, const std::string& path_) : name(name_), path(path_) {
-        reg<ItemType,std::string>(this,id_);
+//        reg<ItemType,std::string>(this,id_);
     }
 
     virtual ~ItemType() {}
@@ -73,7 +73,7 @@ public:
     bool stack(Item& item);
 
     bool exists() { return count>0; }
-};
+};*/
 
 }
 #endif

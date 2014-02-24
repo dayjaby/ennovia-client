@@ -1,67 +1,135 @@
-#include "ui/render.hpp"
-#include "world/optionlist.hpp"
-#include "world/player.hpp"
-#include "world/map.hpp"
 #include <boost/tuple/tuple.hpp>
-#include "mayor.hpp"
+#include "misc/CGUITTFont.h"
+#include "ui/render.hpp"
+#include "ui/graphics.hpp"
+#include "ui/eventreceiver.hpp"
 #include "ui/guiinventory.hpp"
+#include "world/position.hpp"
+#include "world/optionlist.hpp"
+#include "world/map.hpp"
+#include "world/library.hpp"
+#include "world/locatable.hpp"
+#include "mayor.hpp"
 
 namespace Ennovia
 {
 
-Render::Render(int width_, int height_,Mayor& mayor_) :
-    width(width_), height(height_), mayor(mayor_), library(mayor_.getLibrary()), optionListContextMenu(0)
+struct RenderImpl
 {
-    device = createDevice(video::EDT_OPENGL, dimension2d<u32>(width,height),16,false,false,false);
+    RenderImpl(int width_, int height_,Mayor& mayor_) :
+        width(width_), height(height_), mayor(mayor_), optionListContextMenu(0), currentMap(0)
+    {
+        device = createDevice(video::EDT_OPENGL, dimension2d<u32>(width,height),16,false,false,false);
 
 
-    guienv = device->getGUIEnvironment();
-    eventReceiver.gui = guienv;
-    driver = device->getVideoDriver();
-    smgr = device->getSceneManager();
-    collision = smgr->getSceneCollisionManager();
-    device->getFileSystem()->addFileArchive("media");
-    device->setEventReceiver(&eventReceiver);
-    moveCamera(0,0,0);
+        guienv = device->getGUIEnvironment();
+        eventReceiver.gui = guienv;
+        driver = device->getVideoDriver();
+        smgr = device->getSceneManager();
+        collision = smgr->getSceneCollisionManager();
+        device->getFileSystem()->addFileArchive("media");
+        device->setEventReceiver(&eventReceiver);
+        moveCamera(0,0,0);
 
-    camera = smgr->addCameraSceneNode(0,vector3df(0,20.f,0),vector3df(25,0,25));
+        camera = smgr->addCameraSceneNode(0,vector3df(0,20.f,0),vector3df(25,0,25));
 
-    entityParent = smgr->addEmptySceneNode();
+        entityParent = smgr->addEmptySceneNode();
+        std::cout << "Render constructed" << std::endl;
+    }
 
-    //loadMap("chessboard.3ds","",50,50);
-    //loadMap("chessboard.3ds","",50,50);
-    // camera->setTarget(node->getBoundingBox().getCenter());
-//        mayor.log <<  << "," << node->getBoundingBox().getExtent().Y << ","<< node->getBoundingBox().getExtent().Z << ","<< std::endl;
+    void loadMap(Map* map);
+    void setMap(irr::scene::ISceneNode* node, irr::scene::ISceneNode* map);
 
-}
+    void processOptionList(Locatable* locatable,OptionList* optionlist);
+    irr::scene::ISceneNode* loadAnimatedMesh(const std::string& path, const std::string& texture);
+    irr::video::ITexture* getTexture(const std::string& texture);
+    void setCameraTarget(irr::scene::ISceneNode* node);
+    void setAnimation(irr::scene::ISceneNode* node,irr::scene::EMD2_ANIMATION_TYPE animation);
+    void moveSceneNode(Locatable* locatable,irr::scene::ISceneNode* node,float x, float y);
+    float getMapHeight(float x, float y);
+    void draw();
+    bool run();
 
-Render::~Render()
-{
-    if(map) map->drop();
-    device->drop();
-}
-void Render::draw()
+    void moveMouse(int x,int y,bool left,bool right);
+    void updateOptionList();
+    void mouseLeftClick(int x,int y,bool ctrl);
+    void mouseRightClick(int x,int y);
+    void moveCamera(float x,float y,float z);
+    irr::gui::IGUIEnvironment* getGUIEnvironment();
+    irr::video::IVideoDriver* getVideoDriver();
+    irr::gui::IGUIContextMenu* getOptionListContextMenu();
+    void setOptionListContextMenu(irr::gui::IGUIContextMenu* olcm);
+
+    irr::core::rect<irr::s32> getTopLeftRect(int w,int h);
+    irr::core::rect<irr::s32> getTopRightRect(int w,int h);
+    irr::core::rect<irr::s32> getBottomLeftRect(int w,int h);
+    irr::core::rect<irr::s32> getBottomRightRect(int w,int h);
+
+    /** private **/
+    Position getPositionUnderMouse(int mx,int my);
+    void getLocatablesUnderMouse(std::vector<Locatable*>* locatables,int mx,int my);
+    void processLeftClick();
+    void processCtrlLeftClick();
+    /** end private **/
+
+    Position lastMousePosition;
+    irr::core::position2di lastMouseLocation;
+
+    Mayor& mayor;
+
+    int width, height;
+    EventReceiver eventReceiver;
+    IrrlichtDevice* device;
+    irr::gui::IGUIEnvironment* guienv;
+    irr::video::IVideoDriver* driver;
+    irr::scene::ISceneManager* smgr;
+    scene::ISceneCollisionManager* collision;
+
+    float cameraHeight, cameraAngle, cameraDistance;
+    ISceneNode* cameraTarget;
+
+    scene::ICameraSceneNode* camera;
+    scene::ISceneNode* entityParent;
+    ISceneNode* map;
+
+    Map* currentMap;
+    std::map<std::string,irr::video::ITexture*> textures;
+
+    OptionList optionList;
+    irr::gui::IGUIContextMenu* optionListContextMenu;
+    std::map<Locatable*,OptionList*> optionLists;
+    std::vector<Locatable*> leftClick;
+    std::vector<Locatable*> ctrlLeftClick;
+
+    irr::gui::IGUIWindow* inventory;
+};
+
+
+void RenderImpl::draw()
 {
     video::SMaterial material;
     material.Lighting = false;
     material.Wireframe = false;
-
+    mayor.log << "Render Draw " << std::endl;
     if(cameraTarget)
     {
         mayor.log << "CT" << std::flush;
         float theta = cameraHeight*PI/180;
         float phi = cameraAngle*PI/180;
         camera->setPosition(cameraTarget->getPosition()
-                        +vector3df(sin(theta)*cos(phi)*cameraDistance,
-                                   cos(theta)*cameraDistance,
-                                   sin(theta)*sin(phi)*cameraDistance));
+                            +vector3df(sin(theta)*cos(phi)*cameraDistance,
+                                       cos(theta)*cameraDistance,
+                                       sin(theta)*sin(phi)*cameraDistance));
         camera->setTarget(cameraTarget->getPosition());
     }
-    reg<Player> player = mayor.getPlayer();
-    if(!inventory && player.exists()) {
-        inventory = guienv->addWindow(getBottomRightRect(192+8,300));
-        new GUIInventory(inventory,player->inventory());
-    }
+    mayor.log << "Get Player " << std::endl;
+
+    /* reg<Player> player = mayor.getPlayer();
+     if(!inventory && player.exists()) {
+         inventory = guienv->addWindow(getBottomRightRect(192+8,300));
+         new GUIInventory(inventory,player->inventory());
+     }*/
+    mayor.log << "Begin Scene" << std::endl;
     driver->beginScene(true,true,SColor(255,100,101,140));
     smgr->drawAll();
     guienv->drawAll();
@@ -69,21 +137,24 @@ void Render::draw()
     driver->setMaterial(material);
 }
 
-bool Render::run()
+bool RenderImpl::run()
 {
     return device->run();
 }
 
-void Render::moveMouse(int x,int y,bool left,bool right)
+void RenderImpl::moveMouse(int x,int y,bool left,bool right)
 {
-    Position pos = getPositionUnderMouse(x,y);
-    //if(!(pos==lastMousePosition))
-    //    getLocatablesUnderMouse(0,x,y);
-    lastMousePosition = pos;
-    lastMouseLocation = core::position2di(x,y);
+    if(currentMap)
+    {
+        Position pos = getPositionUnderMouse(x,y);
+        mayor.log << "Mouse moved and position fetched!" << std::endl;
+        lastMousePosition = pos;
+        lastMouseLocation = core::position2di(x,y);
+    }
 }
 
-void Render::updateOptionList() {
+void RenderImpl::updateOptionList()
+{
     if(optionList.options.size()>0)
     {
         optionListContextMenu = guienv->addContextMenu(core::rect<s32>(lastMouseLocation,core::dimension2di(250,200)),0,-2);
@@ -94,48 +165,64 @@ void Render::updateOptionList() {
     }
 }
 
-void Render::mouseLeftClick(int x,int y,bool ctrl) {
+void RenderImpl::mouseLeftClick(int x,int y,bool ctrl)
+{
     optionList.options.clear();
     irr::gui::IGUIElement* element = guienv->getRootGUIElement()->getElementFromPoint(irr::core::position2d<s32>(x,y));
-    if(element && element->getParent() && element->getID()>0) {
-        switch(element->getID()) {
+    if(element && element->getParent() && element->getID()>0)
+    {
+        switch(element->getID())
+        {
         case 1: //  Item
-            GUIDataElement<Item>* itemData = static_cast<GUIDataElement<Item>*>(element);
+            /*GUIDataElement<Item>* itemData = static_cast<GUIDataElement<Item>*>(element);
             Item* item = itemData->getData();
-            OptionList* ol = item->getOptionList(mayor.getPlayer().get());
+            OptionList* ol = item->getOptionList(mayor.getPlayer());
             if(ol) optionList.addList(*ol);
             updateOptionList();
+            */
             break;
         }
-    } else if(element && element->getID()<0) {
-        switch(element->getID()) {
+    }
+    else if(element && element->getID()<0)
+    {
+        switch(element->getID())
+        {
         case -2:
             IGUIContextMenu* contextMenu = (IGUIContextMenu*) element;
-            Player* player = mayor.getPlayer();
+            Locatable* player = mayor.getPlayer();
             optionList.options[contextMenu->getSelectedItem()]->onChoose(player);
             leftClick.clear();
             ctrlLeftClick.clear();
             break;
         }
-    } else {
-        if(ctrl) {
+    }
+    else
+    {
+        if(ctrl)
+        {
             getLocatablesUnderMouse(&ctrlLeftClick,x,y);
             processCtrlLeftClick();
-        } else {
+        }
+        else
+        {
             getLocatablesUnderMouse(&leftClick,x,y);
             processLeftClick();
         }
     }
 }
 
-void Render::mouseRightClick(int x,int y) {
+void RenderImpl::mouseRightClick(int x,int y)
+{
     mayor.log << "Mouse right click" << std::endl;
     //getOptionListsUnderMouse(x,y);
     Position end = getPositionUnderMouse(x,y);
-    reg<Player> player = mayor.getPlayer();
-    if(!player.exists()) return;
+    Locatable* player = mayor.getPlayer();
+    mayor.log << "Does the player exist?" << std::endl;
+    if(!player) return;
+    mayor.log << "Yes he does!" << std::endl;
     Position start = player->getPosition();
-    if(end.isValid()) {
+    if(end.isValid())
+    {
         core::line3d<f32> ray;
         ray.start = vector3df(start.x,getMapHeight(start.x,start.y)+0.1,start.y);
         float height = getMapHeight(end.x,end.y);
@@ -143,19 +230,20 @@ void Render::mouseRightClick(int x,int y) {
         core::vector3df intersection;
         core::triangle3df hitTriangle;
         if(!smgr->getSceneCollisionManager()->
-            getSceneNodeAndCollisionPointFromRay(ray,
-                                             intersection,
-                                             hitTriangle,
-                                             4)) {
+                getSceneNodeAndCollisionPointFromRay(ray,
+                        intersection,
+                        hitTriangle,
+                        4))
+        {
             mayor.walkTo(end.x,end.y);
-            reg<ISceneNode> node(player.id());
+            //reg<ISceneNode> node(player.id());
             //if(node.exists())
             //    walkTo(node.get(),end.x,height,end.y);
         }
     }
 }
 
-void Render::moveCamera(float x,float y,float z)
+void RenderImpl::moveCamera(float x,float y,float z)
 {
     cameraAngle += x;
     cameraHeight += y;
@@ -166,52 +254,83 @@ void Render::moveCamera(float x,float y,float z)
     if(cameraDistance>30) cameraDistance = 30;
 }
 
-irr::core::rect<s32> Render::getTopLeftRect(int w,int h) {
+irr::gui::IGUIEnvironment* RenderImpl::getGUIEnvironment()
+{
+    return guienv;
+}
+irr::video::IVideoDriver* RenderImpl::getVideoDriver()
+{
+    return driver;
+}
+irr::gui::IGUIContextMenu* RenderImpl::getOptionListContextMenu()
+{
+    return optionListContextMenu;
+}
+void RenderImpl::setOptionListContextMenu(irr::gui::IGUIContextMenu* olcm)
+{
+    optionListContextMenu = olcm;
+}
+
+
+irr::core::rect<s32> RenderImpl::getTopLeftRect(int w,int h)
+{
     return irr::core::rect<s32>(0,0,w,h);
 }
-irr::core::rect<s32> Render::getTopRightRect(int w,int h) {
+irr::core::rect<s32> RenderImpl::getTopRightRect(int w,int h)
+{
     return irr::core::rect<s32>(width-w,0,width,h);
 }
-irr::core::rect<s32> Render::getBottomLeftRect(int w,int h) {
+irr::core::rect<s32> RenderImpl::getBottomLeftRect(int w,int h)
+{
     return irr::core::rect<s32>(0,height-h,w,height);
 }
-irr::core::rect<s32> Render::getBottomRightRect(int w,int h) {
+irr::core::rect<s32> RenderImpl::getBottomRightRect(int w,int h)
+{
     return irr::core::rect<s32>(width-w,height-h,width,height);
 }
 
-Position Render::getPositionUnderMouse(int mx,int my) {
+Position RenderImpl::getPositionUnderMouse(int mx,int my)
+{
     mayor.log << "Get position under mouse" << std::endl;
     core::line3df ray =
         collision->getRayFromScreenCoordinates(core::position2di(mx,my),
-                                               camera);
+                camera);
+    mayor.log << "Get position under mouse" << std::endl;
     core::vector3df intersection;
     core::triangle3df hitTriangle;
-    if(currentMap.exists()) {
+    if(currentMap)
+    {
+        mayor.log << "Ray calculated " << currentMap << std::endl;
+        mayor.log << "Ray SceneNode Collision" << std::endl;
         if(collision->getSceneNodeAndCollisionPointFromRay(ray,intersection,hitTriangle,1))
         {
             float x = intersection.X;
             float y = intersection.Z;
-            return Position(x,y,currentMap.get());
+            mayor.log << "Finished" << std::endl;
+            return Position(x,y,currentMap);
         }
     }
     return Position();
 }
 
-void Render::getLocatablesUnderMouse(std::vector<Locatable*>* locatables,int mx,int my) {
+void RenderImpl::getLocatablesUnderMouse(std::vector<Locatable*>* locatables,int mx,int my)
+{
     mayor.log << "Get Locatables under mouse" << std::endl;
     core::line3df ray =
         collision->getRayFromScreenCoordinates(core::position2di(mx,my),
-                                               camera);
+                camera);
     core::vector3df intersection;
     core::triangle3df hitTriangle;
     std::set<Locatable*> locatableSet;
     while(ISceneNode* node = collision->getSceneNodeAndCollisionPointFromRay(ray,intersection,hitTriangle,2,entityParent))
     {
-        reg<ISceneNode> sceneNode = library.getSceneNode(node);
-        reg<Locatable> locatable = library.getLocatable(sceneNode.id());
-        if(locatable.exists()) {
-            if(locatableSet.count(locatable)==0) {
-                mayor.getLocatableOptionList(locatable.id());
+        int id = mayor.getSceneNodes().get(node);
+        Locatable* locatable = mayor.getLocatables().get(id);
+        if(locatable)
+        {
+            if(locatableSet.count(locatable)==0)
+            {
+                mayor.getLocatableOptionList(id);
                 optionLists.erase(locatable);
             }
             locatableSet.insert(locatable);
@@ -221,28 +340,30 @@ void Render::getLocatablesUnderMouse(std::vector<Locatable*>* locatables,int mx,
     }
     if(locatables)
         *locatables = std::vector<Locatable*>(locatableSet.begin(),locatableSet.end());
-    if(currentMap.exists()) {
+    if(currentMap)
+    {
         if(collision->getSceneNodeAndCollisionPointFromRay(ray,intersection,hitTriangle,1))
         {
             int x = intersection.X;
             int y = intersection.Z;
-            Position pos(x,y,currentMap.get());
-            if(pos.isValid()) {
-/*                Tile* tile = pos.getTile();
-                if(locatables)
-                    locatables->push_back(tile);
-                mayor.getTileOptionList(*tile);*/
+            Position pos(x,y,currentMap);
+            if(pos.isValid())
+            {
+                /*                Tile* tile = pos.getTile();
+                                if(locatables)
+                                    locatables->push_back(tile);
+                                mayor.getTileOptionList(*tile);*/
             }
         }
     }
 }
 
 
-void Render::loadMap(Map* newmap)
+void RenderImpl::loadMap(Map* newmap)
 {
     mayor.log << "Load map" << std::endl;
     if(!newmap) return;
-    currentMap = library.getMap(newmap);
+    currentMap = newmap;
     int mwidth = newmap->width, mheight = newmap->height;
     scene::IAnimatedMesh* mesh = smgr->getMesh(newmap->path.c_str());
     //scene::IAnimatedMesh* mesh = smgr->getMesh("media/tree_scene.3ds");
@@ -252,7 +373,7 @@ void Render::loadMap(Map* newmap)
         map = smgr->addOctreeSceneNode(mesh->getMesh(0), 0, 1, 1024);
         map->setMaterialFlag(video::EMF_LIGHTING, false);
         ITriangleSelector* selector = smgr->createOctreeTriangleSelector(
-                mesh, map, 128);
+                                          mesh, map, 128);
         map->setTriangleSelector(selector);
         selector->drop();
         for(int x=0; x<mwidth+1; x++)
@@ -263,41 +384,44 @@ void Render::loadMap(Map* newmap)
             }
         }
         if(cameraTarget) mayor.log << "camera target exists" << std::endl;
-        if(cameraTarget && library.isSceneNode(cameraTarget)) {
+        int id = mayor.getSceneNodes().get(cameraTarget);
+        if(cameraTarget && id)
+        {
             mayor.log << "camera target is scene node" << std::endl;
-            reg<irr::scene::ISceneNode> target = library.getSceneNode(cameraTarget);
-            if(library.isLocatable(target.id())) {
                 mayor.log << "camera target is locatable" << std::endl;
-                reg<Locatable> locatable = library.getLocatable(target.id());
-                if(locatable->getPosition().map == currentMap.get()) {
-                    mayor.log << "camera target is on this map" << std::endl;
-                    float x = locatable->getPosition().x;
-                    float y = locatable->getPosition().y;
-                    moveSceneNode(locatable.get(),target.get(),x,y);
-                    setMap(target.get(),map);
+                Locatable* locatable = mayor.getLocatables().get(id);
+                if(locatable && locatable->getPosition().map == currentMap)
+                {
+                        mayor.log << "camera target is on this map" << std::endl;
+                        float x = locatable->getPosition().x;
+                        float y = locatable->getPosition().y;
+                        moveSceneNode(locatable,cameraTarget,x,y);
+                        setMap(cameraTarget,map);
                 }
-            }
         }
         mayor.log << "after?" << std::endl;
     }
 }
 
-void Render::setMap(irr::scene::ISceneNode* node, irr::scene::ISceneNode* map) {
+void RenderImpl::setMap(irr::scene::ISceneNode* node, irr::scene::ISceneNode* map)
+{
     mayor.log << "SET MAP" << std::endl;
     const core::aabbox3d<f32>& box = node->getBoundingBox();
     core::vector3df radius = box.MaxEdge - box.getCenter();
     scene::ISceneNodeAnimator* anim = smgr->createCollisionResponseAnimator(
-            map->getTriangleSelector(), node, radius);
+                                          map->getTriangleSelector(), node, radius);
     node->addAnimator(anim);
     anim->drop();
 
 }
 
-void Render::processOptionList(Locatable* locatable,OptionList* optionlist) {
+void RenderImpl::processOptionList(Locatable* locatable,OptionList* optionlist)
+{
     optionLists[locatable] = optionlist;
     typedef OptionList::Options::iterator Iterator;
     int index = 0;
-    for(Iterator i = optionlist->options.begin();i != optionlist->options.end();++i,++index) {
+    for(Iterator i = optionlist->options.begin(); i != optionlist->options.end(); ++i,++index)
+    {
         mayor.log << index << ": " << (*i)->getDescription();
     }
 
@@ -305,44 +429,54 @@ void Render::processOptionList(Locatable* locatable,OptionList* optionlist) {
     if(std::find(ctrlLeftClick.begin(),ctrlLeftClick.end(),locatable) != ctrlLeftClick.end()) processCtrlLeftClick();
 }
 
-void Render::processLeftClick() {
+void RenderImpl::processLeftClick()
+{
     typedef std::vector<Locatable*>::iterator Iterator;
     mayor.log << "elements=" << leftClick.size() << std::endl;
-    for(Iterator i = leftClick.begin();i != leftClick.end();++i) {
+    for(Iterator i = leftClick.begin(); i != leftClick.end(); ++i)
+    {
         Locatable* locatable = *i;
-        if(optionLists.count(locatable)>0) {
+        if(optionLists.count(locatable)>0)
+        {
             mayor.log << "contains optionlist" << std::endl;
             OptionList* optionList = optionLists[locatable];
-            if(optionList->options.size()>0) {
+            if(optionList->options.size()>0)
+            {
                 mayor.log << "contains option" << std::endl;
-                Player* player = mayor.getPlayer();
+                Locatable* player = mayor.getPlayer();
                 optionList->options[0]->onChoose(player);
                 leftClick.clear();
                 ctrlLeftClick.clear();
                 return;
             }
-        } else {
+        }
+        else
+        {
             return;
         }
     }
 }
 
-void Render::processCtrlLeftClick() {
+void RenderImpl::processCtrlLeftClick()
+{
     optionList.options.clear();
     typedef std::vector<Locatable*>::iterator Iterator;
     mayor.log << "elements=" << ctrlLeftClick.size() << std::endl;
-    for(Iterator i = ctrlLeftClick.begin();i != ctrlLeftClick.end();++i) {
+    for(Iterator i = ctrlLeftClick.begin(); i != ctrlLeftClick.end(); ++i)
+    {
         Locatable* locatable = *i;
-        if(optionLists.count(locatable)==0) {
+        if(optionLists.count(locatable)==0)
+        {
             return;
         }
     }
-    for(Iterator i = ctrlLeftClick.begin();i != ctrlLeftClick.end();++i) {
+    for(Iterator i = ctrlLeftClick.begin(); i != ctrlLeftClick.end(); ++i)
+    {
         Locatable* locatable = *i;
         //if(optionLists.count(locatable)>0) {
-            mayor.log << "contains optionlist" << std::endl;
-            OptionList* ol = optionLists[locatable];
-            optionList.addList(*ol);
+        mayor.log << "contains optionlist" << std::endl;
+        OptionList* ol = optionLists[locatable];
+        optionList.addList(*ol);
 
         //} else {
         //    return;
@@ -354,14 +488,16 @@ void Render::processCtrlLeftClick() {
 
 }
 
-irr::scene::ISceneNode* Render::loadAnimatedMesh(const std::string& path, const std::string& texture) {
+irr::scene::ISceneNode* RenderImpl::loadAnimatedMesh(const std::string& path, const std::string& texture)
+{
     mayor.log << path << std::endl;
     irr::scene::IAnimatedMeshSceneNode* mesh = smgr->addAnimatedMeshSceneNode(smgr->getMesh(path.c_str()),entityParent,2,core::vector3df(0,0,0));
     if(mesh)
     {
         mayor.log << "create tri selector" << std::endl;
         ITriangleSelector* selector = smgr->createTriangleSelectorFromBoundingBox(mesh);
-        if(map) {
+        if(map)
+        {
             mayor.log << "set map" << std::endl;
             setMap(mesh,map);
         }
@@ -374,34 +510,41 @@ irr::scene::ISceneNode* Render::loadAnimatedMesh(const std::string& path, const 
         mayor.log << "done" << std::endl;
         selector->drop();
         return mesh;
-    } else {
+    }
+    else
+    {
         return 0;
     }
 }
 
-irr::video::ITexture* Render::getTexture(const std::string& texture) {
+irr::video::ITexture* RenderImpl::getTexture(const std::string& texture)
+{
     return driver->getTexture(texture.c_str());
 }
-void Render::setCameraTarget(ISceneNode* node) {
+void RenderImpl::setCameraTarget(ISceneNode* node)
+{
     mayor.log << "Set camera target" << std::endl;
     if(node) cameraTarget = node;
     getMapHeight(1,1);
 }
 
-void Render::setAnimation(ISceneNode* node,EMD2_ANIMATION_TYPE animation) {
+void RenderImpl::setAnimation(ISceneNode* node,EMD2_ANIMATION_TYPE animation)
+{
     mayor.log << "Set animation" << std::endl;
     irr::scene::IAnimatedMeshSceneNode* mnode = (irr::scene::IAnimatedMeshSceneNode*)node;
     mnode->setMD2Animation(animation);
 }
 
-void Render::moveSceneNode(Locatable* locatable,irr::scene::ISceneNode* node,float x, float y) {
+void RenderImpl::moveSceneNode(Locatable* locatable,irr::scene::ISceneNode* node,float x, float y)
+{
     mayor.log << "Move scene node" << std::endl;
     getMapHeight(x,y);
     irr::scene::IAnimatedMeshSceneNode* mnode = (irr::scene::IAnimatedMeshSceneNode*)node;
     mayor.log << "map height " << x << "," << y << " = " << getMapHeight(x,y) << std::endl;
     if(node->getPosition().X == 0 && node->getPosition().Z == 0)
         node->setPosition(vector3df(x,getMapHeight(x,y)+0.5,y));
-    else if(locatable){
+    else if(locatable)
+    {
         Position currentPos(node->getPosition().X,node->getPosition().Z,locatable->getPosition().map);
         Position targetPos(x,y,locatable->getPosition().map);
         Move* move = new Move(locatable,currentPos,targetPos);
@@ -428,321 +571,130 @@ void Render::moveSceneNode(Locatable* locatable,irr::scene::ISceneNode* node,flo
     }
 }
 
-float Render::getMapHeight(float x, float y) {
+float RenderImpl::getMapHeight(float x, float y)
+{
     core::line3d<f32> ray;
     ray.start = vector3df(x,3,y);
     ray.end = vector3df(x,-3,y);
     core::vector3df intersection;
     core::triangle3df hitTriangle;
     smgr->getSceneCollisionManager()->
-        getSceneNodeAndCollisionPointFromRay(ray,
-                                             intersection,
-                                             hitTriangle,
-                                             1);
+    getSceneNodeAndCollisionPointFromRay(ray,
+                                         intersection,
+                                         hitTriangle,
+                                         1);
 
     return (hitTriangle.pointA.Y + hitTriangle.pointB.Y + hitTriangle.pointC.Y) / 3;
 
 }
 
-/*
-GUI* GUI::gui = 0;
-
-GUI::GUI(int width_, int height_)
-    : width(width_), height(height_),
-    cameraHeight(5), cameraAngle(90),
-    optionListActive(false), optionListContextMenu(0),
-    player("Player"),chest("Chest"),openChest(0),openChestElement(0)
-{
-    guii = this;
-
-    mayor.log << "Device initialization" << std::endl;
-    device = createDevice(video::EDT_OPENGL, dimension2d<u32>(width,height),16,false,false,false,&eventReceiver);
-    guienv = device->getGUIEnvironment();
-    driver = device->getVideoDriver();
-    smgr = device->getSceneManager();
-    collision = smgr->getSceneCollisionManager();
-    mayor.log << "Camera initialization" << std::endl;
-    camera = smgr->addCameraSceneNode(0,vector3df(0,4.5,0),vector3df(25,0,25));
-    entityParent = smgr->addEmptySceneNode();
-
-    mayor.log << "GUI initialization" << std::endl;
-
-    /// GUI - Initialization
-
-    eventReceiver.gui = guienv;
-    device->setWindowCaption(L"Ennnovia - the ORPG");
-    face.load("media/FreeMonoBold.ttf");
-    fonts.resize(10);
-    for(int i=0; i<10; i++)
-    {
-        fonts[i] = new CGUITTFont(driver);
-        fonts[i]->attach(&face,12+i*2);
-    }
-
-    inventory = guienv->addWindow(core::rect<s32>(width-48*4-20,height-48*7-30,width,height),false,L"Inventory");
-    inventory->setDraggable(false);
-    inventory->getCloseButton()->setVisible(false);
-
-    timer() = device->getTimer();
-
-    mayor.log << "Map initialization" << std::endl;
-
-    currentMap = new Map(50,50);
-    currentMap->getTile(1,0).type = TileType::Rock();
-    currentMap->getTile(1,1).type = TileType::Rock();
-    currentMap->getTile(1,2).type = TileType::Rock();
-    currentMap->getTile(2,2).type = TileType::Rock();
-    currentMap->getTile(3,2).type = TileType::Rock();
-    currentMap->getTile(3,1).type = TileType::Rock();
-    currentMap->getTile(3,0).type = TileType::Rock();
-    for(int x=0; x<51; x++)
-    {
-        for(int y=0; y<51; y++)
-        {
-            currentMap->heightmap[x][y] = (x*x+y*y)/150.0;
-        }
-    }
-    player.setPosition(Position(4,4,currentMap));
-    chest.setPosition(Position(2,2,currentMap));
-    Item& item = chest.getItemAt(0,0);
-    item.type = lua.getItemType("Coins");
-    item.amount = 117;
-
-    mayor.log << "3D initialization" << std::endl;
-
-
-    mapx = new MapSceneNode(smgr->getRootSceneNode(), smgr, currentMap, 333);
-    ITriangleSelector* selector = smgr->createTriangleSelectorFromBoundingBox(mapx);
-    mapx->setTriangleSelector(selector);
-    selector->drop();
-    playerx = smgr->addAnimatedMeshSceneNode(smgr->getMesh("media/faerie.md2"),entityParent,1,core::vector3df(4.5,1,4.45));
-    if(playerx)
-    {
-        selector = smgr->createTriangleSelectorFromBoundingBox(playerx);
-        playerx->setMD2Animation(scene::EMAT_STAND);
-        playerx->setMaterialTexture(0,driver->getTexture("media/faerie2.bmp"));
-        playerx->setScale(vector3df(0.03,0.03,0.03));
-        mayor.log << playerx->getMesh()->getFrameCount() << std::endl;
-        mayor.log << playerx->getMesh()->getMeshType() << "/" << EAMT_MD2 << std::endl;
-        playerx->setMaterialFlag(video::EMF_LIGHTING,false);
-        playerx->setTriangleSelector(selector);
-        selector->drop();
-    }
-    addEntity(&player,playerx);
-
-    chestx = smgr->addMeshSceneNode(smgr->getMesh("media/treasure_chest.obj"),entityParent,1,core::vector3df(2.5,0,2.5));
-    if(chestx)
-    {
-        selector = smgr->createTriangleSelectorFromBoundingBox(chestx);
-        chestx->setMaterialTexture(0,driver->getTexture("media/treasure_chest.jpg"));
-        chestx->setMaterialFlag(video::EMF_LIGHTING,false);
-        chestx->setScale(vector3df(0.5,0.5,0.5));
-        chestx->setRotation(vector3df(0,180,0));
-        chestx->setTriangleSelector(selector);
-        selector->drop();
-    }
-    addEntity(&chest,chestx);
-    mayor.log << "Register player: " << &player << "->" << playerx << std::endl;
-}
-
-GUI::~GUI()
-{
-    device->drop();
-}
-
-void GUI::run()
-{
-    while(device->run())
-    {
-        if(device->isWindowActive())
-            onRun();
-        else
-            device->yield();
-    }
-}
-
-void GUI::onRun()
-{
-
-    camera->setPosition(playerx->getPosition()+vector3df(cos(cameraAngle*PI/180)*6,cameraHeight,sin(cameraAngle*PI/180)*6));
-    camera->setTarget(playerx->getPosition());
-    if(eventReceiver.IsKeyDown(irr::KEY_LEFT))
-    {
-        cameraAngle -= 0.5;
-    }
-    if(eventReceiver.IsKeyDown(irr::KEY_RIGHT))
-    {
-        cameraAngle += 0.5;
-    }
-    if(eventReceiver.IsKeyDown(irr::KEY_UP))
-    {
-        cameraHeight += 0.06;
-    }
-    if(eventReceiver.IsKeyDown(irr::KEY_DOWN))
-    {
-        cameraHeight -= 0.06;
-    }
-    if(eventReceiver.IsKeyDown(irr::KEY_SPACE))
-    {
-        playerx->setMD2Animation(scene::EMAT_ATTACK);
-    }
-    if(cameraHeight<0.1) cameraHeight = 0.1;
-    if(cameraHeight>6) cameraHeight = 6;
-    bool leftMouseClick = eventReceiver.mouseState.buttonClicked(MouseState::Left);
-    bool rightMouseClick = eventReceiver.mouseState.buttonClicked(MouseState::Right);
-    //if(leftMouseClick || rightMouseClick) {
-    optionList.options.clear();
-    IGUIElement* top = guienv->getRootGUIElement()->getElementFromPoint(eventReceiver.mouseState.Position);
-    // is a gui element under the mouse cursor?
-    if(top && top->getParent())
-    {
-        // the gui element belongs to the chest?
-        if(top->getParent()->getID() == DT_CHEST && top->getParent() != guienv->getRootGUIElement() && openChest)
-        {
-            const boost::tuple<Chest*,int,int>& data = static_cast<GUIDataElement<boost::tuple<Chest*,int,int> > *>(top->getParent())->getData();
-            Item& item = data.get<0>()->getItemAt(data.get<1>(),data.get<2>());
-            ChestItem citem(data.get<0>(),data.get<1>(),data.get<2>());
-            optionList.addList(citem.getOptionList(&player));
-        }
-    }
-    else     // if not, then get the 3d entities under the mouse cursor
-    {
-        core::line3df ray = collision->getRayFromScreenCoordinates(eventReceiver.mouseState.Position,camera);
-        core::vector3df intersection;
-        core::triangle3df hitTriangle;
-        if(ISceneNode* node = collision->getSceneNodeAndCollisionPointFromRay(ray,intersection,hitTriangle,0,mapx))
-        {
-            s32 id = node->getID();
-            int x = id % currentMap->width;
-            int y = (id - x) / currentMap->width;
-            optionList.addList(currentMap->getTile(x,y).getOptionList(&player));
-        }
-        if(ISceneNode* node = collision->getSceneNodeAndCollisionPointFromRay(ray,intersection,hitTriangle,0,entityParent))
-        {
-            //  ray.start = intersection + ROUNDING_ERROR_f32 * (ray.end - ray.start);
-            Entity* entity = getNodesEntity(node);
-            if(entity != 0)
-            {
-                optionList.addList(entity->getOptionList(&player));
-            }
-        }
-    }
-    //}
-
-    if(leftMouseClick)
-    {
-        if(optionListActive && currentOptionList.options.size()>0 && eventReceiver.contextMenuID != -1)
-        {
-            mayor.log << "x" << std::endl;
-            currentOptionList.options[eventReceiver.contextMenuID]->onChoose(&player);
-            mayor.log << "x" << std::endl;
-            currentOptionList.options.clear();
-            eventReceiver.contextMenuID = -1;
-            optionListActive = false;
-        }
-        else if(optionList.options.size()>0)
-        {
-            optionList.options[0]->onChoose(&player);
-        }
-    }
-    if(rightMouseClick)
-    {
-        currentOptionList = optionList;
-        if(optionList.options.size()>0)
-        {
-            optionListActive = true;
-            optionListContextMenu = guienv->addContextMenu(core::rect<s32>(eventReceiver.mouseState.Position,core::dimension2di(250,200)),0,-1);
-            for(int i=0; i<optionList.options.size(); i++)
-            {
-                optionListContextMenu->addItem(core::stringw(optionList.options[i]->getDescription().c_str()).c_str());
-            }
-        }
-    }
-
-    if(openChest)
-    {
-
-    }
-
-
-    driver->beginScene(true,true,SColor(255,100,101,140));
-    smgr->drawAll();
-    guienv->drawAll();
-    player.updateActionSchedule();
-    driver->endScene();
-}
-
-
-void GUI::onGUIElementClosed(IGUIElement* elem)
-{
-    //if(elem == openChestElement) {
-    //closeGUIChest();
-    //}
-}
-
-void GUI::updateInventory()
+Render::Render(int width_, int height_,Mayor& mayor_) :
+    d(new RenderImpl(width_,height_,mayor_))
 {
 }
 
-/* void GUI::createGUIChest(Chest* chest) {
-     if(chest == openChest) return;
-     if(openChest) {
-         closeGUIChest();
-     }
-     openChestElement = guienv->addWindow(core::rect<s32>(200,200,chest->getWidth()*48+204,chest->getHeight()*48+222),false,stringw(chest->getName().c_str()).c_str());
-     openChestElement->getMinimizeButton()->setVisible(true);
-     openChest = chest;
-     updateGUIChest();
- }
-
- void GUI::updateGUIChest() {
-     if(!openChest) return;
-     core::list<IGUIElement*> children = openChestElement->getChildren();
-     for(core::list<IGUIElement*>::Iterator i = children.begin(); i!=children.end();++i) {
-         if((*i)->getID()>=0) (*i)->remove();
-     }
-     for(int x=0;x<openChest->getWidth();x++) {
-         for(int y=0;y<openChest->getHeight();y++) {
-             if(openChest->getItemAt(x,y).type) {
-                 IGUIElement* dataElement =
-                     new GUIDataElement<boost::tuple<Chest*,int,int> >(DT_CHEST,boost::tuple<Chest*,int,int>(openChest,x,y),core::rect<s32>(x*48+2,y*48+20,x*48+50,y*48+68),guienv,openChestElement);
-                 IGUIImage* image = guienv->addImage(getTexture(openChest->getItemAt(x,y).type->getPath()),core::position2d<s32>(0,0),true,dataElement);
-                 core::stringw word(openChest->getItemAt(x,y).amount);
-                 int x2 = 48-fonts[2]->getWidthFromWord(word);
-                 IGUIStaticText* text = guienv->addStaticText(word.c_str(),core::rect<s32>(x2,32,48,48),false,false,dataElement);
-                 text->enableOverrideColor(true);
-                 text->setOverrideColor(irr::video::SColor(255,255,0,0));
-                 text->setOverrideFont(fonts[2]);
-             }
-         }
-     }
- }
-
- void GUI::closeGUIChest() {
-     mayor.log << "Close open chest" << std::endl;
-     openChest = 0;
-     openChestElement->remove();
- }
-
-void GUI::addEntity(Entity* entity, ISceneNode* node)
+Render::~Render()
 {
-    entityToNode[entity] = node;
-    nodeToEntity[node] = entity;
+    if(d->map) d->map->drop();
+    d->device->drop();
+}
+void Render::loadMap(Map* map)
+{
+    d->loadMap(map);
+}
+void Render::setMap(irr::scene::ISceneNode* node, irr::scene::ISceneNode* map)
+{
+    d->setMap(node,map);
+}
+void Render::processOptionList(Locatable* locatable,OptionList* optionlist)
+{
+    d->processOptionList(locatable,optionlist);
+}
+irr::scene::ISceneNode* Render::loadAnimatedMesh(const std::string& path, const std::string& texture)
+{
+    return d->loadAnimatedMesh(path,texture);
+}
+irr::video::ITexture* Render::getTexture(const std::string& texture)
+{
+    return d->getTexture(texture);
+}
+void Render::setCameraTarget(irr::scene::ISceneNode* node)
+{
+    d->setCameraTarget(node);
+}
+void Render::setAnimation(irr::scene::ISceneNode* node,irr::scene::EMD2_ANIMATION_TYPE animation)
+{
+    d->setAnimation(node,animation);
+}
+void Render::moveSceneNode(Locatable* locatable,irr::scene::ISceneNode* node,float x, float y)
+{
+    d->moveSceneNode(locatable,node,x,y);
+}
+float Render::getMapHeight(float x, float y)
+{
+    return d->getMapHeight(x,y);
+}
+void Render::draw()
+{
+    d->draw();
+}
+bool Render::run()
+{
+    return d->run();
 }
 
-Entity* GUI::getNodesEntity(ISceneNode* node)
+void Render::moveMouse(int x,int y,bool left,bool right)
 {
-    return nodeToEntity[node];
+    d->moveMouse(x,y,left,right);
+}
+void Render::updateOptionList()
+{
+    d->updateOptionList();
+}
+void Render::mouseLeftClick(int x,int y,bool ctrl)
+{
+    d->mouseLeftClick(x,y,ctrl);
+}
+void Render::mouseRightClick(int x,int y)
+{
+    d->mouseRightClick(x,y);
+}
+void Render::moveCamera(float x,float y,float z)
+{
+    d->moveCamera(x,y,z);
+}
+irr::gui::IGUIEnvironment* Render::getGUIEnvironment()
+{
+    return d->getGUIEnvironment();
+}
+irr::video::IVideoDriver* Render::getVideoDriver()
+{
+    return d->getVideoDriver();
+}
+irr::gui::IGUIContextMenu* Render::getOptionListContextMenu()
+{
+    return d->getOptionListContextMenu();
+}
+void Render::setOptionListContextMenu(irr::gui::IGUIContextMenu* olcm)
+{
+    return d->setOptionListContextMenu(olcm);
 }
 
-ISceneNode* GUI::getEntitySceneNode(Entity* entity)
+irr::core::rect<irr::s32> Render::getTopLeftRect(int w,int h)
 {
-    return entityToNode[entity];
+    return d->getTopLeftRect(w,h);
+}
+irr::core::rect<irr::s32> Render::getTopRightRect(int w,int h)
+{
+    return d->getTopRightRect(w,h);
+}
+irr::core::rect<irr::s32> Render::getBottomLeftRect(int w,int h)
+{
+    return d->getBottomLeftRect(w,h);
+}
+irr::core::rect<irr::s32> Render::getBottomRightRect(int w,int h)
+{
+    return d->getBottomRightRect(w,h);
 }
 
-void GUI::removeEntity(Entity* entity)
-{
-    entityToNode.erase(entityToNode.find(entity));
-    nodeToEntity.erase(nodeToEntity.find(getEntitySceneNode(entity)));
-}*/
 }

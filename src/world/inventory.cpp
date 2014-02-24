@@ -2,7 +2,7 @@
 #include "world/locatable.hpp"
 #include "misc/registry.hpp"
 namespace Ennovia {
-
+/*
     Inventory::Inventory(Locatable* locatable)
         : owner(locatable),width_(4),height_(6) {
         items.resize(width_*height_);
@@ -56,5 +56,5 @@ namespace Ennovia {
         }
         return result;
     }
-
+*/
 }

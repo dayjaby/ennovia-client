@@ -1,19 +1,17 @@
 #ifndef ENNOVIA_RENDER_HPP
 #define ENNOVIA_RENDER_HPP
 
-#include "misc/registry.hpp"
+#include <memory>
+#include <vector>
 #include "misc/irrlicht.hpp"
-#include "misc/CGUITTFont.h"
-#include "ui/graphics.hpp"
-#include "ui/eventreceiver.hpp"
 #include "world/position.hpp"
-#include "world/optionlist.hpp"
 
 namespace Ennovia {
     class Map;
     class Mayor;
-    class Library;
     class Locatable;
+    class OptionList;
+    struct RenderImpl;
     class Render {
     public:
         Render(int width_, int height_, Mayor& mayor_);
@@ -24,8 +22,8 @@ namespace Ennovia {
         void processOptionList(Locatable* locatable,OptionList* optionlist);
         irr::scene::ISceneNode* loadAnimatedMesh(const std::string& path, const std::string& texture);
         irr::video::ITexture* getTexture(const std::string& texture);
-        void setCameraTarget(ISceneNode* node);
-        void setAnimation(ISceneNode* node,EMD2_ANIMATION_TYPE animation);
+        void setCameraTarget(irr::scene::ISceneNode* node);
+        void setAnimation(irr::scene::ISceneNode* node,irr::scene::EMD2_ANIMATION_TYPE animation);
         void moveSceneNode(Locatable* locatable,irr::scene::ISceneNode* node,float x, float y);
         float getMapHeight(float x, float y);
         void draw();
@@ -36,130 +34,28 @@ namespace Ennovia {
         void mouseLeftClick(int x,int y,bool ctrl);
         void mouseRightClick(int x,int y);
         void moveCamera(float x,float y,float z);
-        irr::gui::IGUIEnvironment* getGUIEnvironment() {return guienv; }
-        irr::video::IVideoDriver* getVideoDriver() { return driver; }
-        irr::gui::IGUIContextMenu* getOptionListContextMenu() { return optionListContextMenu; }
-        void setOptionListContextMenu(irr::gui::IGUIContextMenu* olcm) { optionListContextMenu = olcm; }
+        irr::gui::IGUIEnvironment* getGUIEnvironment();
+        irr::video::IVideoDriver* getVideoDriver();
+        irr::gui::IGUIContextMenu* getOptionListContextMenu();
+        void setOptionListContextMenu(irr::gui::IGUIContextMenu* olcm);
 
-        irr::core::rect<s32> getTopLeftRect(int w,int h);
-        irr::core::rect<s32> getTopRightRect(int w,int h);
-        irr::core::rect<s32> getBottomLeftRect(int w,int h);
-        irr::core::rect<s32> getBottomRightRect(int w,int h);
+        irr::core::rect<irr::s32> getTopLeftRect(int w,int h);
+        irr::core::rect<irr::s32> getTopRightRect(int w,int h);
+        irr::core::rect<irr::s32> getBottomLeftRect(int w,int h);
+        irr::core::rect<irr::s32> getBottomRightRect(int w,int h);
     private:
-        Position lastMousePosition;
-        irr::core::position2di lastMouseLocation;
         Position getPositionUnderMouse(int mx,int my);
         void getLocatablesUnderMouse(std::vector<Locatable*>* locatables,int mx,int my);
         void processLeftClick();
         void processCtrlLeftClick();
 
-        Mayor& mayor;
-        Library& library;
+        std::auto_ptr<RenderImpl> d;
 
-        int width, height;
-        EventReceiver eventReceiver;
-        IrrlichtDevice* device;
-        irr::gui::IGUIEnvironment* guienv;
-        irr::video::IVideoDriver* driver;
-        irr::scene::ISceneManager* smgr;
-        scene::ISceneCollisionManager* collision;
-
-        float cameraHeight, cameraAngle, cameraDistance;
-        ISceneNode* cameraTarget;
-
-        scene::ICameraSceneNode* camera;
-        scene::ISceneNode* entityParent;
-        ISceneNode* map;
-
-        reg<Map> currentMap;
-        std::map<std::string,irr::video::ITexture*> textures;
-
-        OptionList optionList;
-        irr::gui::IGUIContextMenu* optionListContextMenu;
-        std::map<Locatable*,OptionList*> optionLists;
-        std::vector<Locatable*> leftClick;
-        std::vector<Locatable*> ctrlLeftClick;
-
-        irr::gui::IGUIWindow* inventory;
 
     };
 
     #define RENDER Mayor::get().getRender()
 
-/*
-    class GUI {
-    public:
-        GUI(int width_, int height_);
-        ~GUI();
-
-        static GUI* get() {
-            return gui;
-        }
-
-
-        void run();
-
-        irr::video::IVideoDriver*& getDriver() { return driver; }
-        // creates a window that shows the chest contents
-        Player& getPlayer() { return player; }
-        void onGUIElementClosed(IGUIElement* elem);
-        void updateInventory();
-        void createGUIChest(Chest* chest);
-        void updateGUIChest();
-        void closeGUIChest();
-
-        void addEntity(Entity* entity,ISceneNode* node);
-        Entity* getNodesEntity(ISceneNode* node);
-        ISceneNode* getEntitySceneNode(Entity* entity);
-        void removeEntity(Entity* entity);
-
-        irr::video::ITexture* getTexture(std::string name) {
-            if(textures.find(name) == textures.end()) {
-                textures[name] = driver->getTexture(name.c_str());
-            }
-            return textures[name];
-        }
-    private:
-        void onRun();
-        int width, height;
-        MyEventReceiver eventReceiver;
-        IrrlichtDevice* device;
-        LuaManager lua;
-
-        static GUI* gui;
-
-        irr::gui::IGUIEnvironment* guienv;
-        irr::video::IVideoDriver* driver;
-        irr::scene::ISceneManager* smgr;
-        scene::ISceneCollisionManager* collision;
-
-        float cameraHeight, cameraAngle;
-        bool optionListActive;
-        IGUIContextMenu* optionListContextMenu;
-        OptionList optionList;
-        OptionList currentOptionList;
-
-        scene::ICameraSceneNode* camera;
-        scene::ISceneNode* entityParent;
-        scene::IAnimatedMeshSceneNode* playerx;
-        scene::IMeshSceneNode* chestx;
-        MapSceneNode* mapx;
-
-        Map* currentMap;
-        CGUITTFace face;
-        std::vector<CGUITTFont*> fonts;
-
-        std::map<Entity*,ISceneNode*> entityToNode;
-        std::map<ISceneNode*,Entity*> nodeToEntity;
-
-        irr::gui::IGUIWindow* inventory;
-        std::map<std::string,irr::video::ITexture*> textures;
-        Player player;*/
-//        Chest chest;
-
-
-
-  //  };
 
 }
 

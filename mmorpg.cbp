@@ -74,12 +74,10 @@
 		<Unit filename="include/ui/eventreceiver.hpp" />
 		<Unit filename="include/ui/graphics.hpp" />
 		<Unit filename="include/ui/render.hpp" />
-		<Unit filename="include/ui/useraction.hpp" />
 		<Unit filename="include/ui/windows/window.hpp" />
 		<Unit filename="include/world/actions.hpp" />
 		<Unit filename="include/world/container.hpp" />
 		<Unit filename="include/world/entity.hpp" />
-		<Unit filename="include/world/factory.hpp" />
 		<Unit filename="include/world/items.hpp" />
 		<Unit filename="include/world/library.hpp" />
 		<Unit filename="include/world/livingobject.hpp" />
@@ -124,7 +122,6 @@
 		<Unit filename="src/ui/graphics.cpp" />
 		<Unit filename="src/ui/guiinventory.cpp" />
 		<Unit filename="src/ui/render.cpp" />
-		<Unit filename="src/ui/useraction.cpp" />
 		<Unit filename="src/world/actions.cpp" />
 		<Unit filename="src/world/actions/move.cpp" />
 		<Unit filename="src/world/entity.cpp" />

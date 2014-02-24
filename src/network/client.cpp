@@ -1,27 +1,44 @@
 #include "network/client.hpp"
 #include "network/message.hpp"
-#include "world/player.hpp"
 #include "world/optionlist.hpp"
 #include "mayor.hpp"
 
 namespace Ennovia
 {
 
-Client::Client(boost::asio::io_service& io_service,
-               std::string host, std::string service)
-    : connection(new Connection(io_service))
+struct my_connect_condition
 {
+  template <typename Iterator>
+  Iterator operator()(
+      const boost::system::error_code& ec,
+      Iterator next)
+  {
+    if (ec) std::cout << "Error: " << ec.message() << std::endl;
+    std::cout << "Trying: " << next->endpoint() << std::endl;
+    return next;
+  }
+};
+
+Client::Client(boost::asio::io_service& io_service_,
+               const std::string& host_, const std::string& service_)
+    : io_service(io_service_), host(host_), service(service_), connection(new Connection(io_service))
+{
+    connect();
+}
+
+void Client::connect() {
     // Resolve the host name into an IP address.
     boost::asio::ip::tcp::resolver resolver(io_service);
     boost::asio::ip::tcp::resolver::query query(host, service);
+    boost::asio::ip::tcp::resolver::iterator end;
     boost::asio::ip::tcp::resolver::iterator endpoint_iterator =
         resolver.resolve(query);
     std::cout << "Establish Connection..." << std::endl;
-
     // Start an asynchronous connect operation.
-    boost::asio::async_connect(connection->socket(), endpoint_iterator,
+    boost::asio::async_connect(connection->socket(), endpoint_iterator, my_connect_condition(),
                                boost::bind(&Client::handle_connect, this,
                                            boost::asio::placeholders::error));
+
 }
 
 
@@ -30,11 +47,14 @@ void Client::handle_connect(const boost::system::error_code& e)
 {
     if (!e)
     {
+        std::cout << "Connected. Start reading" << std::endl;
         start_read();
     }
     else
     {
+        std::cout << "Can't connect to server. Try again" << std::endl;
         std::cerr << e.message() << std::endl;
+        connect();
     }
 }
 
@@ -134,7 +154,7 @@ void Client::interpret(int msgid, std::istream& is)
     {
         IntroduceLocatable intro;
         intro.ParseFromIstream(&is);
-        mayor.introduceLocatable(intro.id(),intro.type(),intro.name());
+        mayor.introduceLocatable(intro.id(),intro.name());
         mayor.log << "Introduction " << intro.id() << "," << intro.type() << "," << intro.name() << std::endl;
         if(intro.has_model()) {
             mayor.log << "Set Model " << intro.model();

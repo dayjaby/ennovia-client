@@ -48,8 +48,8 @@ public:
         socket_.shutdown(boost::asio::ip::tcp::socket::shutdown_both, ec);
     }
 
-    template <int msgid,class Type>
-    void write(Type& t)
+    template <class Type>
+    void write(int msgid, Type& t)
 
     {
         std::ostringstream archive_stream;
@@ -57,8 +57,7 @@ public:
         writeStringStream(msgid,archive_stream);
     }
 
-    template <int msgid>
-    void write()
+    void write(int msgid)
 
     {
         std::ostringstream archive_stream;
@@ -73,8 +72,6 @@ public:
 
     void handle_read_data(MessageHeader msg, const boost::system::error_code& e,
                           boost::tuple<ErrorHandler,Handler> handler, boost::shared_ptr<Connection> conn);
-    reg<Player> player;
-
 private:
 
     void writeStringStream(int msgid, std::ostringstream&  ostream);

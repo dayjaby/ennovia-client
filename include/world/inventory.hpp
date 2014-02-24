@@ -6,7 +6,7 @@
 #include "misc/registry_forw.hpp"
 
 namespace Ennovia {
-    class Locatable;
+/*    class Locatable;
 
     class Inventory {
     public:
@@ -27,7 +27,7 @@ namespace Ennovia {
         int width_,height_;
         Items items;
     };
-
+*/
 }
 
 #endif

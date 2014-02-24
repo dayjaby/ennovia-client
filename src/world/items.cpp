@@ -1,9 +1,8 @@
 #include "world/items.hpp"
 #include "world/optionlist.hpp"
-#include "world/livingobject.hpp"
 
 namespace Ennovia {
-
+/*
     OptionList* ItemType::getOptionList(LivingObject* o, Item* s)
     {
         return new OptionList();
@@ -27,5 +26,5 @@ namespace Ennovia {
         return !item.exists();
     }
 
-
+*/
 }

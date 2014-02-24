@@ -13,17 +13,22 @@ public:
 
     /// Constructor starts the asynchronous connect operation.
     Client(boost::asio::io_service& io_service,
-           std::string host, std::string service);
+           const std::string& host, const std::string& service);
 
-    template <int msgid, typename Type>
-    void write(Type& t)
+    void connect();
+
+    template <typename Type>
+    void write(int msgid, Type& t)
     {
-        std::cout << "Write message " << msgid << std::endl;
-        connection->write<msgid>(t);
+        connection->write(msgid, t);
     }
 
+    boost::asio::io_service& io_service;
+    const std::string& host;
+    const std::string& service;
     boost::shared_ptr<Connection> connection;
 private:
+
     /// Handle completion of a connect operation.
     void handle_connect(const boost::system::error_code& e);
 

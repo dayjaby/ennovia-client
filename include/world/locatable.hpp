@@ -16,10 +16,9 @@ public:
     Locatable(const Position& pos, const std::string& name_);
     virtual ~Locatable();
 
-    virtual OptionList* getOptionList(LivingObject* p);
+    virtual OptionList* getOptionList(Locatable* p);
     virtual std::string getName();
-    Inventory& inventory() {return inventory_; }
-    virtual std::string onExamine(LivingObject* o);
+    virtual std::string onExamine(Locatable* o);
 
     const Position& getPosition() const {return position_; }
     void setPosition(const Position& position);
@@ -45,7 +44,6 @@ protected:
     unsigned actionEnd;
 
     std::string name;
-    Inventory inventory_;
 };
 }
 #endif

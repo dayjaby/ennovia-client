@@ -5,7 +5,7 @@ namespace Ennovia {
 
     std::string Option::getDescription() { return "Default Action"; }
 
-    void Option::onChoose(LivingObject* lo) {}
+    void Option::onChoose(Locatable* lo) {}
 
     bool OptionList::isValid() {
         /** TODO: timestamp **/

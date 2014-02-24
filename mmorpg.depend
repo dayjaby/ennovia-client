@@ -1312,21 +1312,14 @@
 1391981268 source:c:\development\ennovia-client\src\misc\registry.cpp
 	"misc/registry.hpp"
 
-1391988361 c:\development\ennovia-client\include\misc\registry.hpp
-	<map>
-	<cstdlib>
-	<cstdio>
-	<boost/bind.hpp>
-	<boost/shared_ptr.hpp>
-	<boost/bimap.hpp>
-	"misc/registry_forw.hpp"
+1393239193 c:\development\ennovia-client\include\misc\registry.hpp
 
 1391981267 c:\development\ennovia-client\include\misc\registry_forw.hpp
 
 1391981268 source:c:\development\ennovia-client\src\network\connection.cpp
 	"network/connection.hpp"
 
-1391981267 c:\development\ennovia-client\include\network\connection.hpp
+1393239598 c:\development\ennovia-client\include\network\connection.hpp
 	<boost/bind.hpp>
 	<boost/shared_ptr.hpp>
 	<boost/tuple/tuple.hpp>
@@ -1342,7 +1335,8 @@
 1391981268 source:c:\development\ennovia-client\src\network\proxies.cpp
 	"network/network.hpp"
 
-1391988461 c:\development\ennovia-client\include\network\network.hpp
+1393245790 c:\development\ennovia-client\include\network\network.hpp
+	<boost/asio.hpp>
 	"network/connection.hpp"
 	"network/message.hpp"
 	"network/client.hpp"
@@ -1355,7 +1349,7 @@
 	<boost/tuple/tuple.hpp>
 	"network/connection.hpp"
 
-1391981267 c:\development\ennovia-client\include\network\client.hpp
+1393279760 c:\development\ennovia-client\include\network\client.hpp
 	"network/connection.hpp"
 
 1391981268 source:c:\development\ennovia-client\src\ui\graphics.cpp
@@ -1368,13 +1362,15 @@
 	<vector>
 	<string>
 
-1391981267 c:\development\ennovia-client\include\misc\irrlicht.hpp
-	<boost/asio.hpp>
+1393245781 c:\development\ennovia-client\include\misc\irrlicht.hpp
 	<irrlicht.h>
 
-1391981268 source:c:\development\ennovia-client\src\world\actions.cpp
+1393277266 source:c:\development\ennovia-client\src\world\actions.cpp
 	"world/actions.hpp"
 	"world/locatable.hpp"
+	"mayor.hpp"
+	"ui/render.hpp"
+	"world/library.hpp"
 
 1391981267 c:\development\ennovia-client\include\world\actions.hpp
 	<set>
@@ -1388,7 +1384,7 @@
 
 1391981267 c:\development\ennovia-client\include\world\position.hpp
 
-1391981267 c:\development\ennovia-client\include\world\locatable.hpp
+1393240305 c:\development\ennovia-client\include\world\locatable.hpp
 	<deque>
 	"world/entity.hpp"
 	"world/position.hpp"
@@ -1397,12 +1393,12 @@
 
 1391981267 c:\development\ennovia-client\include\world\entity.hpp
 
-1391981267 c:\development\ennovia-client\include\world\inventory.hpp
+1393240264 c:\development\ennovia-client\include\world\inventory.hpp
 	<boost/multi_array.hpp>
 	"world/items.hpp"
 	"misc/registry_forw.hpp"
 
-1391981267 c:\development\ennovia-client\include\world\items.hpp
+1393240239 c:\development\ennovia-client\include\world\items.hpp
 	"world/entity.hpp"
 	"world/actions.hpp"
 	"misc/registry.hpp"
@@ -1411,48 +1407,45 @@
 	"world/entity.hpp"
 	"world/optionlist.hpp"
 
-1391981267 c:\development\ennovia-client\include\world\optionlist.hpp
+1393244885 c:\development\ennovia-client\include\world\optionlist.hpp
 	<string>
 	<vector>
 	"core.hpp"
 
-1391981268 source:c:\development\ennovia-client\src\world\inventory.cpp
+1393240270 source:c:\development\ennovia-client\src\world\inventory.cpp
 	"world/inventory.hpp"
 	"world/locatable.hpp"
 	"misc/registry.hpp"
 
-1391981268 source:c:\development\ennovia-client\src\world\items.cpp
+1393245530 source:c:\development\ennovia-client\src\world\items.cpp
 	"world/items.hpp"
 	"world/optionlist.hpp"
-	"world/livingobject.hpp"
 
 1391981267 c:\development\ennovia-client\include\world\livingobject.hpp
 	"world/locatable.hpp"
 
-1391981268 source:c:\development\ennovia-client\src\world\library.cpp
+1393277324 source:c:\development\ennovia-client\src\world\library.cpp
 	"world/library.hpp"
 	"world/locatable.hpp"
-	"world/livingobject.hpp"
-	"world/player.hpp"
 	"world/map.hpp"
 	"world/optionlist.hpp"
 
-1391981267 c:\development\ennovia-client\include\world\library.hpp
-	"misc/registry.hpp"
+1393277139 c:\development\ennovia-client\include\world\library.hpp
+	<boost/bimap.hpp>
 	"core.hpp"
 
 1391981267 c:\development\ennovia-client\include\world\player.hpp
 	"world/livingobject.hpp"
 	"world/items.hpp"
 
-1391989881 c:\development\ennovia-client\include\world\map.hpp
+1393246962 c:\development\ennovia-client\include\world\map.hpp
 	<boost/multi_array.hpp>
 	<vector>
 	<sstream>
+	<set>
 	"misc/astar/stlastar.h"
 	"world/entity.hpp"
 	"world/position.hpp"
-	"world/object.hpp"
 
 1391981267 c:\development\ennovia-client\include\misc\astar\stlastar.h
 	<iostream>
@@ -1473,7 +1466,7 @@
 	"world/livingobject.hpp"
 	"world/map.hpp"
 
-1391989427 source:c:\development\ennovia-client\src\world\locatable.cpp
+1393277436 source:c:\development\ennovia-client\src\world\locatable.cpp
 	"world/locatable.hpp"
 	"world/tile.hpp"
 	"world/map.hpp"
@@ -1486,36 +1479,30 @@
 	<set>
 	"world/locatable.hpp"
 
-1391981267 c:\development\ennovia-client\include\mayor.hpp
+1393248639 c:\development\ennovia-client\include\mayor.hpp
 	<fstream>
-	"world/library.hpp"
-	"ui/render.hpp"
-	"network/client.hpp"
-	"world/actions.hpp"
+	<memory>
+	<set>
 
-1392415853 c:\development\ennovia-client\include\ui\render.hpp
-	"misc/registry.hpp"
+1393245837 c:\development\ennovia-client\include\ui\render.hpp
+	<memory>
+	<vector>
 	"misc/irrlicht.hpp"
-	"misc/CGUITTFont.h"
-	"ui/graphics.hpp"
-	"ui/eventreceiver.hpp"
 	"world/position.hpp"
-	"world/optionlist.hpp"
 
 1392375906 c:\development\ennovia-client\include\ui\eventreceiver.hpp
 	"misc/irrlicht.hpp"
 	<iostream>
 	<sstream>
 
-1391981268 source:c:\development\ennovia-client\src\world\map.cpp
+1393247243 source:c:\development\ennovia-client\src\world\map.cpp
 	"world/map.hpp"
-	"world/tile.hpp"
-	"world/player.hpp"
-	"misc/registry.hpp"
+	"mayor.hpp"
+	"world/library.hpp"
 
 1391981268 source:c:\development\ennovia-client\src\world\objects.cpp
 
-1391981268 source:c:\development\ennovia-client\src\world\optionlist.cpp
+1393247263 source:c:\development\ennovia-client\src\world\optionlist.cpp
 	"world/optionlist.hpp"
 
 1391981268 source:c:\development\ennovia-client\src\world\player.cpp
@@ -1538,17 +1525,20 @@
 	<boost/lexical_cast.hpp>
 	"mayor.hpp"
 
-1392417701 source:c:\development\ennovia-client\src\mayor.cpp
+1393264999 source:c:\development\ennovia-client\src\mayor.cpp
 	"mayor.hpp"
 	"core.hpp"
-	"world/map.hpp"
-	"world/player.hpp"
+	"ui/render.hpp"
 	"network/network.hpp"
+	"network/client.hpp"
+	"world/library.hpp"
+	"world/map.hpp"
+	"world/actions.hpp"
+	"world/locatable.hpp"
 
-1392415370 source:c:\development\ennovia-client\src\network\client.cpp
+1393242343 source:c:\development\ennovia-client\src\network\client.cpp
 	"network/client.hpp"
 	"network/message.hpp"
-	"world/player.hpp"
 	"world/optionlist.hpp"
 	"mayor.hpp"
 
@@ -1558,11 +1548,12 @@
 	"ui/useraction.hpp"
 	"mayor.hpp"
 
-1391981268 source:c:\development\ennovia-client\src\ui\guiinventory.cpp
+1393243961 source:c:\development\ennovia-client\src\ui\guiinventory.cpp
 	"ui/graphics.hpp"
 	"ui/guiinventory.hpp"
 	"mayor.hpp"
 	"world/inventory.hpp"
+	"ui/render.hpp"
 
 1391981267 c:\development\ennovia-client\include\ui\guiinventory.hpp
 	"ui/windows/window.hpp"
@@ -1575,23 +1566,30 @@
 	"world/entity.hpp"
 	"misc/irrlicht.hpp"
 
-1392451629 source:c:\development\ennovia-client\src\ui\render.cpp
-	"ui/render.hpp"
-	"world/optionlist.hpp"
-	"world/player.hpp"
-	"world/map.hpp"
+1393277150 source:c:\development\ennovia-client\src\ui\render.cpp
 	<boost/tuple/tuple.hpp>
-	"mayor.hpp"
+	"misc/CGUITTFont.h"
+	"ui/render.hpp"
+	"ui/graphics.hpp"
+	"ui/eventreceiver.hpp"
 	"ui/guiinventory.hpp"
+	"world/position.hpp"
+	"world/optionlist.hpp"
+	"world/map.hpp"
+	"world/library.hpp"
+	"world/locatable.hpp"
+	"mayor.hpp"
 
-1391981268 source:c:\development\ennovia-client\src\world\optionproxy.cpp
+1393247278 source:c:\development\ennovia-client\src\world\optionproxy.cpp
 	"world/optionlist.hpp"
 	"mayor.hpp"
 
-1391988308 source:c:\development\ennovia-client\src\world\actions\move.cpp
+1393156121 source:c:\development\ennovia-client\src\world\actions\move.cpp
 	"world/actions.hpp"
 	"world/livingobject.hpp"
 	"mayor.hpp"
+	"ui/render.hpp"
+	"world/library.hpp"
 
 1392374715 c:\development\ennovia-client\include\ui\useraction.hpp
 	"misc/irrlicht.hpp"

@@ -4,16 +4,15 @@
 #include <boost/multi_array.hpp>
 #include <vector>
 #include <sstream>
+#include <set>
 #include "misc/astar/stlastar.h"
 #include "world/entity.hpp"
 #include "world/position.hpp"
-#include "world/object.hpp"
 
 
 namespace Ennovia
 {
-
-class Tile;
+class Locatable;
 class Map
 {
 public:
@@ -62,7 +61,7 @@ private:
     float range;
 };
 
-/*class Move : public Action
+class Move : public Action
 {
 public:
     Move(Map* map_, int direction_) : map(map_), direction(direction_) {}

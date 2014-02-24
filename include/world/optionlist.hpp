@@ -7,12 +7,12 @@
 
 namespace Ennovia {
 
-    class LivingObject;
+    class Locatable;
     class Option {
     public:
         virtual ~Option() {}
         virtual std::string getDescription();
-        virtual void onChoose(LivingObject* lo);
+        virtual void onChoose(Locatable* lo);
     };
 
     class OptionList;
@@ -22,7 +22,7 @@ namespace Ennovia {
         OptionProxy(const std::string& desc_, int id, int index);
         OptionProxy(const OptionProxy& other);
         virtual std::string getDescription();
-        virtual void onChoose(LivingObject* lo);
+        virtual void onChoose(Locatable* lo);
 
         friend class OptionList;
     private:

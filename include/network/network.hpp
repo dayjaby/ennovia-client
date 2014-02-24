@@ -1,6 +1,8 @@
 #ifndef ENNOVIA_NETWORK_HPP
 #define ENNOVIA_NETWORK_HPP
 
+#include <boost/asio.hpp>
+
 #include "network/connection.hpp"
 #include "network/message.hpp"
 #include "network/client.hpp"

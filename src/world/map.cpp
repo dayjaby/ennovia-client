@@ -1,8 +1,6 @@
 #include "world/map.hpp"
-//#include "ui/game.hpp"
-#include "world/tile.hpp"
-#include "world/player.hpp"
-#include "misc/registry.hpp"
+#include "mayor.hpp"
+#include "world/library.hpp"
 
 namespace Ennovia
 {
@@ -11,13 +9,7 @@ namespace Ennovia
 Map::Map(int id,const std::string& path_, const std::string& heightmap_, int width_, int height_) :
 path(path_), heightmappath(heightmap_), width(width_), height(height_), /*tiles(boost::extents[width_][height_]),*/ heightmap(boost::extents[width_+1][height_+1])
 {
-    std::cout << "Create map with id " << id << std::endl;
-    reg<Entity> entity(id);
-    if(entity.exists()) entity.erase();
-    reg<Entity>(new Entity(),id);
-    reg<Map>(this,id);
-    reg<Map> mp(id);
-    if(mp.get()==this) std::cout << "same map" << std::endl;
+    Mayor::get().getMaps().create(id,this);
     for(int x=0; x<width; x++)
     {
         for(int y=0; y<height; y++)
