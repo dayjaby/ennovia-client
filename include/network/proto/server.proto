@@ -16,14 +16,6 @@ message ServerMessage {
     required string text = 1;
 }
 
-// SEND_TILE_OPTIONLIST
-message SendTileOptionList {
-    required int32 map = 1;
-    required int32 x = 2;
-    required int32 y = 3;
-    repeated OptionRef options = 4;
-}
-
 // SEND_LOCATABLE_OPTIONLIST
 message SendLocatableOptionList {
     required int32 id = 1;
@@ -60,7 +52,6 @@ message LocatablePosition {
 
 message IntroduceLocatable {
     required int32 id = 1;
-    required int32 type = 2;
     required string name = 3;
     optional string model = 4;
     optional string texture = 5;

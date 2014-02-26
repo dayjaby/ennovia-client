@@ -1,322 +1,4849 @@
 Mayor.Tick
-<Tick | alive | 4329189>
+<Tick | alive | 4328885>
 Mayor.Frame
 <Frame | aliveRender Draw 
 Get Player 
+Begin Scene
+| draw >
+Received message: 3
+[MSG from Server]: Welcome to our server!
+|
+Mayor.Tick
+<Tick | alive | 4328886>
+Received message: 200
+|
+Mayor.Frame
+<Frame | aliveRender Draw 
+Get Player 
+Begin Scene
+| draw >
+Mayor.Tick
+<Tick | alive | 4328887>
+Mayor.Frame
+<Frame | aliveRender Draw 
+Get Player 
+Begin Scene
+| draw >
+Received message: 203
+Login successful!
+|
+Mayor.Tick
+<Tick | alive | 4328888>
+Mayor.Frame
+<Frame | aliveRender Draw 
+Get Player 
+Begin Scene
+| draw >
+Mayor.Tick
+<Tick | alive | 4328889>
+Mayor.Frame
+<Frame | aliveRender Draw 
+Get Player 
+Begin Scene
+| draw >
+Mayor.Tick
+<Tick | alive | 4328890>
+Mayor.Frame
+<Frame | aliveRender Draw 
+Get Player 
+Begin Scene
+| draw >
+Mayor.Tick
+<Tick | alive | 4328891>
+Mayor.Frame
+<Frame | aliveRender Draw 
+Get Player 
+Begin Scene
+| draw >
+Mayor.Tick
+<Tick | alive | 4328892>
+Mayor.Frame
+<Frame | aliveRender Draw 
+Get Player 
+Begin Scene
+| draw >
+Mayor.Tick
+<Tick | alive | 4328893>
+Mayor.Frame
+<Frame | aliveRender Draw 
+Get Player 
+Begin Scene
+| draw >
+Mayor.Tick
+<Tick | alive | 4328894>
+Mayor.Frame
+<Frame | aliveRender Draw 
+Get Player 
+Begin Scene
+| draw >
+Mayor.Tick
+<Tick | alive | 4328895>
+Mayor.Frame
+<Frame | aliveRender Draw 
+Get Player 
+Begin Scene
+| draw >
+Mayor.Tick
+<Tick | alive | 4328896>
+Mayor.Frame
+<Frame | aliveRender Draw 
+Get Player 
+Begin Scene
+| draw >
+Mayor.Tick
+<Tick | alive | 4328897>
+Mayor.Frame
+<Frame | aliveRender Draw 
+Get Player 
+Begin Scene
+| draw >
+Mayor.Tick
+<Tick | alive | 4328898>
+Mayor.Frame
+<Frame | aliveRender Draw 
+Get Player 
+Begin Scene
+| draw >
+Mayor.Tick
+<Tick | alive | 4328899>
+Mayor.Frame
+<Frame | aliveRender Draw 
+Get Player 
+Begin Scene
+| draw >
+Mayor.Tick
+<Tick | alive | 4328900>
+Mayor.Frame
+<Frame | aliveRender Draw 
+Get Player 
+Begin Scene
+| draw >
+Mayor.Tick
+<Tick | alive | 4328901>
+Mayor.Frame
+<Frame | aliveRender Draw 
+Get Player 
+Begin Scene
+| draw >
+Mayor.Tick
+<Tick | alive | 4328902>
+Mayor.Frame
+<Frame | aliveRender Draw 
+Get Player 
+Begin Scene
+| draw >
+Mayor.Tick
+<Tick | alive | 4328903>
+Mayor.Frame
+<Frame | aliveRender Draw 
+Get Player 
+Begin Scene
+| draw >
+Mayor.Tick
+<Tick | alive | 4328904>
+Mayor.Frame
+<Frame | aliveRender Draw 
+Get Player 
+Begin Scene
+| draw >
+Mayor.Tick
+<Tick | alive | 4328905>
+Mayor.Frame
+<Frame | aliveRender Draw 
+Get Player 
+Begin Scene
+| draw >
+Mayor.Tick
+<Tick | alive | 4328906>
+Mayor.Frame
+<Frame | aliveRender Draw 
+Get Player 
+Begin Scene
+| draw >
+Mayor.Tick
+<Tick | alive | 4328907>
+Mayor.Frame
+<Frame | aliveRender Draw 
+Get Player 
+Begin Scene
+| draw >
+Mayor.Tick
+<Tick | alive | 4328908>
+Mayor.Frame
+<Frame | aliveRender Draw 
+Get Player 
+Begin Scene
+| draw >
+Mayor.Tick
+<Tick | alive | 4328909>
+Mayor.Frame
+<Frame | aliveRender Draw 
+Get Player 
+Begin Scene
+| draw >
+Mayor.Tick
+<Tick | alive | 4328910>
+Mayor.Frame
+<Frame | aliveRender Draw 
+Get Player 
+Begin Scene
+| draw >
+Mayor.Tick
+<Tick | alive | 4328911>
+Mayor.Frame
+<Frame | aliveRender Draw 
+Get Player 
+Begin Scene
+| draw >
+Mayor.Tick
+<Tick | alive | 4328912>
+Mayor.Frame
+<Frame | aliveRender Draw 
+Get Player 
+Begin Scene
+| draw >
+Mayor.Tick
+<Tick | alive | 4328913>
+Mayor.Frame
+<Frame | aliveRender Draw 
+Get Player 
+Begin Scene
+| draw >
+Mayor.Tick
+<Tick | alive | 4328914>
+Mayor.Frame
+<Frame | aliveRender Draw 
+Get Player 
+Begin Scene
+| draw >
+Mayor.Tick
+<Tick | alive | 4328915>
+Mayor.Frame
+<Frame | aliveRender Draw 
+Get Player 
+Begin Scene
+| draw >
+Mayor.Tick
+<Tick | alive | 4328916>
+Mayor.Frame
+<Frame | aliveRender Draw 
+Get Player 
+Begin Scene
+| draw >
+Mayor.Tick
+<Tick | alive | 4328917>
+Mayor.Frame
+<Frame | aliveRender Draw 
+Get Player 
+Begin Scene
+| draw >
+Mayor.Tick
+<Tick | alive | 4328918>
+Mayor.Frame
+<Frame | aliveRender Draw 
+Get Player 
+Begin Scene
+| draw >
+Mayor.Tick
+<Tick | alive | 4328919>
+Mayor.Frame
+<Frame | aliveRender Draw 
+Get Player 
+Begin Scene
+| draw >
+Mayor.Tick
+<Tick | alive | 4328920>
+Mayor.Frame
+<Frame | aliveRender Draw 
+Get Player 
+Begin Scene
+| draw >
+Mayor.Tick
+<Tick | alive | 4328921>
+Mayor.Frame
+<Frame | aliveRender Draw 
+Get Player 
+Begin Scene
+| draw >
+Mayor.Tick
+<Tick | alive | 4328922>
+Mayor.Frame
+<Frame | aliveRender Draw 
+Get Player 
+Begin Scene
+| draw >
+Mayor.Tick
+<Tick | alive | 4328923>
+Mayor.Frame
+<Frame | aliveRender Draw 
+Get Player 
+Begin Scene
+| draw >
+Mayor.Tick
+<Tick | alive | 4328924>
+Mayor.Frame
+<Frame | aliveRender Draw 
+Get Player 
+Begin Scene
+| draw >
+Mayor.Tick
+<Tick | alive | 4328925>
+Mayor.Frame
+<Frame | aliveRender Draw 
+Get Player 
+Begin Scene
+| draw >
+Mayor.Tick
+<Tick | alive | 4328926>
+Mayor.Frame
+<Frame | aliveRender Draw 
+Get Player 
+Begin Scene
+| draw >
+Mayor.Tick
+<Tick | alive | 4328927>
+Mayor.Frame
+<Frame | aliveRender Draw 
+Get Player 
+Begin Scene
+| draw >
+Mayor.Tick
+<Tick | alive | 4328928>
+Mayor.Frame
+<Frame | aliveRender Draw 
+Get Player 
+Begin Scene
+| draw >
+Mayor.Tick
+<Tick | alive | 4328929>
+Mayor.Frame
+<Frame | aliveRender Draw 
+Get Player 
+Begin Scene
+| draw >
+Received message: 302
+Introduction 846930886,0,Chest
+Set Model treasure_chest.objtreasure_chest.obj
+create tri selector
+done
+|
+Mayor.Tick
+<Tick | alive | 4328930>
+Mayor.Frame
+<Frame | aliveRender Draw 
+Get Player 
+Begin Scene
+| draw >
+Mayor.Tick
+<Tick | alive | 4328931>
+Received message: 302
+Introduction 1804289383,2,admin
+Set Model faerie.md2faerie.md2
+create tri selector
+done
+|
+Mayor.Frame
+<Frame | aliveRender Draw 
+Get Player 
+Begin Scene
+| draw >
+Mayor.Tick
+<Tick | alive | 4328932>
+Mayor.Frame
+<Frame | aliveRender Draw 
+Get Player 
+Begin Scene
+| draw >
+Received message: 300
+Local player: 1804289383
+You are 1804289383|
+Mayor.Tick
+<Tick | alive | 4328933>
+Mayor.Frame
+<Frame | aliveRender Draw 
+Get Player 
+Begin Scene
+| draw >
+Mayor.Tick
+<Tick | alive | 4328934>
+Mayor.Frame
+<Frame | aliveRender Draw 
+Get Player 
+Begin Scene
+| draw >
+Received message: 301
+Set Locatable Position
+Locatable exists
+Map doesnt exist
+Done
+Lo1804289383@1,5,5
+|
+Mayor.Tick
+<Tick | alive | 4328935>
+Mayor.Frame
+<Frame | aliveRender Draw 
+Get Player 
+Begin Scene
+| draw >
+Received message: 301
+Set Locatable Position
+Locatable exists
+Map doesnt exist
+Done
+Lo846930886@1,2,2
+|
+Mayor.Tick
+<Tick | alive | 4328936>
+Received message: 301
+Set Locatable Position
+Locatable exists
+Map doesnt exist
+Done
+Lo1804289383@1,5,5
+|
+Received message: 302
+Introduction 1804289383,2,admin
+Set Model faerie.md2Set camera target
+|
+Received message: 400
+Map 1=tree_scene.3ds,,27*27|
+Received message: 301
+Set Locatable Position
+Locatable exists
+Map exists
+1804289383,1804289383
+Add locatable to map
+Locatable repositioned
+Is scene node
+Move scene node
+map height 5,5 = 0
+Scene node moved
+Render new map
+Load map
+Mesh loaded
+camera target exists
+camera target is scene node
+camera target is locatable
+camera target is on this map
+Move scene node
+map height 5,5 = -1.29499
+0|0Target = 5,-0.794987,5
+animated !!!!!!!!!!
+SET MAP
+after?
+Done
+Lo1804289383@1,5,5
+|
+Mayor.Frame
+<Frame | aliveRender Draw 
+CTGet Player 
+Begin Scene
+| draw >
+Received message: 400
+Map 1=tree_scene.3ds,,27*27|
+Mayor.Tick
+<Tick | alive | 4328937Set animation
+>
+Received message: 301
+Set Locatable Position
+Locatable exists
+Map exists
+846930886,1804289383
+Add locatable to map
+Locatable repositioned
+Is scene node
+Move scene node
+map height 2,2 = -1.29499
+Scene node moved
+Done
+Lo846930886@1,2,2
+|
+Mayor.Frame
+<Frame | aliveRender Draw 
+CTGet Player 
+Begin Scene
+| draw >
+Received message: 400
+Map 1=tree_scene.3ds,,27*27|
+Received message: 301
+Set Locatable Position
+Locatable exists
+Map exists
+1804289383,1804289383
+Locatable repositioned
+Is scene node
+Move scene node
+map height 5,5 = -1.29499
+0|0Target = 5,-0.794987,5
+animated !!!!!!!!!!
+Scene node moved
+Done
+Lo1804289383@1,5,5
+|
+Mayor.Tick
+<Tick | alive | 4328938Set animation
+>
+Mayor.Frame
+<Frame | aliveRender Draw 
+CTGet Player 
+Begin Scene
+| draw >
+Mayor.Tick
+<Tick | alive | 4328939>
+Mayor.Frame
+<Frame | aliveRender Draw 
+CTGet Player 
+Begin Scene
+| draw >
+Mayor.Tick
+<Tick | alive | 4328940>
+Mayor.Frame
+<Frame | aliveRender Draw 
+CTGet Player 
+Begin Scene
+| draw >
+Mayor.Tick
+<Tick | alive | 4328941>
+Mayor.Frame
+<Frame | aliveRender Draw 
+CTGet Player 
+Begin Scene
+| draw >
+Mayor.Tick
+<Tick | alive | 4328942>
+Mayor.Frame
+<Frame | aliveRender Draw 
+CTGet Player 
+Begin Scene
+| draw >
+Mayor.Tick
+<Tick | alive | 4328943>
+Mayor.Frame
+<Frame | aliveRender Draw 
+CTGet Player 
+Begin Scene
+| draw >
+Mayor.Tick
+<Tick | alive | 4328944>
+Mayor.Frame
+<Frame | aliveRender Draw 
+CTGet Player 
+Begin Scene
+| draw >
+Mayor.Tick
+<Tick | alive | 4328945>
+Mayor.Frame
+<Frame | aliveRender Draw 
+CTGet Player 
+Begin Scene
+| draw >
+Mayor.Tick
+<Tick | alive | 4328946>
+Mayor.Frame
+<Frame | aliveRender Draw 
+CTGet Player 
+Begin Scene
+| draw >
+Mayor.Tick
+<Tick | alive | 4328947>
+Mayor.Frame
+<Frame | aliveRender Draw 
+CTGet Player 
+Begin Scene
+| draw >
+Mayor.Tick
+<Tick | alive | 4328948>
+Mayor.Frame
+<Frame | aliveRender Draw 
+CTGet Player 
+Begin Scene
+| draw >
+Mayor.Tick
+<Tick | alive | 4328949>
+Mayor.Frame
+<Frame | aliveRender Draw 
+CTGet Player 
+Begin Scene
+| draw >
+Mayor.Tick
+<Tick | alive | 4328950>
+Mayor.Frame
+<Frame | aliveGet position under mouse
+Get position under mouse
+Ray calculated 0x4f2310
+Ray SceneNode Collision
+Finished
+Mouse moved and position fetched!
+Render Draw 
+CTGet Player 
+Begin Scene
+| draw >
+Mayor.Tick
+<Tick | alive | 4328951>
+Mayor.Frame
+<Frame | aliveRender Draw 
+CTGet Player 
+Begin Scene
+| draw >
+Mayor.Tick
+<Tick | alive | 4328952>
+Mayor.Frame
+<Frame | aliveGet position under mouse
+Get position under mouse
+Ray calculated 0x4f2310
+Ray SceneNode Collision
+Finished
+Mouse moved and position fetched!
+Render Draw 
+CTGet Player 
+Begin Scene
+| draw >
+Mayor.Tick
+<Tick | alive | 4328953>
+Mayor.Frame
+<Frame | aliveGet position under mouse
+Get position under mouse
+Ray calculated 0x4f2310
+Ray SceneNode Collision
+Finished
+Mouse moved and position fetched!
+Render Draw 
+CTGet Player 
+Begin Scene
+| draw >
+Mayor.Tick
+<Tick | alive | 4328954>
+Mayor.Frame
+<Frame | aliveGet position under mouse
+Get position under mouse
+Ray calculated 0x4f2310
+Ray SceneNode Collision
+Finished
+Mouse moved and position fetched!
+Render Draw 
+CTGet Player 
+Begin Scene
+| draw >
+Mayor.Tick
+<Tick | alive | 4328955>
+Mayor.Frame
+<Frame | aliveGet position under mouse
+Get position under mouse
+Ray calculated 0x4f2310
+Ray SceneNode Collision
+Finished
+Mouse moved and position fetched!
+Render Draw 
+CTGet Player 
+Begin Scene
+| draw >
+Mayor.Tick
+<Tick | alive | 4328956>
+Mayor.Frame
+<Frame | aliveRender Draw 
+CTGet Player 
+Begin Scene
+| draw >
+Mayor.Tick
+<Tick | alive | 4328957>
+Mayor.Frame
+<Frame | aliveRender Draw 
+CTGet Player 
+Begin Scene
+| draw >
+Mayor.Tick
+<Tick | alive | 4328958>
+Mayor.Frame
+<Frame | aliveRender Draw 
+CTGet Player 
+Begin Scene
+| draw >
+Mayor.Tick
+<Tick | alive | 4328959>
+Mayor.Frame
+<Frame | aliveRender Draw 
+CTGet Player 
+Begin Scene
+| draw >
+Mayor.Tick
+<Tick | alive | 4328960>
+Mayor.Frame
+<Frame | aliveRender Draw 
+CTGet Player 
+Begin Scene
+| draw >
+Mayor.Tick
+<Tick | alive | 4328961>
+Mayor.Frame
+<Frame | aliveRender Draw 
+CTGet Player 
+Begin Scene
+| draw >
+Mayor.Tick
+<Tick | alive | 4328962>
+Mayor.Frame
+<Frame | aliveGet position under mouse
+Get position under mouse
+Ray calculated 0x4f2310
+Ray SceneNode Collision
+Finished
+Mouse moved and position fetched!
+Render Draw 
+CTGet Player 
+Begin Scene
+| draw >
+Mayor.Tick
+<Tick | alive | 4328963>
+Mayor.Frame
+<Frame | aliveGet Locatables under mouse
+elements=0
+Get position under mouse
+Get position under mouse
+Ray calculated 0x4f2310
+Ray SceneNode Collision
+Finished
+Mouse moved and position fetched!
+Render Draw 
+CTGet Player 
+Begin Scene
+| draw >
+Mayor.Tick
+<Tick | alive | 4328964>
+Mayor.Frame
+<Frame | aliveRender Draw 
+CTGet Player 
+Begin Scene
+| draw >
+Mayor.Tick
+<Tick | alive | 4328965>
+Mayor.Frame
+<Frame | aliveRender Draw 
+CTGet Player 
+Begin Scene
+| draw >
+Mayor.Tick
+<Tick | alive | 4328966>
+Mayor.Frame
+<Frame | aliveGet position under mouse
+Get position under mouse
+Ray calculated 0x4f2310
+Ray SceneNode Collision
+Finished
+Mouse moved and position fetched!
+Render Draw 
+CTGet Player 
+Begin Scene
+| draw >
+Mayor.Tick
+<Tick | alive | 4328967>
+Mayor.Frame
+<Frame | aliveGet position under mouse
+Get position under mouse
+Ray calculated 0x4f2310
+Ray SceneNode Collision
+Finished
+Mouse moved and position fetched!
+Render Draw 
+CTGet Player 
+Begin Scene
+| draw >
+Mayor.Tick
+<Tick | alive | 4328968>
+Mayor.Frame
+<Frame | aliveGet position under mouse
+Get position under mouse
+Ray calculated 0x4f2310
+Ray SceneNode Collision
+Finished
+Mouse moved and position fetched!
+Render Draw 
+CTGet Player 
+Begin Scene
+| draw >
+Mayor.Tick
+<Tick | alive | 4328969>
+Mayor.Frame
+<Frame | aliveRender Draw 
+CTGet Player 
+Begin Scene
+| draw >
+Mayor.Tick
+<Tick | alive | 4328970>
+Mayor.Frame
+<Frame | aliveRender Draw 
+CTGet Player 
+Begin Scene
+| draw >
+Mayor.Tick
+<Tick | alive | 4328971>
+Mayor.Frame
+<Frame | aliveRender Draw 
+CTGet Player 
+Begin Scene
+| draw >
+Mayor.Tick
+<Tick | alive | 4328972>
+Mayor.Frame
+<Frame | aliveRender Draw 
+CTGet Player 
+Begin Scene
+| draw >
+Mayor.Tick
+<Tick | alive | 4328973>
+Mayor.Frame
+<Frame | aliveRender Draw 
+CTGet Player 
+Begin Scene
+| draw >
+Mayor.Tick
+<Tick | alive | 4328974>
+Mayor.Frame
+<Frame | aliveRender Draw 
+CTGet Player 
+Begin Scene
+| draw >
+Mayor.Tick
+<Tick | alive | 4328975>
+Mayor.Frame
+<Frame | aliveRender Draw 
+CTGet Player 
+Begin Scene
+| draw >
+Mayor.Tick
+<Tick | alive | 4328976>
+Mayor.Frame
+<Frame | aliveRender Draw 
+CTGet Player 
+Begin Scene
+| draw >
+Mayor.Tick
+<Tick | alive | 4328977>
+Mayor.Frame
+<Frame | aliveGet position under mouse
+Get position under mouse
+Ray calculated 0x4f2310
+Ray SceneNode Collision
+Finished
+Mouse moved and position fetched!
+Render Draw 
+CTGet Player 
+Begin Scene
+| draw >
+Mayor.Tick
+<Tick | alive | 4328978>
+Mayor.Frame
+<Frame | aliveGet position under mouse
+Get position under mouse
+Ray calculated 0x4f2310
+Ray SceneNode Collision
+Finished
+Mouse moved and position fetched!
+Render Draw 
+CTGet Player 
+Begin Scene
+| draw >
+Mayor.Tick
+<Tick | alive | 4328979>
+Mayor.Frame
+<Frame | aliveGet position under mouse
+Get position under mouse
+Ray calculated 0x4f2310
+Ray SceneNode Collision
+Finished
+Mouse moved and position fetched!
+Render Draw 
+CTGet Player 
+Begin Scene
+| draw >
+Mayor.Tick
+<Tick | alive | 4328980>
+Mayor.Frame
+<Frame | aliveGet position under mouse
+Get position under mouse
+Ray calculated 0x4f2310
+Ray SceneNode Collision
+Finished
+Mouse moved and position fetched!
+Render Draw 
+CTGet Player 
+Begin Scene
+| draw >
+Mayor.Tick
+<Tick | alive | 4328981>
+Mayor.Frame
+<Frame | aliveGet position under mouse
+Get position under mouse
+Ray calculated 0x4f2310
+Ray SceneNode Collision
+Finished
+Mouse moved and position fetched!
+Render Draw 
+CTGet Player 
+Begin Scene
+| draw >
+Mayor.Tick
+<Tick | alive | 4328982>
+Mayor.Frame
+<Frame | aliveGet Locatables under mouse
+elements=1
+Get position under mouse
+Get position under mouse
+Ray calculated 0x4f2310
+Ray SceneNode Collision
+Finished
+Mouse moved and position fetched!
+Render Draw 
+CTGet Player 
+Begin Scene
+| draw >
+Received message: 101
+0: Look atelements=1
+contains optionlist
+contains option
+|
+Received message: 3
+[MSG from Server]: You see a admin
+|
+Mayor.Tick
+<Tick | alive | 4328983>
+Mayor.Frame
+<Frame | aliveGet position under mouse
+Get position under mouse
+Ray calculated 0x4f2310
+Ray SceneNode Collision
+Finished
+Mouse moved and position fetched!
+Render Draw 
+CTGet Player 
+Begin Scene
+| draw >
+Mayor.Tick
+<Tick | alive | 4328984>
+Mayor.Frame
+<Frame | aliveGet position under mouse
+Get position under mouse
+Ray calculated 0x4f2310
+Ray SceneNode Collision
+Finished
+Mouse moved and position fetched!
+Render Draw 
+CTGet Player 
+Begin Scene
+| draw >
+Mayor.Tick
+<Tick | alive | 4328985>
+Mayor.Frame
+<Frame | aliveGet position under mouse
+Get position under mouse
+Ray calculated 0x4f2310
+Ray SceneNode Collision
+Finished
+Mouse moved and position fetched!
+Render Draw 
+CTGet Player 
+Begin Scene
+| draw >
+Mayor.Tick
+<Tick | alive | 4328986>
+Mayor.Frame
+<Frame | aliveGet position under mouse
+Get position under mouse
+Ray calculated 0x4f2310
+Ray SceneNode Collision
+Finished
+Mouse moved and position fetched!
+Render Draw 
+CTGet Player 
+Begin Scene
+| draw >
+Mayor.Tick
+<Tick | alive | 4328987>
+Mayor.Frame
+<Frame | aliveGet position under mouse
+Get position under mouse
+Ray calculated 0x4f2310
+Ray SceneNode Collision
+Finished
+Mouse moved and position fetched!
+Render Draw 
+CTGet Player 
+Begin Scene
+| draw >
+Mayor.Tick
+<Tick | alive | 4328988>
+Mayor.Frame
+<Frame | aliveGet position under mouse
+Get position under mouse
+Ray calculated 0x4f2310
+Ray SceneNode Collision
+Finished
+Mouse moved and position fetched!
+Render Draw 
+CTGet Player 
+Begin Scene
+| draw >
+Mayor.Tick
+<Tick | alive | 4328989>
+Mayor.Frame
+<Frame | aliveRender Draw 
+CTGet Player 
+Begin Scene
+| draw >
+Mayor.Tick
+<Tick | alive | 4328990>
+Mayor.Frame
+<Frame | aliveGet position under mouse
+Get position under mouse
+Ray calculated 0x4f2310
+Ray SceneNode Collision
+Finished
+Mouse moved and position fetched!
+Render Draw 
+CTGet Player 
+Begin Scene
+| draw >
+Mayor.Tick
+<Tick | alive | 4328991>
+Mayor.Frame
+<Frame | aliveGet position under mouse
+Get position under mouse
+Ray calculated 0x4f2310
+Ray SceneNode Collision
+Finished
+Mouse moved and position fetched!
+Render Draw 
+CTGet Player 
+Begin Scene
+| draw >
+Mayor.Tick
+<Tick | alive | 4328992>
+Mayor.Frame
+<Frame | aliveGet position under mouse
+Get position under mouse
+Ray calculated 0x4f2310
+Ray SceneNode Collision
+Finished
+Mouse moved and position fetched!
+Render Draw 
+CTGet Player 
+Begin Scene
+| draw >
+Mayor.Tick
+<Tick | alive | 4328993>
+Mayor.Frame
+<Frame | aliveGet position under mouse
+Get position under mouse
+Ray calculated 0x4f2310
+Ray SceneNode Collision
+Finished
+Mouse moved and position fetched!
+Render Draw 
+CTGet Player 
+Begin Scene
+| draw >
+Mayor.Tick
+<Tick | alive | 4328994>
+Mayor.Frame
+<Frame | aliveRender Draw 
+CTGet Player 
+Begin Scene
+| draw >
+Mayor.Tick
+<Tick | alive | 4328995>
+Mayor.Frame
+<Frame | aliveRender Draw 
+CTGet Player 
+Begin Scene
+| draw >
+Mayor.Tick
+<Tick | alive | 4328996>
+Mayor.Frame
+<Frame | aliveGet position under mouse
+Get position under mouse
+Ray calculated 0x4f2310
+Ray SceneNode Collision
+Finished
+Mouse moved and position fetched!
+Render Draw 
+CTGet Player 
+Begin Scene
+| draw >
+Mayor.Tick
+<Tick | alive | 4328997>
+Mayor.Frame
+<Frame | aliveGet position under mouse
+Get position under mouse
+Ray calculated 0x4f2310
+Ray SceneNode Collision
+Finished
+Mouse moved and position fetched!
+Render Draw 
+CTGet Player 
+Begin Scene
+| draw >
+Mayor.Tick
+<Tick | alive | 4328998>
+Mayor.Frame
+<Frame | aliveGet position under mouse
+Get position under mouse
+Ray calculated 0x4f2310
+Ray SceneNode Collision
+Finished
+Mouse moved and position fetched!
+Render Draw 
+CTGet Player 
+Begin Scene
+| draw >
+Mayor.Tick
+<Tick | alive | 4328999>
+Mayor.Frame
+<Frame | aliveGet position under mouse
+Get position under mouse
+Ray calculated 0x4f2310
+Ray SceneNode Collision
+Finished
+Mouse moved and position fetched!
+Render Draw 
+CTGet Player 
+Begin Scene
+| draw >
+Mayor.Tick
+<Tick | alive | 4329000>
+Mayor.Frame
+<Frame | aliveGet position under mouse
+Get position under mouse
+Ray calculated 0x4f2310
+Ray SceneNode Collision
+Finished
+Mouse moved and position fetched!
+Render Draw 
+CTGet Player 
+Begin Scene
+| draw >
+Mayor.Tick
+<Tick | alive | 4329001>
+Mayor.Frame
+<Frame | aliveRender Draw 
+CTGet Player 
+Begin Scene
+| draw >
+Mayor.Tick
+<Tick | alive | 4329002>
+Mayor.Frame
+<Frame | aliveRender Draw 
+CTGet Player 
+Begin Scene
+| draw >
+Mayor.Tick
+<Tick | alive | 4329003>
+Mayor.Frame
+<Frame | aliveGet position under mouse
+Get position under mouse
+Ray calculated 0x4f2310
+Ray SceneNode Collision
+Finished
+Mouse moved and position fetched!
+Render Draw 
+CTGet Player 
+Begin Scene
+| draw >
+Mayor.Tick
+<Tick | alive | 4329004>
+Mayor.Frame
+<Frame | aliveGet position under mouse
+Get position under mouse
+Ray calculated 0x4f2310
+Ray SceneNode Collision
+Finished
+Mouse moved and position fetched!
+Render Draw 
+CTGet Player 
+Begin Scene
+| draw >
+Mayor.Tick
+<Tick | alive | 4329005>
+Mayor.Frame
+<Frame | aliveGet position under mouse
+Get position under mouse
+Ray calculated 0x4f2310
+Ray SceneNode Collision
+Finished
+Mouse moved and position fetched!
+Render Draw 
+CTGet Player 
+Begin Scene
+| draw >
+Mayor.Tick
+<Tick | alive | 4329006>
+Mayor.Frame
+<Frame | aliveRender Draw 
+CTGet Player 
+Begin Scene
+| draw >
+Mayor.Tick
+<Tick | alive | 4329007>
+Mayor.Frame
+<Frame | aliveRender Draw 
+CTGet Player 
+Begin Scene
+| draw >
+Mayor.Tick
+<Tick | alive | 4329008>
+Mayor.Frame
+<Frame | aliveRender Draw 
+CTGet Player 
+Begin Scene
+| draw >
+Mayor.Tick
+<Tick | alive | 4329009>
+Mayor.Frame
+<Frame | aliveRender Draw 
+CTGet Player 
+Begin Scene
+| draw >
+Mayor.Tick
+<Tick | alive | 4329010>
+Mayor.Frame
+<Frame | aliveRender Draw 
+CTGet Player 
+Begin Scene
+| draw >
+Mayor.Tick
+<Tick | alive | 4329011>
+Mayor.Frame
+<Frame | aliveRender Draw 
+CTGet Player 
+Begin Scene
+| draw >
+Mayor.Tick
+<Tick | alive | 4329012>
+Mayor.Frame
+<Frame | aliveRender Draw 
+CTGet Player 
+Begin Scene
+| draw >
+Mayor.Tick
+<Tick | alive | 4329013>
+Mayor.Frame
+<Frame | aliveRender Draw 
+CTGet Player 
+Begin Scene
+| draw >
+Mayor.Tick
+<Tick | alive | 4329014>
+Mayor.Frame
+<Frame | aliveRender Draw 
+CTGet Player 
+Begin Scene
+| draw >
+Mayor.Tick
+<Tick | alive | 4329015>
+Mayor.Frame
+<Frame | aliveGet position under mouse
+Get position under mouse
+Ray calculated 0x4f2310
+Ray SceneNode Collision
+Finished
+Mouse moved and position fetched!
+Get position under mouse
+Get position under mouse
+Ray calculated 0x4f2310
+Ray SceneNode Collision
+Finished
+Mouse moved and position fetched!
+Render Draw 
+CTGet Player 
+Begin Scene
+| draw >
+Mayor.Tick
+<Tick | alive | 4329016>
+Mayor.Frame
+<Frame | aliveGet position under mouse
+Get position under mouse
+Ray calculated 0x4f2310
+Ray SceneNode Collision
+Finished
+Mouse moved and position fetched!
+Get position under mouse
+Get position under mouse
+Ray calculated 0x4f2310
+Ray SceneNode Collision
+Finished
+Mouse moved and position fetched!
+Render Draw 
+CTGet Player 
+Begin Scene
+| draw >
+Mayor.Tick
+<Tick | alive | 4329017>
+Mayor.Frame
+<Frame | aliveGet position under mouse
+Get position under mouse
+Ray calculated 0x4f2310
+Ray SceneNode Collision
+Finished
+Mouse moved and position fetched!
+Render Draw 
+CTGet Player 
+Begin Scene
+| draw >
+Mayor.Tick
+<Tick | alive | 4329018>
+Mayor.Frame
+<Frame | aliveGet position under mouse
+Get position under mouse
+Ray calculated 0x4f2310
+Ray SceneNode Collision
+Finished
+Mouse moved and position fetched!
+Render Draw 
+CTGet Player 
+Begin Scene
+| draw >
+Mayor.Tick
+<Tick | alive | 4329019>
+Mayor.Frame
+<Frame | aliveGet position under mouse
+Get position under mouse
+Ray calculated 0x4f2310
+Ray SceneNode Collision
+Finished
+Mouse moved and position fetched!
+Render Draw 
+CTGet Player 
+Begin Scene
+| draw >
+Mayor.Tick
+<Tick | alive | 4329020>
+Mayor.Frame
+<Frame | aliveGet position under mouse
+Get position under mouse
+Ray calculated 0x4f2310
+Ray SceneNode Collision
+Finished
+Mouse moved and position fetched!
+Render Draw 
+CTGet Player 
+Begin Scene
+| draw >
+Mayor.Tick
+<Tick | alive | 4329021>
+Mayor.Frame
+<Frame | aliveGet position under mouse
+Get position under mouse
+Ray calculated 0x4f2310
+Ray SceneNode Collision
+Finished
+Mouse moved and position fetched!
+Render Draw 
+CTGet Player 
+Begin Scene
+| draw >
+Mayor.Tick
+<Tick | alive | 4329022>
+Mayor.Frame
+<Frame | aliveGet position under mouse
+Get position under mouse
+Ray calculated 0x4f2310
+Ray SceneNode Collision
+Finished
+Mouse moved and position fetched!
+Render Draw 
+CTGet Player 
+Begin Scene
+| draw >
+Mayor.Tick
+<Tick | alive | 4329023>
+Mayor.Frame
+<Frame | aliveRender Draw 
+CTGet Player 
+Begin Scene
+| draw >
+Mayor.Tick
+<Tick | alive | 4329024>
+Mayor.Frame
+<Frame | aliveRender Draw 
+CTGet Player 
+Begin Scene
+| draw >
+Mayor.Tick
+<Tick | alive | 4329025>
+Mayor.Frame
+<Frame | aliveRender Draw 
+CTGet Player 
+Begin Scene
+| draw >
+Mayor.Tick
+<Tick | alive | 4329026>
+Mayor.Frame
+<Frame | aliveRender Draw 
+CTGet Player 
+Begin Scene
+| draw >
+Mayor.Tick
+<Tick | alive | 4329027>
+Mayor.Frame
+<Frame | aliveRender Draw 
+CTGet Player 
+Begin Scene
+| draw >
+Mayor.Tick
+<Tick | alive | 4329028>
+Mayor.Frame
+<Frame | aliveRender Draw 
+CTGet Player 
+Begin Scene
+| draw >
+Mayor.Tick
+<Tick | alive | 4329029>
+Mayor.Frame
+<Frame | aliveRender Draw 
+CTGet Player 
+Begin Scene
+| draw >
+Mayor.Tick
+<Tick | alive | 4329030>
+Mayor.Frame
+<Frame | aliveRender Draw 
+CTGet Player 
+Begin Scene
+| draw >
+Mayor.Tick
+<Tick | alive | 4329031>
+Mayor.Frame
+<Frame | aliveRender Draw 
+CTGet Player 
+Begin Scene
+| draw >
+Mayor.Tick
+<Tick | alive | 4329032>
+Mayor.Frame
+<Frame | aliveRender Draw 
+CTGet Player 
+Begin Scene
+| draw >
+Mayor.Tick
+<Tick | alive | 4329033>
+Mayor.Frame
+<Frame | aliveRender Draw 
+CTGet Player 
+Begin Scene
+| draw >
+Mayor.Tick
+<Tick | alive | 4329034>
+Mayor.Frame
+<Frame | aliveRender Draw 
+CTGet Player 
+Begin Scene
+| draw >
+Mayor.Tick
+<Tick | alive | 4329035>
+Mayor.Frame
+<Frame | aliveGet position under mouse
+Get position under mouse
+Ray calculated 0x4f2310
+Ray SceneNode Collision
+Mouse moved and position fetched!
+Get position under mouse
+Get position under mouse
+Ray calculated 0x4f2310
+Ray SceneNode Collision
+Mouse moved and position fetched!
+Render Draw 
+CTGet Player 
+Begin Scene
+| draw >
+Mayor.Tick
+<Tick | alive | 4329036>
+Mayor.Frame
+<Frame | aliveGet position under mouse
+Get position under mouse
+Ray calculated 0x4f2310
+Ray SceneNode Collision
+Mouse moved and position fetched!
+Render Draw 
+CTGet Player 
+Begin Scene
+| draw >
+Mayor.Tick
+<Tick | alive | 4329037>
+Mayor.Frame
+<Frame | aliveGet position under mouse
+Get position under mouse
+Ray calculated 0x4f2310
+Ray SceneNode Collision
+Mouse moved and position fetched!
+Render Draw 
+CTGet Player 
+Begin Scene
+| draw >
+Mayor.Tick
+<Tick | alive | 4329038>
+Mayor.Frame
+<Frame | aliveRender Draw 
+CTGet Player 
+Begin Scene
+| draw >
+Mayor.Tick
+<Tick | alive | 4329039>
+Mayor.Frame
+<Frame | aliveRender Draw 
+CTGet Player 
+Begin Scene
+| draw >
+Mayor.Tick
+<Tick | alive | 4329040>
+Mayor.Frame
+<Frame | aliveMouse right click
+Get position under mouse
+Get position under mouse
+Ray calculated 0x4f2310
+Ray SceneNode Collision
+Does the player exist?
+Yes he does!
+Get position under mouse
+Get position under mouse
+Ray calculated 0x4f2310
+Ray SceneNode Collision
+Mouse moved and position fetched!
+Render Draw 
+CTGet Player 
+Begin Scene
+| draw >
+Mayor.Tick
+<Tick | alive | 4329041>
+Mayor.Frame
+<Frame | aliveRender Draw 
+CTGet Player 
+Begin Scene
+| draw >
+Mayor.Tick
+<Tick | alive | 4329042>
+Mayor.Frame
+<Frame | aliveRender Draw 
+CTGet Player 
+Begin Scene
+| draw >
+Mayor.Tick
+<Tick | alive | 4329043>
+Mayor.Frame
+<Frame | aliveRender Draw 
+CTGet Player 
+Begin Scene
+| draw >
+Mayor.Tick
+<Tick | alive | 4329044>
+Mayor.Frame
+<Frame | aliveRender Draw 
+CTGet Player 
+Begin Scene
+| draw >
+Mayor.Tick
+<Tick | alive | 4329045>
+Mayor.Frame
+<Frame | aliveGet position under mouse
+Get position under mouse
+Ray calculated 0x4f2310
+Ray SceneNode Collision
+Mouse moved and position fetched!
+Render Draw 
+CTGet Player 
+Begin Scene
+| draw >
+Mayor.Tick
+<Tick | alive | 4329046>
+Mayor.Frame
+<Frame | aliveGet position under mouse
+Get position under mouse
+Ray calculated 0x4f2310
+Ray SceneNode Collision
+Mouse moved and position fetched!
+Render Draw 
+CTGet Player 
+Begin Scene
+| draw >
+Mayor.Tick
+<Tick | alive | 4329047>
+Mayor.Frame
+<Frame | aliveRender Draw 
+CTGet Player 
+Begin Scene
+| draw >
+Mayor.Tick
+<Tick | alive | 4329048>
+Mayor.Frame
+<Frame | aliveRender Draw 
+CTGet Player 
+Begin Scene
+| draw >
+Mayor.Tick
+<Tick | alive | 4329049>
+Mayor.Frame
+<Frame | aliveMouse right click
+Get position under mouse
+Get position under mouse
+Ray calculated 0x4f2310
+Ray SceneNode Collision
+Does the player exist?
+Yes he does!
+Get position under mouse
+Get position under mouse
+Ray calculated 0x4f2310
+Ray SceneNode Collision
+Mouse moved and position fetched!
+Render Draw 
+CTGet Player 
+Begin Scene
+| draw >
+Mayor.Tick
+<Tick | alive | 4329050>
+Mayor.Frame
+<Frame | aliveGet position under mouse
+Get position under mouse
+Ray calculated 0x4f2310
+Ray SceneNode Collision
+Mouse moved and position fetched!
+Render Draw 
+CTGet Player 
+Begin Scene
+| draw >
+Mayor.Tick
+<Tick | alive | 4329051>
+Mayor.Frame
+<Frame | aliveGet position under mouse
+Get position under mouse
+Ray calculated 0x4f2310
+Ray SceneNode Collision
+Mouse moved and position fetched!
+Render Draw 
+CTGet Player 
+Begin Scene
+| draw >
+Mayor.Tick
+<Tick | alive | 4329052>
+Mayor.Frame
+<Frame | aliveRender Draw 
+CTGet Player 
+Begin Scene
+| draw >
+Mayor.Tick
+<Tick | alive | 4329053>
+Mayor.Frame
+<Frame | aliveRender Draw 
+CTGet Player 
+Begin Scene
+| draw >
+Mayor.Tick
+<Tick | alive | 4329054>
+Mayor.Frame
+<Frame | aliveRender Draw 
+CTGet Player 
+Begin Scene
+| draw >
+Mayor.Tick
+<Tick | alive | 4329055>
+Mayor.Frame
+<Frame | aliveRender Draw 
+CTGet Player 
+Begin Scene
+| draw >
+Mayor.Tick
+<Tick | alive | 4329056>
+Mayor.Frame
+<Frame | aliveRender Draw 
+CTGet Player 
+Begin Scene
+| draw >
+Mayor.Tick
+<Tick | alive | 4329057>
+Mayor.Frame
+<Frame | aliveRender Draw 
+CTGet Player 
+Begin Scene
+| draw >
+Mayor.Tick
+<Tick | alive | 4329058>
+Mayor.Frame
+<Frame | aliveGet Locatables under mouse
+elements=1
+Get position under mouse
+Get position under mouse
+Ray calculated 0x4f2310
+Ray SceneNode Collision
+Mouse moved and position fetched!
+Render Draw 
+CTGet Player 
+Begin Scene
+| draw >
+Received message: 101
+0: Look at1: Count Moneyelements=1
+contains optionlist
+|
+Mayor.Tick
+<Tick | alive | 4329059>
+Mayor.Frame
+<Frame | aliveRender Draw 
+CTGet Player 
+Begin Scene
+| draw >
+Mayor.Tick
+<Tick | alive | 4329060>
+Mayor.Frame
+<Frame | aliveRender Draw 
+CTGet Player 
+Begin Scene
+| draw >
+Mayor.Tick
+<Tick | alive | 4329061>
+Mayor.Frame
+<Frame | aliveRender Draw 
+CTGet Player 
+Begin Scene
+| draw >
+Mayor.Tick
+<Tick | alive | 4329062>
+Mayor.Frame
+<Frame | aliveGet position under mouse
+Get position under mouse
+Ray calculated 0x4f2310
+Ray SceneNode Collision
+Mouse moved and position fetched!
+Render Draw 
+CTGet Player 
+Begin Scene
+| draw >
+Mayor.Tick
+<Tick | alive | 4329063>
+Mayor.Frame
+<Frame | aliveGet position under mouse
+Get position under mouse
+Ray calculated 0x4f2310
+Ray SceneNode Collision
+Mouse moved and position fetched!
+Get position under mouse
+Get position under mouse
+Ray calculated 0x4f2310
+Ray SceneNode Collision
+Mouse moved and position fetched!
+Render Draw 
+CTGet Player 
+Begin Scene
+| draw >
+Mayor.Tick
+<Tick | alive | 4329064>
+Mayor.Frame
+<Frame | aliveGet position under mouse
+Get position under mouse
+Ray calculated 0x4f2310
+Ray SceneNode Collision
+Mouse moved and position fetched!
+Render Draw 
+CTGet Player 
+Begin Scene
+| draw >
+Mayor.Tick
+<Tick | alive | 4329065>
+Mayor.Frame
+<Frame | aliveGet position under mouse
+Get position under mouse
+Ray calculated 0x4f2310
+Ray SceneNode Collision
+Mouse moved and position fetched!
+Render Draw 
+CTGet Player 
+Begin Scene
+| draw >
+Mayor.Tick
+<Tick | alive | 4329066>
+Mayor.Frame
+<Frame | aliveGet position under mouse
+Get position under mouse
+Ray calculated 0x4f2310
+Ray SceneNode Collision
+Mouse moved and position fetched!
+Render Draw 
+CTGet Player 
+Begin Scene
+| draw >
+Mayor.Tick
+<Tick | alive | 4329067>
+Mayor.Frame
+<Frame | aliveGet position under mouse
+Get position under mouse
+Ray calculated 0x4f2310
+Ray SceneNode Collision
+Mouse moved and position fetched!
+Render Draw 
+CTGet Player 
+Begin Scene
+| draw >
+Mayor.Tick
+<Tick | alive | 4329068>
+Mayor.Frame
+<Frame | aliveGet position under mouse
+Get position under mouse
+Ray calculated 0x4f2310
+Ray SceneNode Collision
+Mouse moved and position fetched!
+Render Draw 
+CTGet Player 
+Begin Scene
+| draw >
+Mayor.Tick
+<Tick | alive | 4329069>
+Mayor.Frame
+<Frame | aliveGet position under mouse
+Get position under mouse
+Ray calculated 0x4f2310
+Ray SceneNode Collision
+Finished
+Mouse moved and position fetched!
+Render Draw 
+CTGet Player 
+Begin Scene
+| draw >
+Mayor.Tick
+<Tick | alive | 4329070>
+Mayor.Frame
+<Frame | aliveGet position under mouse
+Get position under mouse
+Ray calculated 0x4f2310
+Ray SceneNode Collision
+Finished
+Mouse moved and position fetched!
+Render Draw 
+CTGet Player 
+Begin Scene
+| draw >
+Mayor.Tick
+<Tick | alive | 4329071>
+Mayor.Frame
+<Frame | aliveRender Draw 
+CTGet Player 
+Begin Scene
+| draw >
+Mayor.Tick
+<Tick | alive | 4329072>
+Mayor.Frame
+<Frame | aliveRender Draw 
+CTGet Player 
+Begin Scene
+| draw >
+Mayor.Tick
+<Tick | alive | 4329073>
+Mayor.Frame
+<Frame | aliveRender Draw 
+CTGet Player 
+Begin Scene
+| draw >
+Mayor.Tick
+<Tick | alive | 4329074>
+Mayor.Frame
+<Frame | aliveGet position under mouse
+Get position under mouse
+Ray calculated 0x4f2310
+Ray SceneNode Collision
+Finished
+Mouse moved and position fetched!
+Render Draw 
+CTGet Player 
+Begin Scene
+| draw >
+Mayor.Tick
+<Tick | alive | 4329075>
+Mayor.Frame
+<Frame | aliveRender Draw 
+CTGet Player 
+Begin Scene
+| draw >
+Mayor.Tick
+<Tick | alive | 4329076>
+Mayor.Frame
+<Frame | aliveRender Draw 
+CTGet Player 
+Begin Scene
+| draw >
+Mayor.Tick
+<Tick | alive | 4329077>
+Mayor.Frame
+<Frame | aliveRender Draw 
+CTGet Player 
+Begin Scene
+| draw >
+Mayor.Tick
+<Tick | alive | 4329078>
+Mayor.Frame
+<Frame | aliveRender Draw 
+CTGet Player 
+Begin Scene
+| draw >
+Mayor.Tick
+<Tick | alive | 4329079>
+Mayor.Frame
+<Frame | aliveRender Draw 
+CTGet Player 
+Begin Scene
+| draw >
+Mayor.Tick
+<Tick | alive | 4329080>
+Mayor.Frame
+<Frame | aliveRender Draw 
+CTGet Player 
+Begin Scene
+| draw >
+Mayor.Tick
+<Tick | alive | 4329081>
+Mayor.Frame
+<Frame | aliveGet position under mouse
+Get position under mouse
+Ray calculated 0x4f2310
+Ray SceneNode Collision
+Finished
+Mouse moved and position fetched!
+Render Draw 
+CTGet Player 
+Begin Scene
+| draw >
+Mayor.Tick
+<Tick | alive | 4329082>
+Mayor.Frame
+<Frame | aliveGet position under mouse
+Get position under mouse
+Ray calculated 0x4f2310
+Ray SceneNode Collision
+Finished
+Mouse moved and position fetched!
+Render Draw 
+CTGet Player 
+Begin Scene
+| draw >
+Mayor.Tick
+<Tick | alive | 4329083>
+Mayor.Frame
+<Frame | aliveRender Draw 
+CTGet Player 
+Begin Scene
+| draw >
+Mayor.Tick
+<Tick | alive | 4329084>
+Mayor.Frame
+<Frame | aliveGet position under mouse
+Get position under mouse
+Ray calculated 0x4f2310
+Ray SceneNode Collision
+Finished
+Mouse moved and position fetched!
+Render Draw 
+CTGet Player 
+Begin Scene
+| draw >
+Mayor.Tick
+<Tick | alive | 4329085>
+Mayor.Frame
+<Frame | aliveRender Draw 
+CTGet Player 
+Begin Scene
+| draw >
+Mayor.Tick
+<Tick | alive | 4329086>
+Mayor.Frame
+<Frame | aliveRender Draw 
+CTGet Player 
+Begin Scene
+| draw >
+Mayor.Tick
+<Tick | alive | 4329087>
+Mayor.Frame
+<Frame | aliveRender Draw 
+CTGet Player 
+Begin Scene
+| draw >
+Mayor.Tick
+<Tick | alive | 4329088>
+Mayor.Frame
+<Frame | aliveRender Draw 
+CTGet Player 
+Begin Scene
+| draw >
+Mayor.Tick
+<Tick | alive | 4329089>
+Mayor.Frame
+<Frame | aliveRender Draw 
+CTGet Player 
+Begin Scene
+| draw >
+Mayor.Tick
+<Tick | alive | 4329090>
+Mayor.Frame
+<Frame | aliveRender Draw 
+CTGet Player 
+Begin Scene
+| draw >
+Mayor.Tick
+<Tick | alive | 4329091>
+Mayor.Frame
+<Frame | aliveRender Draw 
+CTGet Player 
+Begin Scene
+| draw >
+Mayor.Tick
+<Tick | alive | 4329092>
+Mayor.Frame
+<Frame | aliveRender Draw 
+CTGet Player 
+Begin Scene
+| draw >
+Mayor.Tick
+<Tick | alive | 4329093>
+Mayor.Frame
+<Frame | aliveRender Draw 
+CTGet Player 
+Begin Scene
+| draw >
+Mayor.Tick
+<Tick | alive | 4329094>
+Mayor.Frame
+<Frame | aliveRender Draw 
+CTGet Player 
+Begin Scene
+| draw >
+Mayor.Tick
+<Tick | alive | 4329095>
+Mayor.Frame
+<Frame | aliveRender Draw 
+CTGet Player 
+Begin Scene
+| draw >
+Mayor.Tick
+<Tick | alive | 4329096>
+Mayor.Frame
+<Frame | aliveRender Draw 
+CTGet Player 
+Begin Scene
+| draw >
+Mayor.Tick
+<Tick | alive | 4329097>
+Mayor.Frame
+<Frame | aliveRender Draw 
+CTGet Player 
+Begin Scene
+| draw >
+Mayor.Tick
+<Tick | alive | 4329098>
+Mayor.Frame
+<Frame | aliveRender Draw 
+CTGet Player 
+Begin Scene
+| draw >
+Mayor.Tick
+<Tick | alive | 4329099>
+Mayor.Frame
+<Frame | aliveRender Draw 
+CTGet Player 
+Begin Scene
+| draw >
+Mayor.Tick
+<Tick | alive | 4329100>
+Mayor.Frame
+<Frame | aliveRender Draw 
+CTGet Player 
+Begin Scene
+| draw >
+Mayor.Tick
+<Tick | alive | 4329101>
+Mayor.Frame
+<Frame | aliveRender Draw 
+CTGet Player 
+Begin Scene
+| draw >
+Mayor.Tick
+<Tick | alive | 4329102>
+Mayor.Frame
+<Frame | aliveRender Draw 
+CTGet Player 
+Begin Scene
+| draw >
+Mayor.Tick
+<Tick | alive | 4329103>
+Mayor.Frame
+<Frame | aliveRender Draw 
+CTGet Player 
+Begin Scene
+| draw >
+Mayor.Tick
+<Tick | alive | 4329104>
+Mayor.Frame
+<Frame | aliveRender Draw 
+CTGet Player 
+Begin Scene
+| draw >
+Mayor.Tick
+<Tick | alive | 4329105>
+Mayor.Frame
+<Frame | aliveRender Draw 
+CTGet Player 
+Begin Scene
+| draw >
+Mayor.Tick
+<Tick | alive | 4329106>
+Mayor.Frame
+<Frame | aliveRender Draw 
+CTGet Player 
+Begin Scene
+| draw >
+Mayor.Tick
+<Tick | alive | 4329107>
+Mayor.Frame
+<Frame | aliveRender Draw 
+CTGet Player 
+Begin Scene
+| draw >
+Mayor.Tick
+<Tick | alive | 4329108>
+Mayor.Frame
+<Frame | aliveRender Draw 
+CTGet Player 
+Begin Scene
+| draw >
+Mayor.Tick
+<Tick | alive | 4329109>
+Mayor.Frame
+<Frame | aliveRender Draw 
+CTGet Player 
+Begin Scene
+| draw >
+Mayor.Tick
+<Tick | alive | 4329110>
+Mayor.Frame
+<Frame | aliveRender Draw 
+CTGet Player 
+Begin Scene
+| draw >
+Mayor.Tick
+<Tick | alive | 4329111>
+Mayor.Frame
+<Frame | aliveRender Draw 
+CTGet Player 
+Begin Scene
+| draw >
+Mayor.Tick
+<Tick | alive | 4329112>
+Mayor.Frame
+<Frame | aliveRender Draw 
+CTGet Player 
+Begin Scene
+| draw >
+Mayor.Tick
+<Tick | alive | 4329113>
+Mayor.Frame
+<Frame | aliveRender Draw 
+CTGet Player 
+Begin Scene
+| draw >
+Mayor.Tick
+<Tick | alive | 4329114>
+Mayor.Frame
+<Frame | aliveRender Draw 
+CTGet Player 
+Begin Scene
+| draw >
+Mayor.Tick
+<Tick | alive | 4329115>
+Mayor.Frame
+<Frame | aliveRender Draw 
+CTGet Player 
+Begin Scene
+| draw >
+Mayor.Tick
+<Tick | alive | 4329116>
+Mayor.Frame
+<Frame | aliveRender Draw 
+CTGet Player 
+Begin Scene
+| draw >
+Mayor.Tick
+<Tick | alive | 4329117>
+Mayor.Frame
+<Frame | aliveRender Draw 
+CTGet Player 
+Begin Scene
+| draw >
+Mayor.Tick
+<Tick | alive | 4329118>
+Mayor.Frame
+<Frame | aliveRender Draw 
+CTGet Player 
+Begin Scene
+| draw >
+Mayor.Tick
+<Tick | alive | 4329119>
+Mayor.Frame
+<Frame | aliveRender Draw 
+CTGet Player 
+Begin Scene
+| draw >
+Mayor.Tick
+<Tick | alive | 4329120>
+Mayor.Frame
+<Frame | aliveRender Draw 
+CTGet Player 
+Begin Scene
+| draw >
+Mayor.Tick
+<Tick | alive | 4329121>
+Mayor.Frame
+<Frame | aliveRender Draw 
+CTGet Player 
+Begin Scene
+| draw >
+Mayor.Tick
+<Tick | alive | 4329122>
+Mayor.Frame
+<Frame | aliveRender Draw 
+CTGet Player 
+Begin Scene
+| draw >
+Mayor.Tick
+<Tick | alive | 4329123>
+Mayor.Frame
+<Frame | aliveGet position under mouse
+Get position under mouse
+Ray calculated 0x4f2310
+Ray SceneNode Collision
+Finished
+Mouse moved and position fetched!
+Render Draw 
+CTGet Player 
+Begin Scene
+| draw >
+Mayor.Tick
+<Tick | alive | 4329124>
+Mayor.Frame
+<Frame | aliveRender Draw 
+CTGet Player 
+Begin Scene
+| draw >
+Mayor.Tick
+<Tick | alive | 4329125>
+Mayor.Frame
+<Frame | aliveRender Draw 
+CTGet Player 
+Begin Scene
+| draw >
+Mayor.Tick
+<Tick | alive | 4329126>
+Mayor.Frame
+<Frame | aliveGet position under mouse
+Get position under mouse
+Ray calculated 0x4f2310
+Ray SceneNode Collision
+Finished
+Mouse moved and position fetched!
+Render Draw 
+CTGet Player 
+Begin Scene
+| draw >
+Mayor.Tick
+<Tick | alive | 4329127>
+Mayor.Frame
+<Frame | aliveGet position under mouse
+Get position under mouse
+Ray calculated 0x4f2310
+Ray SceneNode Collision
+Finished
+Mouse moved and position fetched!
+Render Draw 
+CTGet Player 
+Begin Scene
+| draw >
+Mayor.Tick
+<Tick | alive | 4329128>
+Mayor.Frame
+<Frame | aliveGet position under mouse
+Get position under mouse
+Ray calculated 0x4f2310
+Ray SceneNode Collision
+Finished
+Mouse moved and position fetched!
+Render Draw 
+CTGet Player 
+Begin Scene
+| draw >
+Mayor.Tick
+<Tick | alive | 4329129>
+Mayor.Frame
+<Frame | aliveGet position under mouse
+Get position under mouse
+Ray calculated 0x4f2310
+Ray SceneNode Collision
+Finished
+Mouse moved and position fetched!
+Get position under mouse
+Get position under mouse
+Ray calculated 0x4f2310
+Ray SceneNode Collision
+Finished
+Mouse moved and position fetched!
+Render Draw 
+CTGet Player 
+Begin Scene
+| draw >
+Mayor.Tick
+<Tick | alive | 4329130>
+Mayor.Frame
+<Frame | aliveGet position under mouse
+Get position under mouse
+Ray calculated 0x4f2310
+Ray SceneNode Collision
+Finished
+Mouse moved and position fetched!
+Render Draw 
+CTGet Player 
+Begin Scene
+| draw >
+Mayor.Tick
+<Tick | alive | 4329131>
+Mayor.Frame
+<Frame | aliveRender Draw 
+CTGet Player 
+Begin Scene
+| draw >
+Mayor.Tick
+<Tick | alive | 4329132>
+Mayor.Frame
+<Frame | aliveMouse right click
+Get position under mouse
+Get position under mouse
+Ray calculated 0x4f2310
+Ray SceneNode Collision
+Finished
+Does the player exist?
+Yes he does!
+Get position under mouse
+Get position under mouse
+Ray calculated 0x4f2310
+Ray SceneNode Collision
+Finished
+Mouse moved and position fetched!
+Render Draw 
+CTGet Player 
+Begin Scene
+| draw >
+Received message: 102
+Move scene node
+map height 5.17475,4.37541 = -1.29499
+0.174747|-0.624592Target = 5.17475,-0.794987,4.37541
+animated !!!!!!!!!!
+|
+Mayor.Tick
+<Tick | alive | 4329133>
+Mayor.Frame
+<Frame | aliveRender Draw 
+CTGet Player 
+Begin Scene
+| draw >
+Mayor.Tick
+<Tick | alive | 4329134>
+Mayor.Frame
+<Frame | aliveGet position under mouse
+Get position under mouse
+Ray calculated 0x4f2310
+Ray SceneNode Collision
+Finished
+Mouse moved and position fetched!
+Render Draw 
+CTGet Player 
+Begin Scene
+| draw >
+Received message: 102
+Move scene node
+map height 5.17475,4.37541 = -1.29499
+0.124819|-0.446137Target = 5.17475,-0.794987,4.37541
+animated !!!!!!!!!!
+|
+Mayor.Tick
+<Tick | alive | 4329135>
+Mayor.Frame
+<Frame | aliveGet position under mouse
+Get position under mouse
+Ray calculated 0x4f2310
+Ray SceneNode Collision
+Finished
+Mouse moved and position fetched!
+Render Draw 
+CTGet Player 
+Begin Scene
+| draw >
+Mayor.Tick
+<Tick | alive | 4329136>
+Mayor.Frame
+<Frame | aliveGet position under mouse
+Get position under mouse
+Ray calculated 0x4f2310
+Ray SceneNode Collision
+Finished
+Mouse moved and position fetched!
+Render Draw 
+CTGet Player 
+Begin Scene
+| draw >
+Mayor.Tick
+<Tick | alive | 4329137>
+Mayor.Frame
+<Frame | aliveGet position under mouse
+Get position under mouse
+Ray calculated 0x4f2310
+Ray SceneNode Collision
+Finished
+Mouse moved and position fetched!
+Render Draw 
+CTGet Player 
+Begin Scene
+| draw >
+Mayor.Tick
+<Tick | alive | 4329138>
+Mayor.Frame
+<Frame | aliveRender Draw 
+CTGet Player 
+Begin Scene
+| draw >
+Mayor.Tick
+<Tick | alive | 4329139>
+Mayor.Frame
+<Frame | aliveGet position under mouse
+Get position under mouse
+Ray calculated 0x4f2310
+Ray SceneNode Collision
+Finished
+Mouse moved and position fetched!
+Get position under mouse
+Get position under mouse
+Ray calculated 0x4f2310
+Ray SceneNode Collision
+Finished
+Mouse moved and position fetched!
+Render Draw 
+CTGet Player 
+Begin Scene
+| draw >
+Mayor.Tick
+<Tick | alive | 4329140Set animation
+>
+Mayor.Frame
+<Frame | aliveGet position under mouse
+Get position under mouse
+Ray calculated 0x4f2310
+Ray SceneNode Collision
+Finished
+Mouse moved and position fetched!
+Render Draw 
+CTGet Player 
+Begin Scene
+| draw >
+Mayor.Tick
+<Tick | alive | 4329141>
+Mayor.Frame
+<Frame | aliveGet position under mouse
+Get position under mouse
+Ray calculated 0x4f2310
+Ray SceneNode Collision
+Finished
+Mouse moved and position fetched!
+Render Draw 
+CTGet Player 
+Begin Scene
+| draw >
+Mayor.Tick
+<Tick | alive | 4329142>
+Mayor.Frame
+<Frame | aliveRender Draw 
+CTGet Player 
+Begin Scene
+| draw >
+Mayor.Tick
+<Tick | alive | 4329143>
+Mayor.Frame
+<Frame | aliveRender Draw 
+CTGet Player 
+Begin Scene
+| draw >
+Mayor.Tick
+<Tick | alive | 4329144>
+Mayor.Frame
+<Frame | aliveGet position under mouse
+Get position under mouse
+Ray calculated 0x4f2310
+Ray SceneNode Collision
+Finished
+Mouse moved and position fetched!
+Render Draw 
+CTGet Player 
+Begin Scene
+| draw >
+Mayor.Tick
+<Tick | alive | 4329145>
+Mayor.Frame
+<Frame | aliveGet position under mouse
+Get position under mouse
+Ray calculated 0x4f2310
+Ray SceneNode Collision
+Finished
+Mouse moved and position fetched!
+Render Draw 
+CTGet Player 
+Begin Scene
+| draw >
+Mayor.Tick
+<Tick | alive | 4329146>
+Mayor.Frame
+<Frame | aliveGet position under mouse
+Get position under mouse
+Ray calculated 0x4f2310
+Ray SceneNode Collision
+Finished
+Mouse moved and position fetched!
+Render Draw 
+CTGet Player 
+Begin Scene
+| draw >
+Mayor.Tick
+<Tick | alive | 4329147>
+Mayor.Frame
+<Frame | aliveRender Draw 
+CTGet Player 
+Begin Scene
+| draw >
+Mayor.Tick
+<Tick | alive | 4329148>
+Mayor.Frame
+<Frame | aliveGet position under mouse
+Get position under mouse
+Ray calculated 0x4f2310
+Ray SceneNode Collision
+Finished
+Mouse moved and position fetched!
+Render Draw 
+CTGet Player 
+Begin Scene
+| draw >
+Mayor.Tick
+<Tick | alive | 4329149>
+Mayor.Frame
+<Frame | aliveRender Draw 
+CTGet Player 
+Begin Scene
+| draw >
+Mayor.Tick
+<Tick | alive | 4329150>
+Mayor.Frame
+<Frame | aliveRender Draw 
+CTGet Player 
+Begin Scene
+| draw >
+Mayor.Tick
+<Tick | alive | 4329151>
+Mayor.Frame
+<Frame | aliveRender Draw 
+CTGet Player 
+Begin Scene
+| draw >
+Mayor.Tick
+<Tick | alive | 4329152>
+Mayor.Frame
+<Frame | aliveRender Draw 
+CTGet Player 
+Begin Scene
+| draw >
+Mayor.Tick
+<Tick | alive | 4329153>
+Mayor.Frame
+<Frame | aliveRender Draw 
+CTGet Player 
+Begin Scene
+| draw >
+Mayor.Tick
+<Tick | alive | 4329154>
+Mayor.Frame
+<Frame | aliveRender Draw 
+CTGet Player 
+Begin Scene
+| draw >
+Mayor.Tick
+<Tick | alive | 4329155>
+Mayor.Frame
+<Frame | aliveRender Draw 
+CTGet Player 
+Begin Scene
+| draw >
+Mayor.Tick
+<Tick | alive | 4329156>
+Mayor.Frame
+<Frame | aliveRender Draw 
+CTGet Player 
+Begin Scene
+| draw >
+Mayor.Tick
+<Tick | alive | 4329157>
+Mayor.Frame
+<Frame | aliveRender Draw 
+CTGet Player 
+Begin Scene
+| draw >
+Mayor.Tick
+<Tick | alive | 4329158>
+Mayor.Frame
+<Frame | aliveGet position under mouse
+Get position under mouse
+Ray calculated 0x4f2310
+Ray SceneNode Collision
+Finished
+Mouse moved and position fetched!
+Render Draw 
+CTGet Player 
+Begin Scene
+| draw >
+Mayor.Tick
+<Tick | alive | 4329159>
+Mayor.Frame
+<Frame | aliveRender Draw 
+CTGet Player 
+Begin Scene
+| draw >
+Mayor.Tick
+<Tick | alive | 4329160>
+Mayor.Frame
+<Frame | aliveRender Draw 
+CTGet Player 
+Begin Scene
+| draw >
+Mayor.Tick
+<Tick | alive | 4329161>
+Mayor.Frame
+<Frame | aliveGet position under mouse
+Get position under mouse
+Ray calculated 0x4f2310
+Ray SceneNode Collision
+Finished
+Mouse moved and position fetched!
+Render Draw 
+CTGet Player 
+Begin Scene
+| draw >
+Mayor.Tick
+<Tick | alive | 4329162>
+Mayor.Frame
+<Frame | aliveRender Draw 
+CTGet Player 
+Begin Scene
+| draw >
+Mayor.Tick
+<Tick | alive | 4329163>
+Mayor.Frame
+<Frame | aliveRender Draw 
+CTGet Player 
+Begin Scene
+| draw >
+Mayor.Tick
+<Tick | alive | 4329164>
+Mayor.Frame
+<Frame | aliveRender Draw 
+CTGet Player 
+Begin Scene
+| draw >
+Mayor.Tick
+<Tick | alive | 4329165>
+Mayor.Frame
+<Frame | aliveRender Draw 
+CTGet Player 
+Begin Scene
+| draw >
+Mayor.Tick
+<Tick | alive | 4329166>
+Mayor.Frame
+<Frame | aliveRender Draw 
+CTGet Player 
+Begin Scene
+| draw >
+Mayor.Tick
+<Tick | alive | 4329167>
+Mayor.Frame
+<Frame | aliveRender Draw 
+CTGet Player 
+Begin Scene
+| draw >
+Mayor.Tick
+<Tick | alive | 4329168>
+Mayor.Frame
+<Frame | aliveRender Draw 
+CTGet Player 
+Begin Scene
+| draw >
+Mayor.Tick
+<Tick | alive | 4329169>
+Mayor.Frame
+<Frame | aliveRender Draw 
+CTGet Player 
+Begin Scene
+| draw >
+Mayor.Tick
+<Tick | alive | 4329170>
+Mayor.Frame
+<Frame | aliveRender Draw 
+CTGet Player 
+Begin Scene
+| draw >
+Mayor.Tick
+<Tick | alive | 4329171>
+Mayor.Frame
+<Frame | aliveRender Draw 
+CTGet Player 
+Begin Scene
+| draw >
+Mayor.Tick
+<Tick | alive | 4329172>
+Mayor.Frame
+<Frame | aliveRender Draw 
+CTGet Player 
+Begin Scene
+| draw >
+Mayor.Tick
+<Tick | alive | 4329173>
+Mayor.Frame
+<Frame | aliveRender Draw 
+CTGet Player 
+Begin Scene
+| draw >
+Mayor.Tick
+<Tick | alive | 4329174>
+Mayor.Frame
+<Frame | aliveRender Draw 
+CTGet Player 
+Begin Scene
+| draw >
+Mayor.Tick
+<Tick | alive | 4329175>
+Mayor.Frame
+<Frame | aliveRender Draw 
+CTGet Player 
+Begin Scene
+| draw >
+Mayor.Tick
+<Tick | alive | 4329176>
+Mayor.Frame
+<Frame | aliveRender Draw 
+CTGet Player 
+Begin Scene
+| draw >
+Mayor.Tick
+<Tick | alive | 4329177>
+Mayor.Frame
+<Frame | aliveRender Draw 
+CTGet Player 
+Begin Scene
+| draw >
+Mayor.Tick
+<Tick | alive | 4329178>
+Mayor.Frame
+<Frame | aliveRender Draw 
+CTGet Player 
+Begin Scene
+| draw >
+Mayor.Tick
+<Tick | alive | 4329179>
+Mayor.Frame
+<Frame | aliveRender Draw 
+CTGet Player 
+Begin Scene
+| draw >
+Mayor.Tick
+<Tick | alive | 4329180>
+Mayor.Frame
+<Frame | aliveRender Draw 
+CTGet Player 
+Begin Scene
+| draw >
+Mayor.Tick
+<Tick | alive | 4329181>
+Mayor.Frame
+<Frame | aliveRender Draw 
+CTGet Player 
+Begin Scene
+| draw >
+Mayor.Tick
+<Tick | alive | 4329182>
+Mayor.Frame
+<Frame | aliveRender Draw 
+CTGet Player 
+Begin Scene
+| draw >
+Mayor.Tick
+<Tick | alive | 4329183>
+Mayor.Frame
+<Frame | aliveRender Draw 
+CTGet Player 
+Begin Scene
+| draw >
+Mayor.Tick
+<Tick | alive | 4329184>
+Mayor.Frame
+<Frame | aliveRender Draw 
+CTGet Player 
+Begin Scene
+| draw >
+Mayor.Tick
+<Tick | alive | 4329185>
+Mayor.Frame
+<Frame | aliveRender Draw 
+CTGet Player 
+Begin Scene
+| draw >
+Mayor.Tick
+<Tick | alive | 4329186>
+Mayor.Frame
+<Frame | aliveRender Draw 
+CTGet Player 
+Begin Scene
+| draw >
+Mayor.Tick
+<Tick | alive | 4329187>
+Mayor.Frame
+<Frame | aliveRender Draw 
+CTGet Player 
+Begin Scene
+| draw >
+Mayor.Tick
+<Tick | alive | 4329188>
+Mayor.Frame
+<Frame | aliveRender Draw 
+CTGet Player 
+Begin Scene
+| draw >
+Mayor.Tick
+<Tick | alive | 4329189>
+Mayor.Frame
+<Frame | aliveRender Draw 
+CTGet Player 
 Begin Scene
 | draw >
 Mayor.Tick
 <Tick | alive | 4329190>
 Mayor.Frame
 <Frame | aliveRender Draw 
-Get Player 
+CTGet Player 
 Begin Scene
 | draw >
 Mayor.Tick
 <Tick | alive | 4329191>
 Mayor.Frame
 <Frame | aliveRender Draw 
-Get Player 
+CTGet Player 
 Begin Scene
 | draw >
 Mayor.Tick
 <Tick | alive | 4329192>
 Mayor.Frame
 <Frame | aliveRender Draw 
-Get Player 
+CTGet Player 
 Begin Scene
 | draw >
 Mayor.Tick
 <Tick | alive | 4329193>
 Mayor.Frame
 <Frame | aliveRender Draw 
-Get Player 
+CTGet Player 
 Begin Scene
 | draw >
 Mayor.Tick
 <Tick | alive | 4329194>
 Mayor.Frame
-<Frame | aliveRender Draw 
-Get Player 
+<Frame | aliveGet position under mouse
+Get position under mouse
+Ray calculated 0x4f2310
+Ray SceneNode Collision
+Mouse moved and position fetched!
+Render Draw 
+CTGet Player 
 Begin Scene
 | draw >
 Mayor.Tick
 <Tick | alive | 4329195>
 Mayor.Frame
 <Frame | aliveRender Draw 
-Get Player 
+CTGet Player 
 Begin Scene
 | draw >
 Mayor.Tick
 <Tick | alive | 4329196>
 Mayor.Frame
 <Frame | aliveRender Draw 
-Get Player 
+CTGet Player 
 Begin Scene
 | draw >
 Mayor.Tick
 <Tick | alive | 4329197>
 Mayor.Frame
-<Frame | aliveRender Draw 
-Get Player 
+<Frame | aliveGet position under mouse
+Get position under mouse
+Ray calculated 0x4f2310
+Ray SceneNode Collision
+Finished
+Mouse moved and position fetched!
+Render Draw 
+CTGet Player 
 Begin Scene
 | draw >
 Mayor.Tick
 <Tick | alive | 4329198>
 Mayor.Frame
-<Frame | aliveRender Draw 
-Get Player 
+<Frame | aliveGet position under mouse
+Get position under mouse
+Ray calculated 0x4f2310
+Ray SceneNode Collision
+Finished
+Mouse moved and position fetched!
+Render Draw 
+CTGet Player 
 Begin Scene
 | draw >
 Mayor.Tick
 <Tick | alive | 4329199>
 Mayor.Frame
-<Frame | aliveRender Draw 
-Get Player 
+<Frame | aliveGet position under mouse
+Get position under mouse
+Ray calculated 0x4f2310
+Ray SceneNode Collision
+Finished
+Mouse moved and position fetched!
+Render Draw 
+CTGet Player 
 Begin Scene
 | draw >
 Mayor.Tick
 <Tick | alive | 4329200>
 Mayor.Frame
 <Frame | aliveRender Draw 
-Get Player 
+CTGet Player 
 Begin Scene
 | draw >
 Mayor.Tick
 <Tick | alive | 4329201>
 Mayor.Frame
 <Frame | aliveRender Draw 
-Get Player 
+CTGet Player 
 Begin Scene
 | draw >
 Mayor.Tick
 <Tick | alive | 4329202>
 Mayor.Frame
-<Frame | aliveRender Draw 
-Get Player 
+<Frame | aliveGet position under mouse
+Get position under mouse
+Ray calculated 0x4f2310
+Ray SceneNode Collision
+Finished
+Mouse moved and position fetched!
+Render Draw 
+CTGet Player 
 Begin Scene
 | draw >
 Mayor.Tick
 <Tick | alive | 4329203>
 Mayor.Frame
-<Frame | aliveRender Draw 
-Get Player 
+<Frame | aliveGet position under mouse
+Get position under mouse
+Ray calculated 0x4f2310
+Ray SceneNode Collision
+Finished
+Mouse moved and position fetched!
+Render Draw 
+CTGet Player 
 Begin Scene
 | draw >
 Mayor.Tick
 <Tick | alive | 4329204>
 Mayor.Frame
-<Frame | aliveRender Draw 
-Get Player 
+<Frame | aliveGet position under mouse
+Get position under mouse
+Ray calculated 0x4f2310
+Ray SceneNode Collision
+Finished
+Mouse moved and position fetched!
+Render Draw 
+CTGet Player 
 Begin Scene
 | draw >
 Mayor.Tick
 <Tick | alive | 4329205>
 Mayor.Frame
-<Frame | aliveRender Draw 
-Get Player 
+<Frame | aliveGet position under mouse
+Get position under mouse
+Ray calculated 0x4f2310
+Ray SceneNode Collision
+Finished
+Mouse moved and position fetched!
+Render Draw 
+CTGet Player 
 Begin Scene
 | draw >
 Mayor.Tick
 <Tick | alive | 4329206>
 Mayor.Frame
-<Frame | aliveRender Draw 
-Get Player 
+<Frame | aliveGet position under mouse
+Get position under mouse
+Ray calculated 0x4f2310
+Ray SceneNode Collision
+Finished
+Mouse moved and position fetched!
+Render Draw 
+CTGet Player 
 Begin Scene
 | draw >
 Mayor.Tick
 <Tick | alive | 4329207>
 Mayor.Frame
-<Frame | aliveRender Draw 
-Get Player 
+<Frame | aliveGet position under mouse
+Get position under mouse
+Ray calculated 0x4f2310
+Ray SceneNode Collision
+Finished
+Mouse moved and position fetched!
+Render Draw 
+CTGet Player 
 Begin Scene
 | draw >
 Mayor.Tick
 <Tick | alive | 4329208>
 Mayor.Frame
-<Frame | aliveRender Draw 
-Get Player 
+<Frame | aliveGet position under mouse
+Get position under mouse
+Ray calculated 0x4f2310
+Ray SceneNode Collision
+Finished
+Mouse moved and position fetched!
+Get position under mouse
+Get position under mouse
+Ray calculated 0x4f2310
+Ray SceneNode Collision
+Finished
+Mouse moved and position fetched!
+Render Draw 
+CTGet Player 
 Begin Scene
 | draw >
 Mayor.Tick
 <Tick | alive | 4329209>
 Mayor.Frame
-<Frame | aliveRender Draw 
-Get Player 
+<Frame | aliveGet position under mouse
+Get position under mouse
+Ray calculated 0x4f2310
+Ray SceneNode Collision
+Finished
+Mouse moved and position fetched!
+Render Draw 
+CTGet Player 
 Begin Scene
 | draw >
 Mayor.Tick
 <Tick | alive | 4329210>
 Mayor.Frame
-<Frame | aliveRender Draw 
-Get Player 
+<Frame | aliveGet position under mouse
+Get position under mouse
+Ray calculated 0x4f2310
+Ray SceneNode Collision
+Finished
+Mouse moved and position fetched!
+Render Draw 
+CTGet Player 
 Begin Scene
 | draw >
 Mayor.Tick
 <Tick | alive | 4329211>
 Mayor.Frame
-<Frame | aliveRender Draw 
-Get Player 
+<Frame | aliveGet position under mouse
+Get position under mouse
+Ray calculated 0x4f2310
+Ray SceneNode Collision
+Finished
+Mouse moved and position fetched!
+Render Draw 
+CTGet Player 
 Begin Scene
 | draw >
 Mayor.Tick
 <Tick | alive | 4329212>
 Mayor.Frame
-<Frame | aliveRender Draw 
-Get Player 
+<Frame | aliveGet position under mouse
+Get position under mouse
+Ray calculated 0x4f2310
+Ray SceneNode Collision
+Finished
+Mouse moved and position fetched!
+Get position under mouse
+Get position under mouse
+Ray calculated 0x4f2310
+Ray SceneNode Collision
+Finished
+Mouse moved and position fetched!
+Render Draw 
+CTGet Player 
 Begin Scene
 | draw >
 Mayor.Tick
 <Tick | alive | 4329213>
 Mayor.Frame
-<Frame | aliveRender Draw 
-Get Player 
+<Frame | aliveGet position under mouse
+Get position under mouse
+Ray calculated 0x4f2310
+Ray SceneNode Collision
+Finished
+Mouse moved and position fetched!
+Get position under mouse
+Get position under mouse
+Ray calculated 0x4f2310
+Ray SceneNode Collision
+Finished
+Mouse moved and position fetched!
+Get position under mouse
+Get position under mouse
+Ray calculated 0x4f2310
+Ray SceneNode Collision
+Finished
+Mouse moved and position fetched!
+Render Draw 
+CTGet Player 
 Begin Scene
 | draw >
 Mayor.Tick
 <Tick | alive | 4329214>
 Mayor.Frame
-<Frame | aliveRender Draw 
-Get Player 
+<Frame | aliveGet position under mouse
+Get position under mouse
+Ray calculated 0x4f2310
+Ray SceneNode Collision
+Finished
+Mouse moved and position fetched!
+Get position under mouse
+Get position under mouse
+Ray calculated 0x4f2310
+Ray SceneNode Collision
+Finished
+Mouse moved and position fetched!
+Get position under mouse
+Get position under mouse
+Ray calculated 0x4f2310
+Ray SceneNode Collision
+Finished
+Mouse moved and position fetched!
+Get position under mouse
+Get position under mouse
+Ray calculated 0x4f2310
+Ray SceneNode Collision
+Finished
+Mouse moved and position fetched!
+Render Draw 
+CTGet Player 
 Begin Scene
 | draw >
 Mayor.Tick
 <Tick | alive | 4329215>
 Mayor.Frame
-<Frame | aliveRender Draw 
-Get Player 
+<Frame | aliveGet position under mouse
+Get position under mouse
+Ray calculated 0x4f2310
+Ray SceneNode Collision
+Finished
+Mouse moved and position fetched!
+Render Draw 
+CTGet Player 
 Begin Scene
 | draw >
 Mayor.Tick
 <Tick | alive | 4329216>
 Mayor.Frame
-<Frame | aliveRender Draw 
-Get Player 
+<Frame | aliveGet position under mouse
+Get position under mouse
+Ray calculated 0x4f2310
+Ray SceneNode Collision
+Finished
+Mouse moved and position fetched!
+Render Draw 
+CTGet Player 
 Begin Scene
 | draw >
 Mayor.Tick
 <Tick | alive | 4329217>
 Mayor.Frame
-<Frame | aliveRender Draw 
-Get Player 
+<Frame | aliveGet position under mouse
+Get position under mouse
+Ray calculated 0x4f2310
+Ray SceneNode Collision
+Finished
+Mouse moved and position fetched!
+Render Draw 
+CTGet Player 
 Begin Scene
 | draw >
 Mayor.Tick
 <Tick | alive | 4329218>
 Mayor.Frame
 <Frame | aliveRender Draw 
-Get Player 
+CTGet Player 
 Begin Scene
 | draw >
 Mayor.Tick
 <Tick | alive | 4329219>
 Mayor.Frame
 <Frame | aliveRender Draw 
-Get Player 
+CTGet Player 
 Begin Scene
 | draw >
 Mayor.Tick
 <Tick | alive | 4329220>
 Mayor.Frame
 <Frame | aliveRender Draw 
-Get Player 
+CTGet Player 
 Begin Scene
 | draw >
 Mayor.Tick
 <Tick | alive | 4329221>
 Mayor.Frame
 <Frame | aliveRender Draw 
-Get Player 
+CTGet Player 
 Begin Scene
 | draw >
 Mayor.Tick
 <Tick | alive | 4329222>
 Mayor.Frame
-<Frame | aliveRender Draw 
-Get Player 
+<Frame | aliveGet position under mouse
+Get position under mouse
+Ray calculated 0x4f2310
+Ray SceneNode Collision
+Finished
+Mouse moved and position fetched!
+Render Draw 
+CTGet Player 
 Begin Scene
 | draw >
 Mayor.Tick
 <Tick | alive | 4329223>
 Mayor.Frame
-<Frame | aliveRender Draw 
-Get Player 
+<Frame | aliveGet position under mouse
+Get position under mouse
+Ray calculated 0x4f2310
+Ray SceneNode Collision
+Finished
+Mouse moved and position fetched!
+Render Draw 
+CTGet Player 
 Begin Scene
 | draw >
 Mayor.Tick
 <Tick | alive | 4329224>
 Mayor.Frame
-<Frame | aliveRender Draw 
-Get Player 
+<Frame | aliveGet position under mouse
+Get position under mouse
+Ray calculated 0x4f2310
+Ray SceneNode Collision
+Finished
+Mouse moved and position fetched!
+Render Draw 
+CTGet Player 
 Begin Scene
 | draw >
 Mayor.Tick
 <Tick | alive | 4329225>
 Mayor.Frame
 <Frame | aliveRender Draw 
-Get Player 
+CTGet Player 
 Begin Scene
 | draw >
 Mayor.Tick
 <Tick | alive | 4329226>
 Mayor.Frame
 <Frame | aliveRender Draw 
-Get Player 
+CTGet Player 
 Begin Scene
 | draw >
 Mayor.Tick
 <Tick | alive | 4329227>
 Mayor.Frame
 <Frame | aliveRender Draw 
-Get Player 
+CTGet Player 
 Begin Scene
 | draw >
 Mayor.Tick
 <Tick | alive | 4329228>
 Mayor.Frame
 <Frame | aliveRender Draw 
-Get Player 
+CTGet Player 
 Begin Scene
 | draw >
 Mayor.Tick
 <Tick | alive | 4329229>
 Mayor.Frame
 <Frame | aliveRender Draw 
-Get Player 
+CTGet Player 
 Begin Scene
 | draw >
 Mayor.Tick
 <Tick | alive | 4329230>
 Mayor.Frame
 <Frame | aliveRender Draw 
-Get Player 
+CTGet Player 
 Begin Scene
 | draw >
 Mayor.Tick
 <Tick | alive | 4329231>
 Mayor.Frame
 <Frame | aliveRender Draw 
-Get Player 
+CTGet Player 
 Begin Scene
 | draw >
 Mayor.Tick
 <Tick | alive | 4329232>
 Mayor.Frame
 <Frame | aliveRender Draw 
-Get Player 
+CTGet Player 
 Begin Scene
 | draw >
 Mayor.Tick
 <Tick | alive | 4329233>
 Mayor.Frame
 <Frame | aliveRender Draw 
-Get Player 
+CTGet Player 
 Begin Scene
 | draw >
 Mayor.Tick
 <Tick | alive | 4329234>
 Mayor.Frame
 <Frame | aliveRender Draw 
-Get Player 
+CTGet Player 
 Begin Scene
 | draw >
+Mayor.Tick
+<Tick | alive | 4329235>
+Mayor.Frame
+<Frame | aliveRender Draw 
+CTGet Player 
+Begin Scene
+| draw >
+Mayor.Tick
+<Tick | alive | 4329236>
+Mayor.Frame
+<Frame | aliveRender Draw 
+CTGet Player 
+Begin Scene
+| draw >
+Mayor.Tick
+<Tick | alive | 4329237>
+Mayor.Frame
+<Frame | aliveRender Draw 
+CTGet Player 
+Begin Scene
+| draw >
+Mayor.Tick
+<Tick | alive | 4329238>
+Mayor.Frame
+<Frame | aliveRender Draw 
+CTGet Player 
+Begin Scene
+| draw >
+Mayor.Tick
+<Tick | alive | 4329239>
+Mayor.Frame
+<Frame | aliveRender Draw 
+CTGet Player 
+Begin Scene
+| draw >
+Mayor.Tick
+<Tick | alive | 4329240>
+Mayor.Frame
+<Frame | aliveRender Draw 
+CTGet Player 
+Begin Scene
+| draw >
+Mayor.Tick
+<Tick | alive | 4329241>
+Mayor.Frame
+<Frame | aliveRender Draw 
+CTGet Player 
+Begin Scene
+| draw >
+Mayor.Tick
+<Tick | alive | 4329242>
+Mayor.Frame
+<Frame | aliveRender Draw 
+CTGet Player 
+Begin Scene
+| draw >
+Mayor.Tick
+<Tick | alive | 4329243>
+Mayor.Frame
+<Frame | aliveRender Draw 
+CTGet Player 
+Begin Scene
+| draw >
+Mayor.Tick
+<Tick | alive | 4329244>
+Mayor.Frame
+<Frame | aliveRender Draw 
+CTGet Player 
+Begin Scene
+| draw >
+Mayor.Tick
+<Tick | alive | 4329245>
+Mayor.Frame
+<Frame | aliveRender Draw 
+CTGet Player 
+Begin Scene
+| draw >
+Mayor.Tick
+<Tick | alive | 4329246>
+Mayor.Frame
+<Frame | aliveGet position under mouse
+Get position under mouse
+Ray calculated 0x4f2310
+Ray SceneNode Collision
+Finished
+Mouse moved and position fetched!
+Get position under mouse
+Get position under mouse
+Ray calculated 0x4f2310
+Ray SceneNode Collision
+Finished
+Mouse moved and position fetched!
+Render Draw 
+CTGet Player 
+Begin Scene
+| draw >
+Mayor.Tick
+<Tick | alive | 4329247>
+Mayor.Frame
+<Frame | aliveGet position under mouse
+Get position under mouse
+Ray calculated 0x4f2310
+Ray SceneNode Collision
+Finished
+Mouse moved and position fetched!
+Render Draw 
+CTGet Player 
+Begin Scene
+| draw >
+Mayor.Tick
+<Tick | alive | 4329248>
+Mayor.Frame
+<Frame | aliveGet position under mouse
+Get position under mouse
+Ray calculated 0x4f2310
+Ray SceneNode Collision
+Finished
+Mouse moved and position fetched!
+Render Draw 
+CTGet Player 
+Begin Scene
+| draw >
+Mayor.Tick
+<Tick | alive | 4329249>
+Mayor.Frame
+<Frame | aliveGet position under mouse
+Get position under mouse
+Ray calculated 0x4f2310
+Ray SceneNode Collision
+Finished
+Mouse moved and position fetched!
+Get position under mouse
+Get position under mouse
+Ray calculated 0x4f2310
+Ray SceneNode Collision
+Finished
+Mouse moved and position fetched!
+Render Draw 
+CTGet Player 
+Begin Scene
+| draw >
+Mayor.Tick
+<Tick | alive | 4329250>
+Mayor.Frame
+<Frame | aliveGet position under mouse
+Get position under mouse
+Ray calculated 0x4f2310
+Ray SceneNode Collision
+Finished
+Mouse moved and position fetched!
+Get position under mouse
+Get position under mouse
+Ray calculated 0x4f2310
+Ray SceneNode Collision
+Finished
+Mouse moved and position fetched!
+Render Draw 
+CTGet Player 
+Begin Scene
+| draw >
+Mayor.Tick
+<Tick | alive | 4329251>
+Mayor.Frame
+<Frame | aliveGet position under mouse
+Get position under mouse
+Ray calculated 0x4f2310
+Ray SceneNode Collision
+Finished
+Mouse moved and position fetched!
+Get position under mouse
+Get position under mouse
+Ray calculated 0x4f2310
+Ray SceneNode Collision
+Finished
+Mouse moved and position fetched!
+Render Draw 
+CTGet Player 
+Begin Scene
+| draw >
+Mayor.Tick
+<Tick | alive | 4329252>
+Mayor.Frame
+<Frame | aliveGet position under mouse
+Get position under mouse
+Ray calculated 0x4f2310
+Ray SceneNode Collision
+Finished
+Mouse moved and position fetched!
+Get position under mouse
+Get position under mouse
+Ray calculated 0x4f2310
+Ray SceneNode Collision
+Finished
+Mouse moved and position fetched!
+Render Draw 
+CTGet Player 
+Begin Scene
+| draw >
+Mayor.Tick
+<Tick | alive | 4329253>
+Mayor.Frame
+<Frame | aliveRender Draw 
+CTGet Player 
+Begin Scene
+| draw >
+Mayor.Tick
+<Tick | alive | 4329254>
+Mayor.Frame
+<Frame | aliveRender Draw 
+CTGet Player 
+Begin Scene
+| draw >
+Mayor.Tick
+<Tick | alive | 4329255>
+Mayor.Frame
+<Frame | aliveRender Draw 
+CTGet Player 
+Begin Scene
+| draw >
+Mayor.Tick
+<Tick | alive | 4329256>
+Mayor.Frame
+<Frame | aliveGet position under mouse
+Get position under mouse
+Ray calculated 0x4f2310
+Ray SceneNode Collision
+Finished
+Mouse moved and position fetched!
+Render Draw 
+CTGet Player 
+Begin Scene
+| draw >
+Mayor.Tick
+<Tick | alive | 4329257>
+Mayor.Frame
+<Frame | aliveGet position under mouse
+Get position under mouse
+Ray calculated 0x4f2310
+Ray SceneNode Collision
+Finished
+Mouse moved and position fetched!
+Get position under mouse
+Get position under mouse
+Ray calculated 0x4f2310
+Ray SceneNode Collision
+Finished
+Mouse moved and position fetched!
+Render Draw 
+CTGet Player 
+Begin Scene
+| draw >
+Mayor.Tick
+<Tick | alive | 4329258>
+Mayor.Frame
+<Frame | aliveGet position under mouse
+Get position under mouse
+Ray calculated 0x4f2310
+Ray SceneNode Collision
+Finished
+Mouse moved and position fetched!
+Render Draw 
+CTGet Player 
+Begin Scene
+| draw >
+Mayor.Tick
+<Tick | alive | 4329259>
+Mayor.Frame
+<Frame | aliveRender Draw 
+CTGet Player 
+Begin Scene
+| draw >
+Mayor.Tick
+<Tick | alive | 4329260>
+Mayor.Frame
+<Frame | aliveRender Draw 
+CTGet Player 
+Begin Scene
+| draw >
+Mayor.Tick
+<Tick | alive | 4329261>
+Mayor.Frame
+<Frame | aliveGet position under mouse
+Get position under mouse
+Ray calculated 0x4f2310
+Ray SceneNode Collision
+Finished
+Mouse moved and position fetched!
+Get position under mouse
+Get position under mouse
+Ray calculated 0x4f2310
+Ray SceneNode Collision
+Finished
+Mouse moved and position fetched!
+Render Draw 
+CTGet Player 
+Begin Scene
+| draw >
+Mayor.Tick
+<Tick | alive | 4329262>
+Mayor.Frame
+<Frame | aliveGet position under mouse
+Get position under mouse
+Ray calculated 0x4f2310
+Ray SceneNode Collision
+Finished
+Mouse moved and position fetched!
+Render Draw 
+CTGet Player 
+Begin Scene
+| draw >
+Mayor.Tick
+<Tick | alive | 4329263>
+Mayor.Frame
+<Frame | aliveGet position under mouse
+Get position under mouse
+Ray calculated 0x4f2310
+Ray SceneNode Collision
+Finished
+Mouse moved and position fetched!
+Render Draw 
+CTGet Player 
+Begin Scene
+| draw >
+Mayor.Tick
+<Tick | alive | 4329264>
+Mayor.Frame
+<Frame | aliveRender Draw 
+CTGet Player 
+Begin Scene
+| draw >
+Mayor.Tick
+<Tick | alive | 4329265>
+Mayor.Frame
+<Frame | aliveGet position under mouse
+Get position under mouse
+Ray calculated 0x4f2310
+Ray SceneNode Collision
+Finished
+Mouse moved and position fetched!
+Get position under mouse
+Get position under mouse
+Ray calculated 0x4f2310
+Ray SceneNode Collision
+Finished
+Mouse moved and position fetched!
+Render Draw 
+CTGet Player 
+Begin Scene
+| draw >
+Mayor.Tick
+<Tick | alive | 4329266>
+Mayor.Frame
+<Frame | aliveRender Draw 
+CTGet Player 
+Begin Scene
+| draw >
+Mayor.Tick
+<Tick | alive | 4329267>
+Mayor.Frame
+<Frame | aliveGet position under mouse
+Get position under mouse
+Ray calculated 0x4f2310
+Ray SceneNode Collision
+Finished
+Mouse moved and position fetched!
+Render Draw 
+CTGet Player 
+Begin Scene
+| draw >
+Mayor.Tick
+<Tick | alive | 4329268>
+Mayor.Frame
+<Frame | aliveGet position under mouse
+Get position under mouse
+Ray calculated 0x4f2310
+Ray SceneNode Collision
+Finished
+Mouse moved and position fetched!
+Render Draw 
+CTGet Player 
+Begin Scene
+| draw >
+Mayor.Tick
+<Tick | alive | 4329269>
+Mayor.Frame
+<Frame | aliveRender Draw 
+CTGet Player 
+Begin Scene
+| draw >
+Mayor.Tick
+<Tick | alive | 4329270>
+Mayor.Frame
+<Frame | aliveRender Draw 
+CTGet Player 
+Begin Scene
+| draw >
+Mayor.Tick
+<Tick | alive | 4329271>
+Mayor.Frame
+<Frame | aliveMouse right click
+Get position under mouse
+Get position under mouse
+Ray calculated 0x4f2310
+Ray SceneNode Collision
+Finished
+Does the player exist?
+Yes he does!
+Get position under mouse
+Get position under mouse
+Ray calculated 0x4f2310
+Ray SceneNode Collision
+Finished
+Mouse moved and position fetched!
+Render Draw 
+CTGet Player 
+Begin Scene
+| draw >
+Received message: 102
+Move scene node
+map height 0.285266,2.67387 = -1.29499
+-4.88948|-1.70154Target = 0.285266,-0.794987,2.67387
+animated !!!!!!!!!!
+|
+Mayor.Tick
+<Tick | alive | 4329272>
+Mayor.Frame
+<Frame | aliveRender Draw 
+CTGet Player 
+Begin Scene
+| draw >
+Mayor.Tick
+<Tick | alive | 4329273>
+Mayor.Frame
+<Frame | aliveRender Draw 
+CTGet Player 
+Begin Scene
+| draw >
+Received message: 102
+Move scene node
+map height 0.285266,2.67387 = -1.29499
+-4.70048|-1.63577Target = 0.285266,-0.794987,2.67387
+animated !!!!!!!!!!
+|
+Mayor.Tick
+<Tick | alive | 4329274>
+Mayor.Frame
+<Frame | aliveGet position under mouse
+Get position under mouse
+Ray calculated 0x4f2310
+Ray SceneNode Collision
+Finished
+Mouse moved and position fetched!
+Render Draw 
+CTGet Player 
+Begin Scene
+| draw >
+Mayor.Tick
+<Tick | alive | 4329275>
+Mayor.Frame
+<Frame | aliveGet position under mouse
+Get position under mouse
+Ray calculated 0x4f2310
+Ray SceneNode Collision
+Mouse moved and position fetched!
+Render Draw 
+CTGet Player 
+Begin Scene
+| draw >
+Mayor.Tick
+<Tick | alive | 4329276>
+Mayor.Frame
+<Frame | aliveRender Draw 
+CTGet Player 
+Begin Scene
+| draw >
+Mayor.Tick
+<Tick | alive | 4329277>
+Mayor.Frame
+<Frame | aliveRender Draw 
+CTGet Player 
+Begin Scene
+| draw >
+Mayor.Tick
+<Tick | alive | 4329278>
+Mayor.Frame
+<Frame | aliveGet position under mouse
+Get position under mouse
+Ray calculated 0x4f2310
+Ray SceneNode Collision
+Mouse moved and position fetched!
+Render Draw 
+CTGet Player 
+Begin Scene
+| draw >
+Mayor.Tick
+<Tick | alive | 4329279>
+Mayor.Frame
+<Frame | aliveGet position under mouse
+Get position under mouse
+Ray calculated 0x4f2310
+Ray SceneNode Collision
+Finished
+Mouse moved and position fetched!
+Render Draw 
+CTGet Player 
+Begin Scene
+| draw >
+Mayor.Tick
+<Tick | alive | 4329280>
+Mayor.Frame
+<Frame | aliveGet position under mouse
+Get position under mouse
+Ray calculated 0x4f2310
+Ray SceneNode Collision
+Finished
+Mouse moved and position fetched!
+Get position under mouse
+Get position under mouse
+Ray calculated 0x4f2310
+Ray SceneNode Collision
+Finished
+Mouse moved and position fetched!
+Render Draw 
+CTGet Player 
+Begin Scene
+| draw >
+Mayor.Tick
+<Tick | alive | 4329281>
+Mayor.Frame
+<Frame | aliveGet position under mouse
+Get position under mouse
+Ray calculated 0x4f2310
+Ray SceneNode Collision
+Finished
+Mouse moved and position fetched!
+Render Draw 
+CTGet Player 
+Begin Scene
+| draw >
+Mayor.Tick
+<Tick | alive | 4329282>
+Mayor.Frame
+<Frame | aliveGet position under mouse
+Get position under mouse
+Ray calculated 0x4f2310
+Ray SceneNode Collision
+Finished
+Mouse moved and position fetched!
+Render Draw 
+CTGet Player 
+Begin Scene
+| draw >
+Mayor.Tick
+<Tick | alive | 4329283>
+Mayor.Frame
+<Frame | aliveGet position under mouse
+Get position under mouse
+Ray calculated 0x4f2310
+Ray SceneNode Collision
+Finished
+Mouse moved and position fetched!
+Get position under mouse
+Get position under mouse
+Ray calculated 0x4f2310
+Ray SceneNode Collision
+Finished
+Mouse moved and position fetched!
+Render Draw 
+CTGet Player 
+Begin Scene
+| draw >
+Mayor.Tick
+<Tick | alive | 4329284>
+Mayor.Frame
+<Frame | aliveGet position under mouse
+Get position under mouse
+Ray calculated 0x4f2310
+Ray SceneNode Collision
+Finished
+Mouse moved and position fetched!
+Get position under mouse
+Get position under mouse
+Ray calculated 0x4f2310
+Ray SceneNode Collision
+Finished
+Mouse moved and position fetched!
+Render Draw 
+CTGet Player 
+Begin Scene
+| draw >
+Mayor.Tick
+<Tick | alive | 4329285>
+Mayor.Frame
+<Frame | aliveGet position under mouse
+Get position under mouse
+Ray calculated 0x4f2310
+Ray SceneNode Collision
+Finished
+Mouse moved and position fetched!
+Render Draw 
+CTGet Player 
+Begin Scene
+| draw >
+Mayor.Tick
+<Tick | alive | 4329286>
+Mayor.Frame
+<Frame | aliveRender Draw 
+CTGet Player 
+Begin Scene
+| draw >
+Mayor.Tick
+<Tick | alive | 4329287>
+Mayor.Frame
+<Frame | aliveRender Draw 
+CTGet Player 
+Begin Scene
+| draw >
+Mayor.Tick
+<Tick | alive | 4329288>
+Mayor.Frame
+<Frame | aliveMouse right click
+Get position under mouse
+Get position under mouse
+Ray calculated 0x4f2310
+Ray SceneNode Collision
+Finished
+Does the player exist?
+Yes he does!
+Get position under mouse
+Get position under mouse
+Ray calculated 0x4f2310
+Ray SceneNode Collision
+Finished
+Mouse moved and position fetched!
+Render Draw 
+CTGet Player 
+Begin Scene
+| draw >
+Received message: 102
+Move scene node
+map height 3.65644,3.24225 = -1.29499
+0.0808382|-0.576658Target = 3.65644,-0.794987,3.24225
+animated !!!!!!!!!!
+|
+Mayor.Tick
+<Tick | alive | 4329289>
+Mayor.Frame
+<Frame | aliveRender Draw 
+CTGet Player 
+Begin Scene
+| draw >
+Mayor.Tick
+<Tick | alive | 4329290>
+Mayor.Frame
+<Frame | aliveRender Draw 
+CTGet Player 
+Begin Scene
+| draw >
+Received message: 102
+Move scene node
+map height 3.65644,3.24225 = -1.29499
+0.0538921|-0.384439Target = 3.65644,-0.794987,3.24225
+animated !!!!!!!!!!
+|
+Mayor.Tick
+<Tick | alive | 4329291>
+Mayor.Frame
+<Frame | aliveGet position under mouse
+Get position under mouse
+Ray calculated 0x4f2310
+Ray SceneNode Collision
+Finished
+Mouse moved and position fetched!
+Render Draw 
+CTGet Player 
+Begin Scene
+| draw >
+Mayor.Tick
+<Tick | alive | 4329292>
+Mayor.Frame
+<Frame | aliveGet position under mouse
+Get position under mouse
+Ray calculated 0x4f2310
+Ray SceneNode Collision
+Finished
+Mouse moved and position fetched!
+Render Draw 
+CTGet Player 
+Begin Scene
+| draw >
+Mayor.Tick
+<Tick | alive | 4329293>
+Mayor.Frame
+<Frame | aliveRender Draw 
+CTGet Player 
+Begin Scene
+| draw >
+Mayor.Tick
+<Tick | alive | 4329294>
+Mayor.Frame
+<Frame | aliveGet position under mouse
+Get position under mouse
+Ray calculated 0x4f2310
+Ray SceneNode Collision
+Finished
+Mouse moved and position fetched!
+Render Draw 
+CTGet Player 
+Begin Scene
+| draw >
+Mayor.Tick
+<Tick | alive | 4329295Set animation
+>
+Mayor.Frame
+<Frame | aliveGet position under mouse
+Get position under mouse
+Ray calculated 0x4f2310
+Ray SceneNode Collision
+Finished
+Mouse moved and position fetched!
+Render Draw 
+CTGet Player 
+Begin Scene
+| draw >
+Mayor.Tick
+<Tick | alive | 4329296>
+Mayor.Frame
+<Frame | aliveGet position under mouse
+Get position under mouse
+Ray calculated 0x4f2310
+Ray SceneNode Collision
+Finished
+Mouse moved and position fetched!
+Render Draw 
+CTGet Player 
+Begin Scene
+| draw >
+Mayor.Tick
+<Tick | alive | 4329297>
+Mayor.Frame
+<Frame | aliveRender Draw 
+CTGet Player 
+Begin Scene
+| draw >
+Mayor.Tick
+<Tick | alive | 4329298>
+Mayor.Frame
+<Frame | aliveGet position under mouse
+Get position under mouse
+Ray calculated 0x4f2310
+Ray SceneNode Collision
+Finished
+Mouse moved and position fetched!
+Render Draw 
+CTGet Player 
+Begin Scene
+| draw >
+Mayor.Tick
+<Tick | alive | 4329299>
+Mayor.Frame
+<Frame | aliveGet position under mouse
+Get position under mouse
+Ray calculated 0x4f2310
+Ray SceneNode Collision
+Finished
+Mouse moved and position fetched!
+Render Draw 
+CTGet Player 
+Begin Scene
+| draw >
+Mayor.Tick
+<Tick | alive | 4329300>
+Mayor.Frame
+<Frame | aliveGet position under mouse
+Get position under mouse
+Ray calculated 0x4f2310
+Ray SceneNode Collision
+Finished
+Mouse moved and position fetched!
+Get position under mouse
+Get position under mouse
+Ray calculated 0x4f2310
+Ray SceneNode Collision
+Finished
+Mouse moved and position fetched!
+Render Draw 
+CTGet Player 
+Begin Scene
+| draw >
+Mayor.Tick
+<Tick | alive | 4329301>
+Mayor.Frame
+<Frame | aliveGet position under mouse
+Get position under mouse
+Ray calculated 0x4f2310
+Ray SceneNode Collision
+Finished
+Mouse moved and position fetched!
+Render Draw 
+CTGet Player 
+Begin Scene
+| draw >
+Mayor.Tick
+<Tick | alive | 4329302>
+Mayor.Frame
+<Frame | aliveGet position under mouse
+Get position under mouse
+Ray calculated 0x4f2310
+Ray SceneNode Collision
+Finished
+Mouse moved and position fetched!
+Render Draw 
+CTGet Player 
+Begin Scene
+| draw >
+Mayor.Tick
+<Tick | alive | 4329303>
+Mayor.Frame
+<Frame | aliveRender Draw 
+CTGet Player 
+Begin Scene
+| draw >
+Mayor.Tick
+<Tick | alive | 4329304>
+Mayor.Frame
+<Frame | aliveRender Draw 
+CTGet Player 
+Begin Scene
+| draw >
+Mayor.Tick
+<Tick | alive | 4329305>
+Mayor.Frame
+<Frame | aliveRender Draw 
+CTGet Player 
+Begin Scene
+| draw >
+Mayor.Tick
+<Tick | alive | 4329306>
+Mayor.Frame
+<Frame | aliveGet Locatables under mouse
+elements=1
+Get position under mouse
+Get position under mouse
+Ray calculated 0x4f2310
+Ray SceneNode Collision
+Finished
+Mouse moved and position fetched!
+Render Draw 
+CTGet Player 
+Begin Scene
+| draw >
+Received message: 101
+0: Look at1: Count Moneyelements=1
+contains optionlist
+|
+Mayor.Tick
+<Tick | alive | 4329307>
+Mayor.Frame
+<Frame | aliveRender Draw 
+CTGet Player 
+Begin Scene
+| draw >
+Mayor.Tick
+<Tick | alive | 4329308>
+Mayor.Frame
+<Frame | aliveRender Draw 
+CTGet Player 
+Begin Scene
+| draw >
+Mayor.Tick
+<Tick | alive | 4329309>
+Mayor.Frame
+<Frame | aliveGet position under mouse
+Get position under mouse
+Ray calculated 0x4f2310
+Ray SceneNode Collision
+Finished
+Mouse moved and position fetched!
+Get position under mouse
+Get position under mouse
+Ray calculated 0x4f2310
+Ray SceneNode Collision
+Finished
+Mouse moved and position fetched!
+Render Draw 
+CTGet Player 
+Begin Scene
+| draw >
+Mayor.Tick
+<Tick | alive | 4329310>
+Mayor.Frame
+<Frame | aliveGet position under mouse
+Get position under mouse
+Ray calculated 0x4f2310
+Ray SceneNode Collision
+Finished
+Mouse moved and position fetched!
+Render Draw 
+CTGet Player 
+Begin Scene
+| draw >
+Mayor.Tick
+<Tick | alive | 4329311>
+Mayor.Frame
+<Frame | aliveGet position under mouse
+Get position under mouse
+Ray calculated 0x4f2310
+Ray SceneNode Collision
+Finished
+Mouse moved and position fetched!
+Get position under mouse
+Get position under mouse
+Ray calculated 0x4f2310
+Ray SceneNode Collision
+Finished
+Mouse moved and position fetched!
+Render Draw 
+CTGet Player 
+Begin Scene
+| draw >
+Mayor.Tick
+<Tick | alive | 4329312>
+Mayor.Frame
+<Frame | aliveGet position under mouse
+Get position under mouse
+Ray calculated 0x4f2310
+Ray SceneNode Collision
+Finished
+Mouse moved and position fetched!
+Render Draw 
+CTGet Player 
+Begin Scene
+| draw >
+Mayor.Tick
+<Tick | alive | 4329313>
+Mayor.Frame
+<Frame | aliveRender Draw 
+CTGet Player 
+Begin Scene
+| draw >
+Mayor.Tick
+<Tick | alive | 4329314>
+Mayor.Frame
+<Frame | aliveRender Draw 
+CTGet Player 
+Begin Scene
+| draw >
+Mayor.Tick
+<Tick | alive | 4329315>
+Mayor.Frame
+<Frame | aliveGet position under mouse
+Get position under mouse
+Ray calculated 0x4f2310
+Ray SceneNode Collision
+Finished
+Mouse moved and position fetched!
+Render Draw 
+CTGet Player 
+Begin Scene
+| draw >
+Mayor.Tick
+<Tick | alive | 4329316>
+Mayor.Frame
+<Frame | aliveRender Draw 
+CTGet Player 
+Begin Scene
+| draw >
+Mayor.Tick
+<Tick | alive | 4329317>
+Mayor.Frame
+<Frame | aliveRender Draw 
+CTGet Player 
+Begin Scene
+| draw >
+Mayor.Tick
+<Tick | alive | 4329318>
+Mayor.Frame
+<Frame | aliveRender Draw 
+CTGet Player 
+Begin Scene
+| draw >
+Mayor.Tick
+<Tick | alive | 4329319>
+Mayor.Frame
+<Frame | aliveRender Draw 
+CTGet Player 
+Begin Scene
+| draw >
+Mayor.Tick
+<Tick | alive | 4329320>
+Mayor.Frame
+<Frame | aliveRender Draw 
+CTGet Player 
+Begin Scene
+| draw >
+Mayor.Tick
+<Tick | alive | 4329321>
+Mayor.Frame
+<Frame | aliveRender Draw 
+CTGet Player 
+Begin Scene
+| draw >
+Mayor.Tick
+<Tick | alive | 4329322>
+Mayor.Frame
+<Frame | aliveGet position under mouse
+Get position under mouse
+Ray calculated 0x4f2310
+Ray SceneNode Collision
+Finished
+Mouse moved and position fetched!
+Render Draw 
+CTGet Player 
+Begin Scene
+| draw >
+Mayor.Tick
+<Tick | alive | 4329323>
+Mayor.Frame
+<Frame | aliveGet position under mouse
+Get position under mouse
+Ray calculated 0x4f2310
+Ray SceneNode Collision
+Finished
+Mouse moved and position fetched!
+Render Draw 
+CTGet Player 
+Begin Scene
+| draw >
+Mayor.Tick
+<Tick | alive | 4329324>
+Mayor.Frame
+<Frame | aliveGet position under mouse
+Get position under mouse
+Ray calculated 0x4f2310
+Ray SceneNode Collision
+Finished
+Mouse moved and position fetched!
+Get position under mouse
+Get position under mouse
+Ray calculated 0x4f2310
+Ray SceneNode Collision
+Finished
+Mouse moved and position fetched!
+Render Draw 
+CTGet Player 
+Begin Scene
+| draw >
+Mayor.Tick
+<Tick | alive | 4329325>
+Mayor.Frame
+<Frame | aliveGet position under mouse
+Get position under mouse
+Ray calculated 0x4f2310
+Ray SceneNode Collision
+Finished
+Mouse moved and position fetched!
+Render Draw 
+CTGet Player 
+Begin Scene
+| draw >
+Mayor.Tick
+<Tick | alive | 4329326>
+Mayor.Frame
+<Frame | aliveRender Draw 
+CTGet Player 
+Begin Scene
+| draw >
+Mayor.Tick
+<Tick | alive | 4329327>
+Mayor.Frame
+<Frame | aliveGet Locatables under mouse
+elements=1
+Get position under mouse
+Get position under mouse
+Ray calculated 0x4f2310
+Ray SceneNode Collision
+Finished
+Mouse moved and position fetched!
+Render Draw 
+CTGet Player 
+Begin Scene
+| draw >
+Received message: 101
+0: Look at1: Count Moneyelements=1
+contains optionlist
+|
+Mayor.Tick
+<Tick | alive | 4329328>
+Mayor.Frame
+<Frame | aliveGet position under mouse
+Get position under mouse
+Ray calculated 0x4f2310
+Ray SceneNode Collision
+Finished
+Mouse moved and position fetched!
+Render Draw 
+CTGet Player 
+Begin Scene
+| draw >
+Mayor.Tick
+<Tick | alive | 4329329>
+Mayor.Frame
+<Frame | aliveGet position under mouse
+Get position under mouse
+Ray calculated 0x4f2310
+Ray SceneNode Collision
+Finished
+Mouse moved and position fetched!
+Render Draw 
+CTGet Player 
+Begin Scene
+| draw >
+Mayor.Tick
+<Tick | alive | 4329330>
+Mayor.Frame
+<Frame | aliveRender Draw 
+CTGet Player 
+Begin Scene
+| draw >
+Mayor.Tick
+<Tick | alive | 4329331>
+Mayor.Frame
+<Frame | aliveRender Draw 
+CTGet Player 
+Begin Scene
+| draw >
+Mayor.Tick
+<Tick | alive | 4329332>
+Mayor.Frame
+<Frame | aliveGet position under mouse
+Get position under mouse
+Ray calculated 0x4f2310
+Ray SceneNode Collision
+Finished
+Mouse moved and position fetched!
+Render Draw 
+CTGet Player 
+Begin Scene
+| draw >
+Mayor.Tick
+<Tick | alive | 4329333>
+Mayor.Frame
+<Frame | aliveGet position under mouse
+Get position under mouse
+Ray calculated 0x4f2310
+Ray SceneNode Collision
+Finished
+Mouse moved and position fetched!
+Render Draw 
+CTGet Player 
+Begin Scene
+| draw >
+Mayor.Tick
+<Tick | alive | 4329334>
+Mayor.Frame
+<Frame | aliveRender Draw 
+CTGet Player 
+Begin Scene
+| draw >
+Mayor.Tick
+<Tick | alive | 4329335>
+Mayor.Frame
+<Frame | aliveRender Draw 
+CTGet Player 
+Begin Scene
+| draw >
+Mayor.Tick
+<Tick | alive | 4329336>
+Mayor.Frame
+<Frame | aliveGet position under mouse
+Get position under mouse
+Ray calculated 0x4f2310
+Ray SceneNode Collision
+Finished
+Mouse moved and position fetched!
+Render Draw 
+CTGet Player 
+Begin Scene
+| draw >
+Mayor.Tick
+<Tick | alive | 4329337>
+Mayor.Frame
+<Frame | aliveRender Draw 
+CTGet Player 
+Begin Scene
+| draw >
+Mayor.Tick
+<Tick | alive | 4329338>
+Mayor.Frame
+<Frame | aliveRender Draw 
+CTGet Player 
+Begin Scene
+| draw >
+Mayor.Tick
+<Tick | alive | 4329339>
+Mayor.Frame
+<Frame | aliveRender Draw 
+CTGet Player 
+Begin Scene
+| draw >
+Mayor.Tick
+<Tick | alive | 4329340>
+Mayor.Frame
+<Frame | aliveRender Draw 
+CTGet Player 
+Begin Scene
+| draw >
+Mayor.Tick
+<Tick | alive | 4329341>
+Mayor.Frame
+<Frame | aliveGet position under mouse
+Get position under mouse
+Ray calculated 0x4f2310
+Ray SceneNode Collision
+Finished
+Mouse moved and position fetched!
+Render Draw 
+CTGet Player 
+Begin Scene
+| draw >
+Mayor.Tick
+<Tick | alive | 4329342>
+Mayor.Frame
+<Frame | aliveRender Draw 
+CTGet Player 
+Begin Scene
+| draw >
+Mayor.Tick
+<Tick | alive | 4329343>
+Mayor.Frame
+<Frame | aliveGet position under mouse
+Get position under mouse
+Ray calculated 0x4f2310
+Ray SceneNode Collision
+Finished
+Mouse moved and position fetched!
+Render Draw 
+CTGet Player 
+Begin Scene
+| draw >
+Mayor.Tick
+<Tick | alive | 4329344>
+Mayor.Frame
+<Frame | aliveGet position under mouse
+Get position under mouse
+Ray calculated 0x4f2310
+Ray SceneNode Collision
+Finished
+Mouse moved and position fetched!
+Render Draw 
+CTGet Player 
+Begin Scene
+| draw >
+Mayor.Tick
+<Tick | alive | 4329345>
+Mayor.Frame
+<Frame | aliveRender Draw 
+CTGet Player 
+Begin Scene
+| draw >
+Mayor.Tick
+<Tick | alive | 4329346>
+Mayor.Frame
+<Frame | aliveRender Draw 
+CTGet Player 
+Begin Scene
+| draw >
+Mayor.Tick
+<Tick | alive | 4329347>
+Mayor.Frame
+<Frame | aliveGet position under mouse
+Get position under mouse
+Ray calculated 0x4f2310
+Ray SceneNode Collision
+Finished
+Mouse moved and position fetched!
+Render Draw 
+CTGet Player 
+Begin Scene
+| draw >
+Mayor.Tick
+<Tick | alive | 4329348>
+Mayor.Frame
+<Frame | aliveGet position under mouse
+Get position under mouse
+Ray calculated 0x4f2310
+Ray SceneNode Collision
+Finished
+Mouse moved and position fetched!
+Render Draw 
+CTGet Player 
+Begin Scene
+| draw >
+Mayor.Tick
+<Tick | alive | 4329349>
+Mayor.Frame
+<Frame | aliveGet position under mouse
+Get position under mouse
+Ray calculated 0x4f2310
+Ray SceneNode Collision
+Finished
+Mouse moved and position fetched!
+Render Draw 
+CTGet Player 
+Begin Scene
+| draw >
+Mayor.Tick
+<Tick | alive | 4329350>
+Mayor.Frame
+<Frame | aliveGet position under mouse
+Get position under mouse
+Ray calculated 0x4f2310
+Ray SceneNode Collision
+Finished
+Mouse moved and position fetched!
+Render Draw 
+CTGet Player 
+Begin Scene
+| draw >
+Mayor.Tick
+<Tick | alive | 4329351>
+Mayor.Frame
+<Frame | aliveGet position under mouse
+Get position under mouse
+Ray calculated 0x4f2310
+Ray SceneNode Collision
+Finished
+Mouse moved and position fetched!
+Render Draw 
+CTGet Player 
+Begin Scene
+| draw >
+Mayor.Tick
+<Tick | alive | 4329352>
+Mayor.Frame
+<Frame | aliveGet position under mouse
+Get position under mouse
+Ray calculated 0x4f2310
+Ray SceneNode Collision
+Finished
+Mouse moved and position fetched!
+Render Draw 
+CTGet Player 
+Begin Scene
+| draw >
+Mayor.Tick
+<Tick | alive | 4329353>
+Mayor.Frame
+<Frame | aliveGet position under mouse
+Get position under mouse
+Ray calculated 0x4f2310
+Ray SceneNode Collision
+Finished
+Mouse moved and position fetched!
+Render Draw 
+CTGet Player 
+Begin Scene
+| draw >
+Mayor.Tick
+<Tick | alive | 4329354>
+Mayor.Frame
+<Frame | aliveRender Draw 
+CTGet Player 
+Begin Scene
+| draw >
+Mayor.Tick
+<Tick | alive | 4329355>
+Mayor.Frame
+<Frame | aliveRender Draw 
+CTGet Player 
+Begin Scene
+| draw >
+Mayor.Tick
+<Tick | alive | 4329356>
+Mayor.Frame
+<Frame | aliveRender Draw 
+CTGet Player 
+Begin Scene
+| draw >
+Mayor.Tick
+<Tick | alive | 4329357>
+Mayor.Frame
+<Frame | aliveRender Draw 
+CTGet Player 
+Begin Scene
+| draw >
+Mayor.Tick
+<Tick | alive | 4329358>
+Mayor.Frame
+<Frame | aliveRender Draw 
+CTGet Player 
+Begin Scene
+| draw >
+Mayor.Tick
+<Tick | alive | 4329359>
+Mayor.Frame
+<Frame | aliveRender Draw 
+CTGet Player 
+Begin Scene
+| draw >
+Mayor.Tick
+<Tick | alive | 4329360>
+Mayor.Frame
+<Frame | aliveRender Draw 
+CTGet Player 
+Begin Scene
+| draw >
+Mayor.Tick
+<Tick | alive | 4329361>
+Mayor.Frame
+<Frame | aliveGet position under mouse
+Get position under mouse
+Ray calculated 0x4f2310
+Ray SceneNode Collision
+Finished
+Mouse moved and position fetched!
+Render Draw 
+CTGet Player 
+Begin Scene
+| draw >
+Mayor.Tick
+<Tick | alive | 4329362>
+Mayor.Frame
+<Frame | aliveGet position under mouse
+Get position under mouse
+Ray calculated 0x4f2310
+Ray SceneNode Collision
+Mouse moved and position fetched!
+Render Draw 
+CTGet Player 
+Begin Scene
+| draw >
+Mayor.Tick
+<Tick | alive | 4329363>
+Mayor.Frame
+<Frame | aliveRender Draw 
+CTGet Player 
+Begin Scene
+| draw >
+Mayor.Tick
+<Tick | alive | 4329364>
+Mayor.Frame
+<Frame | aliveRender Draw 
+CTGet Player 
+Begin Scene
+| draw >
+Mayor.Tick
+<Tick | alive | 4329365>
+Mayor.Frame
+<Frame | aliveRender Draw 
+CTGet Player 
+Begin Scene
+| draw >
+Mayor.Tick
+<Tick | alive | 4329366>
+Mayor.Frame
+<Frame | aliveRender Draw 
+CTGet Player 
+Begin Scene
+| draw >
+Mayor.Tick
+<Tick | alive | 4329367>
+Mayor.Frame
+<Frame | alive| draw >
+Mayor.Tick
+<Tick | alive | 4329368>
+Mayor.Frame
+<Frame | alive| draw >
+Mayor.Tick
+<Tick | alive | 4329369>
+Mayor.Frame
+<Frame | alive| draw >
+Mayor.Tick
+<Tick | alive | 4329370>
+Mayor.Frame
+<Frame | alive| draw >
+Mayor.Tick
+<Tick | alive | 4329371>
+Mayor.Frame
+<Frame | alive| draw >
+Mayor.Tick
+<Tick | alive | 4329372>
+Mayor.Frame
+<Frame | alive| draw >
+Mayor.Tick
+<Tick | alive | 4329373>
+Mayor.Frame
+<Frame | alive| draw >
+Mayor.Tick
+<Tick | alive | 4329374>
+Mayor.Frame
+<Frame | alive| draw >
+Mayor.Tick
+<Tick | alive | 4329375>
+Mayor.Frame
+<Frame | alive| draw >
+Mayor.Tick
+<Tick | alive | 4329376>
+Mayor.Frame
+<Frame | alive| draw >
+Mayor.Tick
+<Tick | alive | 4329377>
+Mayor.Frame
+<Frame | alive| draw >
+Mayor.Tick
+<Tick | alive | 4329378>
+Mayor.Frame
+<Frame | alive| draw >
+Mayor.Tick
+<Tick | alive | 4329379>
+Mayor.Frame
+<Frame | alive| draw >
+Mayor.Tick
+<Tick | alive | 4329380>
+Mayor.Frame
+<Frame | alive| draw >
+Mayor.Tick
+<Tick | alive | 4329381>
+Mayor.Frame
+<Frame | alive| draw >
+Mayor.Tick
+<Tick | alive | 4329382>
+Mayor.Frame
+<Frame | alive| draw >
+Mayor.Tick
+<Tick | alive | 4329383>
+Mayor.Frame
+<Frame | alive| draw >

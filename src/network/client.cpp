@@ -6,19 +6,6 @@
 namespace Ennovia
 {
 
-struct my_connect_condition
-{
-  template <typename Iterator>
-  Iterator operator()(
-      const boost::system::error_code& ec,
-      Iterator next)
-  {
-    if (ec) std::cout << "Error: " << ec.message() << std::endl;
-    std::cout << "Trying: " << next->endpoint() << std::endl;
-    return next;
-  }
-};
-
 Client::Client(boost::asio::io_service& io_service_,
                const std::string& host_, const std::string& service_)
     : io_service(io_service_), host(host_), service(service_), connection(new Connection(io_service))
@@ -35,7 +22,7 @@ void Client::connect() {
         resolver.resolve(query);
     std::cout << "Establish Connection..." << std::endl;
     // Start an asynchronous connect operation.
-    boost::asio::async_connect(connection->socket(), endpoint_iterator, my_connect_condition(),
+    boost::asio::async_connect(connection->socket(), endpoint_iterator,
                                boost::bind(&Client::handle_connect, this,
                                            boost::asio::placeholders::error));
 
@@ -52,9 +39,7 @@ void Client::handle_connect(const boost::system::error_code& e)
     }
     else
     {
-        std::cout << "Can't connect to server. Try again" << std::endl;
         std::cerr << e.message() << std::endl;
-        connect();
     }
 }
 
