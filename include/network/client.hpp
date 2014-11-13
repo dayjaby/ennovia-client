@@ -18,9 +18,9 @@ public:
     void connect();
 
     template <typename Type>
-    void write(int msgid, Type& t)
+    void write(Type t)
     {
-        connection->write(msgid, t);
+        connection->write(t);
     }
 
     boost::asio::io_service& io_service;
@@ -39,7 +39,7 @@ private:
     void finished_read(const boost::system::error_code& e);
 
     /// Interpret a read message
-    void interpret(int msgid, std::istream& is);
+    void interpret(const Json::Value& is);
 
 
 };
