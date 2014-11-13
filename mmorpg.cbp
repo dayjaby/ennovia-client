@@ -73,6 +73,7 @@
 		<Unit filename="include/plugins/GUIPlugin.hpp" />
 		<Unit filename="include/ui/eventreceiver.hpp" />
 		<Unit filename="include/ui/graphics.hpp" />
+		<Unit filename="include/ui/guiinventory.hpp" />
 		<Unit filename="include/ui/render.hpp" />
 		<Unit filename="include/ui/windows/window.hpp" />
 		<Unit filename="include/world/actions.hpp" />
@@ -80,14 +81,10 @@
 		<Unit filename="include/world/entity.hpp" />
 		<Unit filename="include/world/items.hpp" />
 		<Unit filename="include/world/library.hpp" />
-		<Unit filename="include/world/livingobject.hpp" />
 		<Unit filename="include/world/locatable.hpp" />
 		<Unit filename="include/world/map.hpp" />
 		<Unit filename="include/world/object.hpp" />
-		<Unit filename="include/world/objects.hpp" />
-		<Unit filename="include/world/player.hpp" />
 		<Unit filename="include/world/position.hpp" />
-		<Unit filename="include/world/tile.hpp" />
 		<Unit filename="lua/actions.lua">
 			<Option target="&lt;{~None~}&gt;" />
 		</Unit>
@@ -123,20 +120,15 @@
 		<Unit filename="src/ui/guiinventory.cpp" />
 		<Unit filename="src/ui/render.cpp" />
 		<Unit filename="src/world/actions.cpp" />
-		<Unit filename="src/world/actions/move.cpp" />
 		<Unit filename="src/world/entity.cpp" />
 		<Unit filename="src/world/inventory.cpp" />
 		<Unit filename="src/world/items.cpp" />
 		<Unit filename="src/world/library.cpp" />
-		<Unit filename="src/world/livingobject.cpp" />
 		<Unit filename="src/world/locatable.cpp" />
 		<Unit filename="src/world/map.cpp" />
-		<Unit filename="src/world/objects.cpp" />
 		<Unit filename="src/world/optionlist.cpp" />
 		<Unit filename="src/world/optionproxy.cpp" />
-		<Unit filename="src/world/player.cpp" />
 		<Unit filename="src/world/position.cpp" />
-		<Unit filename="src/world/tile.cpp" />
 		<Extensions>
 			<code_completion />
 			<debugger />

@@ -7,6 +7,7 @@
 #include "world/map.hpp"
 #include "world/actions.hpp"
 #include "world/locatable.hpp"
+#include "misc/json/jsoncons.hpp"
 
 namespace Ennovia {
 
@@ -17,8 +18,8 @@ struct MayorImpl {
     tick_timer(io_service, boost::posix_time::milliseconds(TICK)),
     frame_timer(io_service, boost::posix_time::milliseconds(FRAME)),
     //client(io_service,std::string("djabby.dlinkddns.com"),PORT_S),
-    client(io_service,std::string("djabby.dlinkddns.com"),PORT_S),
-    //client(io_service,std::string("192.168.178.33"),PORT_S),
+    //client(io_service,std::string("djabby.dlinkddns.com"),PORT_S),
+    client(io_service,std::string("192.168.137.86"),PORT_S),
     connection(client.connection),
     render(1024,768,mayor)
     {
@@ -48,8 +49,8 @@ struct MayorImpl {
     void frame();
 
     template <class Type>
-    void write(int msgid, Type& t) {
-        client.write(msgid,t);
+    void write(Type t) {
+        client.write(t);
     }
 };
 
@@ -124,42 +125,28 @@ void Mayor::getTileOptionList(Tile& tile) {
 }*/
 
 void Mayor::getLocatableOptionList(int id) {
-    GetLocatableOptionList msg;
-    msg.set_id(id);
-    d->write(GET_LOCATABLE_OPTIONLIST,msg);
+    d->write(Json::Object(Json::Val("msg",GET_LOCATABLE_OPTIONLIST),Json::Val("id",id)));
 }
 
 void Mayor::walkTo(float x, float y) {
-    WalkTo msg;
-    msg.set_x(x);
-    msg.set_y(y);
-    d->write(WALK_TO,msg);
+    d->write(Json::Object(Json::Val("msg",WALK_TO),Json::Val("x",x),Json::Val("y",y)));
 }
 
 void Mayor::chooseOption(int optionlist,int id) {
-    ChooseOption option;
-    option.set_optionlist(optionlist);
-    option.set_id(id);
-    d->write(CHOOSE_OPTION,option);
+    d->write(Json::Object(Json::Val("msg",CHOOSE_OPTION),Json::Val("optionlist",optionlist),Json::Val("id",id)));
 }
 
 void Mayor::getLocatablePosition(int id) {
-    GetLocatablePosition locatable;
-    locatable.set_id(id);
-    d->write(GET_LOCATABLE_POSITION,locatable);
+    d->write(Json::Object(Json::Val("msg",GET_LOCATABLE_POSITION),Json::Val("id",id)));
 }
 
 void Mayor::getLocatableIntroduction(int id) {
-    GetLocatableIntroduction intro;
-    intro.set_id(id);
-    d->write(GET_LOCATABLE_INTRODUCTION,intro);
+    d->write(Json::Object(Json::Val("msg",GET_LOCATABLE_INTRODUCTION),Json::Val("id",id)));
     getLocatablePosition(id);
 }
 
 void Mayor::requestMapData(int mapid) {
-    RequestMapData msg;
-    msg.set_id(mapid);
-    d->write(REQUEST_MAP,msg);
+    d->write(Json::Object(Json::Val("msg",REQUEST_MAP),Json::Val("id",mapid)));
 }
 
 void Mayor::receiveMessage(const std::string& msg) {
@@ -186,12 +173,12 @@ void Mayor::moveTo(int id,float x, float y) {
 
 
 void Mayor::onRequestCredentials() {
-    Credentials credentials;
+    std::string username,password;
     std::cout << "Username: ";
-    getline(std::cin,*credentials.mutable_username());
+    getline(std::cin,username);
     std::cout << "Password: ";
-    getline(std::cin,*credentials.mutable_password());
-    d->write(CREDENTIALS,credentials);
+    getline(std::cin,password);
+    d->write(Json::Object(Json::Val("msg",CREDENTIALS),Json::Val("username",username),Json::Val("password",password)));
 }
 
 
@@ -209,9 +196,7 @@ void Mayor::onLoginValid() {
 
 void Mayor::youAre(int yourId) {
     d->localPlayer = yourId;
-    GetLocatableIntroduction intro;
-    intro.set_id(yourId);
-    d->write(GET_LOCATABLE_INTRODUCTION,intro);
+    d->write(Json::Object(Json::Val("msg",GET_LOCATABLE_INTRODUCTION),Json::Val("id",yourId)));
     log << "Local player: " << yourId << std::endl;
 }
 
