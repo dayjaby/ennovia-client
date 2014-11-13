@@ -1,5 +1,712 @@
 Mayor.Tick
-<Tick | alive | 4308397>
+<Tick | alive | 4311145>
 Mayor.Frame
 <Frame | aliveRender Draw 
-CT
+Get Player 
+Begin Scene
+| draw >
+Mayor.Tick
+<Tick | alive | 4311146>
+Mayor.Frame
+<Frame | aliveRender Draw 
+Get Player 
+Begin Scene
+| draw >
+[MSG from Server]: Welcome to our server!
+|
+|
+Mayor.Tick
+<Tick | alive | 4311147>
+Mayor.Frame
+<Frame | aliveRender Draw 
+Get Player 
+Begin Scene
+| draw >
+Mayor.Tick
+<Tick | alive | 4311148>
+Mayor.Frame
+<Frame | aliveRender Draw 
+Get Player 
+Begin Scene
+| draw >
+Mayor.Tick
+<Tick | alive | 4311149>
+Mayor.Frame
+<Frame | aliveRender Draw 
+Get Player 
+Begin Scene
+| draw >
+Mayor.Tick
+<Tick | alive | 4311150>
+Mayor.Frame
+<Frame | aliveRender Draw 
+Get Player 
+Begin Scene
+| draw >
+Mayor.Tick
+<Tick | alive | 4311151>
+Mayor.Frame
+<Frame | aliveRender Draw 
+Get Player 
+Begin Scene
+| draw >
+Mayor.Tick
+<Tick | alive | 4311152>
+Mayor.Frame
+<Frame | aliveRender Draw 
+Get Player 
+Begin Scene
+| draw >
+Mayor.Tick
+<Tick | alive | 4311153>
+Mayor.Frame
+<Frame | aliveRender Draw 
+Get Player 
+Begin Scene
+| draw >
+Mayor.Tick
+<Tick | alive | 4311154>
+Mayor.Frame
+<Frame | aliveRender Draw 
+Get Player 
+Begin Scene
+| draw >
+Mayor.Tick
+<Tick | alive | 4311155>
+Mayor.Frame
+<Frame | aliveRender Draw 
+Get Player 
+Begin Scene
+| draw >
+Mayor.Tick
+<Tick | alive | 4311156>
+Mayor.Frame
+<Frame | aliveRender Draw 
+Get Player 
+Begin Scene
+| draw >
+Mayor.Tick
+<Tick | alive | 4311157>
+Mayor.Frame
+<Frame | aliveRender Draw 
+Get Player 
+Begin Scene
+| draw >
+Mayor.Tick
+<Tick | alive | 4311158>
+Mayor.Frame
+<Frame | aliveRender Draw 
+Get Player 
+Begin Scene
+| draw >
+Mayor.Tick
+<Tick | alive | 4311159>
+Mayor.Frame
+<Frame | aliveRender Draw 
+Get Player 
+Begin Scene
+| draw >
+Mayor.Tick
+<Tick | alive | 4311160>
+Mayor.Frame
+<Frame | aliveRender Draw 
+Get Player 
+Begin Scene
+| draw >
+Mayor.Tick
+<Tick | alive | 4311161>
+Mayor.Frame
+<Frame | aliveRender Draw 
+Get Player 
+Begin Scene
+| draw >
+Mayor.Tick
+<Tick | alive | 4311162>
+Mayor.Frame
+<Frame | aliveRender Draw 
+Get Player 
+Begin Scene
+| draw >
+Mayor.Tick
+<Tick | alive | 4311163>
+Mayor.Frame
+<Frame | aliveRender Draw 
+Get Player 
+Begin Scene
+| draw >
+Mayor.Tick
+<Tick | alive | 4311164>
+Mayor.Frame
+<Frame | aliveRender Draw 
+Get Player 
+Begin Scene
+| draw >
+Mayor.Tick
+<Tick | alive | 4311165>
+Mayor.Frame
+<Frame | aliveRender Draw 
+Get Player 
+Begin Scene
+| draw >
+Mayor.Tick
+<Tick | alive | 4311166>
+Mayor.Frame
+<Frame | aliveRender Draw 
+Get Player 
+Begin Scene
+| draw >
+Mayor.Tick
+<Tick | alive | 4311167>
+Mayor.Frame
+<Frame | aliveRender Draw 
+Get Player 
+Begin Scene
+| draw >
+Mayor.Tick
+<Tick | alive | 4311168>
+Mayor.Frame
+<Frame | aliveRender Draw 
+Get Player 
+Begin Scene
+| draw >
+Mayor.Tick
+<Tick | alive | 4311169>
+Mayor.Frame
+<Frame | aliveRender Draw 
+Get Player 
+Begin Scene
+| draw >
+Mayor.Tick
+<Tick | alive | 4311170>
+Mayor.Frame
+<Frame | aliveRender Draw 
+Get Player 
+Begin Scene
+| draw >
+Mayor.Tick
+<Tick | alive | 4311171>
+Mayor.Frame
+<Frame | aliveRender Draw 
+Get Player 
+Begin Scene
+| draw >
+Mayor.Tick
+<Tick | alive | 4311172>
+Mayor.Frame
+<Frame | aliveRender Draw 
+Get Player 
+Begin Scene
+| draw >
+Mayor.Tick
+<Tick | alive | 4311173>
+Mayor.Frame
+<Frame | aliveRender Draw 
+Get Player 
+Begin Scene
+| draw >
+Mayor.Tick
+<Tick | alive | 4311174>
+Mayor.Frame
+<Frame | aliveRender Draw 
+Get Player 
+Begin Scene
+| draw >
+Mayor.Tick
+<Tick | alive | 4311175>
+Mayor.Frame
+<Frame | aliveRender Draw 
+Get Player 
+Begin Scene
+| draw >
+Mayor.Tick
+<Tick | alive | 4311176>
+Mayor.Frame
+<Frame | aliveRender Draw 
+Get Player 
+Begin Scene
+| draw >
+Mayor.Tick
+<Tick | alive | 4311177>
+Mayor.Frame
+<Frame | aliveRender Draw 
+Get Player 
+Begin Scene
+| draw >
+Mayor.Tick
+<Tick | alive | 4311178>
+Mayor.Frame
+<Frame | aliveRender Draw 
+Get Player 
+Begin Scene
+| draw >
+Mayor.Tick
+<Tick | alive | 4311179>
+Mayor.Frame
+<Frame | aliveRender Draw 
+Get Player 
+Begin Scene
+| draw >
+Mayor.Tick
+<Tick | alive | 4311180>
+Mayor.Frame
+<Frame | aliveRender Draw 
+Get Player 
+Begin Scene
+| draw >
+Mayor.Tick
+<Tick | alive | 4311181>
+Mayor.Frame
+<Frame | aliveRender Draw 
+Get Player 
+Begin Scene
+| draw >
+Mayor.Tick
+<Tick | alive | 4311182>
+Mayor.Frame
+<Frame | aliveRender Draw 
+Get Player 
+Begin Scene
+| draw >
+Mayor.Tick
+<Tick | alive | 4311183>
+Mayor.Frame
+<Frame | aliveRender Draw 
+Get Player 
+Begin Scene
+| draw >
+Mayor.Tick
+<Tick | alive | 4311184>
+Mayor.Frame
+<Frame | aliveRender Draw 
+Get Player 
+Begin Scene
+| draw >
+Mayor.Tick
+<Tick | alive | 4311185>
+Mayor.Frame
+<Frame | aliveRender Draw 
+Get Player 
+Begin Scene
+| draw >
+Mayor.Tick
+<Tick | alive | 4311186>
+Mayor.Frame
+<Frame | aliveRender Draw 
+Get Player 
+Begin Scene
+| draw >
+Mayor.Tick
+<Tick | alive | 4311187>
+Mayor.Frame
+<Frame | aliveRender Draw 
+Get Player 
+Begin Scene
+| draw >
+Mayor.Tick
+<Tick | alive | 4311188>
+Mayor.Frame
+<Frame | aliveRender Draw 
+Get Player 
+Begin Scene
+| draw >
+Mayor.Tick
+<Tick | alive | 4311189>
+Mayor.Frame
+<Frame | aliveRender Draw 
+Get Player 
+Begin Scene
+| draw >
+Mayor.Tick
+<Tick | alive | 4311190>
+Mayor.Frame
+<Frame | aliveRender Draw 
+Get Player 
+Begin Scene
+| draw >
+Mayor.Tick
+<Tick | alive | 4311191>
+Mayor.Frame
+<Frame | aliveRender Draw 
+Get Player 
+Begin Scene
+| draw >
+Mayor.Tick
+<Tick | alive | 4311192>
+Mayor.Frame
+<Frame | aliveRender Draw 
+Get Player 
+Begin Scene
+| draw >
+Mayor.Tick
+<Tick | alive | 4311193>
+Mayor.Frame
+<Frame | aliveRender Draw 
+Get Player 
+Begin Scene
+| draw >
+Mayor.Tick
+<Tick | alive | 4311194>
+Mayor.Frame
+<Frame | aliveRender Draw 
+Get Player 
+Begin Scene
+| draw >
+Mayor.Tick
+<Tick | alive | 4311195>
+Mayor.Frame
+<Frame | aliveRender Draw 
+Get Player 
+Begin Scene
+| draw >
+Mayor.Tick
+<Tick | alive | 4311196>
+Mayor.Frame
+<Frame | aliveRender Draw 
+Get Player 
+Begin Scene
+| draw >
+Mayor.Tick
+<Tick | alive | 4311197>
+Mayor.Frame
+<Frame | aliveRender Draw 
+Get Player 
+Begin Scene
+| draw >
+Mayor.Tick
+<Tick | alive | 4311198>
+Mayor.Frame
+<Frame | aliveRender Draw 
+Get Player 
+Begin Scene
+| draw >
+Mayor.Tick
+<Tick | alive | 4311199>
+Mayor.Frame
+<Frame | aliveRender Draw 
+Get Player 
+Begin Scene
+| draw >
+Mayor.Tick
+<Tick | alive | 4311200>
+Mayor.Frame
+<Frame | aliveRender Draw 
+Get Player 
+Begin Scene
+| draw >
+Mayor.Tick
+<Tick | alive | 4311201>
+Mayor.Frame
+<Frame | aliveRender Draw 
+Get Player 
+Begin Scene
+| draw >
+Mayor.Tick
+<Tick | alive | 4311202>
+Mayor.Frame
+<Frame | aliveRender Draw 
+Get Player 
+Begin Scene
+| draw >
+Mayor.Tick
+<Tick | alive | 4311203>
+Mayor.Frame
+<Frame | aliveRender Draw 
+Get Player 
+Begin Scene
+| draw >
+Mayor.Tick
+<Tick | alive | 4311204>
+Mayor.Frame
+<Frame | aliveRender Draw 
+Get Player 
+Begin Scene
+| draw >
+Mayor.Tick
+<Tick | alive | 4311205>
+Mayor.Frame
+<Frame | aliveRender Draw 
+Get Player 
+Begin Scene
+| draw >
+Mayor.Tick
+<Tick | alive | 4311206>
+Mayor.Frame
+<Frame | aliveRender Draw 
+Get Player 
+Begin Scene
+| draw >
+Mayor.Tick
+<Tick | alive | 4311207>
+Mayor.Frame
+<Frame | aliveRender Draw 
+Get Player 
+Begin Scene
+| draw >
+Mayor.Tick
+<Tick | alive | 4311208>
+Mayor.Frame
+<Frame | aliveRender Draw 
+Get Player 
+Begin Scene
+| draw >
+Mayor.Tick
+<Tick | alive | 4311209>
+Mayor.Frame
+<Frame | aliveRender Draw 
+Get Player 
+Begin Scene
+| draw >
+Mayor.Tick
+<Tick | alive | 4311210>
+Mayor.Frame
+<Frame | aliveRender Draw 
+Get Player 
+Begin Scene
+| draw >
+Mayor.Tick
+<Tick | alive | 4311211>
+Mayor.Frame
+<Frame | aliveRender Draw 
+Get Player 
+Begin Scene
+| draw >
+Mayor.Tick
+<Tick | alive | 4311212>
+Mayor.Frame
+<Frame | aliveRender Draw 
+Get Player 
+Begin Scene
+| draw >
+Mayor.Tick
+<Tick | alive | 4311213>
+Mayor.Frame
+<Frame | aliveRender Draw 
+Get Player 
+Begin Scene
+| draw >
+Mayor.Tick
+<Tick | alive | 4311214>
+Mayor.Frame
+<Frame | aliveRender Draw 
+Get Player 
+Begin Scene
+| draw >
+Mayor.Tick
+<Tick | alive | 4311215>
+Mayor.Frame
+<Frame | aliveRender Draw 
+Get Player 
+Begin Scene
+| draw >
+Mayor.Tick
+<Tick | alive | 4311216>
+Mayor.Frame
+<Frame | aliveRender Draw 
+Get Player 
+Begin Scene
+| draw >
+Mayor.Tick
+<Tick | alive | 4311217>
+Mayor.Frame
+<Frame | aliveRender Draw 
+Get Player 
+Begin Scene
+| draw >
+Mayor.Tick
+<Tick | alive | 4311218>
+Mayor.Frame
+<Frame | aliveRender Draw 
+Get Player 
+Begin Scene
+| draw >
+Mayor.Tick
+<Tick | alive | 4311219>
+Mayor.Frame
+<Frame | aliveRender Draw 
+Get Player 
+Begin Scene
+| draw >
+Mayor.Tick
+<Tick | alive | 4311220>
+Mayor.Frame
+<Frame | aliveRender Draw 
+Get Player 
+Begin Scene
+| draw >
+Mayor.Tick
+<Tick | alive | 4311221>
+Mayor.Frame
+<Frame | aliveRender Draw 
+Get Player 
+Begin Scene
+| draw >
+Mayor.Tick
+<Tick | alive | 4311222>
+Mayor.Frame
+<Frame | aliveRender Draw 
+Get Player 
+Begin Scene
+| draw >
+Mayor.Tick
+<Tick | alive | 4311223>
+Mayor.Frame
+<Frame | aliveRender Draw 
+Get Player 
+Begin Scene
+| draw >
+Mayor.Tick
+<Tick | alive | 4311224>
+Mayor.Frame
+<Frame | aliveRender Draw 
+Get Player 
+Begin Scene
+| draw >
+Mayor.Tick
+<Tick | alive | 4311225>
+Mayor.Frame
+<Frame | aliveRender Draw 
+Get Player 
+Begin Scene
+| draw >
+Mayor.Tick
+<Tick | alive | 4311226>
+Mayor.Frame
+<Frame | aliveRender Draw 
+Get Player 
+Begin Scene
+| draw >
+Mayor.Tick
+<Tick | alive | 4311227>
+Mayor.Frame
+<Frame | aliveRender Draw 
+Get Player 
+Begin Scene
+| draw >
+Mayor.Tick
+<Tick | alive | 4311228>
+Mayor.Frame
+<Frame | aliveRender Draw 
+Get Player 
+Begin Scene
+| draw >
+Mayor.Tick
+<Tick | alive | 4311229>
+Mayor.Frame
+<Frame | aliveRender Draw 
+Get Player 
+Begin Scene
+| draw >
+Mayor.Tick
+<Tick | alive | 4311230>
+Mayor.Frame
+<Frame | aliveRender Draw 
+Get Player 
+Begin Scene
+| draw >
+Mayor.Tick
+<Tick | alive | 4311231>
+Mayor.Frame
+<Frame | aliveRender Draw 
+Get Player 
+Begin Scene
+| draw >
+Mayor.Tick
+<Tick | alive | 4311232>
+Mayor.Frame
+<Frame | aliveRender Draw 
+Get Player 
+Begin Scene
+| draw >
+Mayor.Tick
+<Tick | alive | 4311233>
+Mayor.Frame
+<Frame | aliveRender Draw 
+Get Player 
+Begin Scene
+| draw >
+Mayor.Tick
+<Tick | alive | 4311234>
+Mayor.Frame
+<Frame | aliveRender Draw 
+Get Player 
+Begin Scene
+| draw >
+Mayor.Tick
+<Tick | alive | 4311235>
+Mayor.Frame
+<Frame | aliveRender Draw 
+Get Player 
+Begin Scene
+| draw >
+Mayor.Tick
+<Tick | alive | 4311236>
+Mayor.Frame
+<Frame | aliveRender Draw 
+Get Player 
+Begin Scene
+| draw >
+Mayor.Tick
+<Tick | alive | 4311237>
+Mayor.Frame
+<Frame | aliveRender Draw 
+Get Player 
+Begin Scene
+| draw >
+Mayor.Tick
+<Tick | alive | 4311238>
+Mayor.Frame
+<Frame | aliveRender Draw 
+Get Player 
+Begin Scene
+| draw >
+Mayor.Tick
+<Tick | alive | 4311239>
+Mayor.Frame
+<Frame | aliveRender Draw 
+Get Player 
+Begin Scene
+| draw >
+Mayor.Tick
+<Tick | alive | 4311240>
+Mayor.Frame
+<Frame | aliveRender Draw 
+Get Player 
+Begin Scene
+| draw >
+Mayor.Tick
+<Tick | alive | 4311241>
+Mayor.Frame
+<Frame | aliveRender Draw 
+Get Player 
+Begin Scene
+| draw >
+Mayor.Tick
+<Tick | alive | 4311242>
+Mayor.Frame
+<Frame | aliveRender Draw 
+Get Player 
+Begin Scene
+| draw >
+Mayor.Tick
+<Tick | alive | 4311243>
+Mayor.Frame
+<Frame | aliveRender Draw 
+Get Player 
+Begin Scene
+| draw >
+Mayor.Tick
+<Tick | alive | 4311244>
+Mayor.Frame
+<Frame | aliveRender Draw 
+Get Player 
+Begin Scene
+| draw >
+Mayor.Tick
+<Tick | alive | 4311245>
+Mayor.Frame
+<Frame | aliveRender Draw 
+Get Player 
+Begin Scene
+| draw >
+Mayor.Tick
+<Tick | alive | 4311246>

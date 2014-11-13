@@ -50,7 +50,6 @@ struct MayorImpl {
 
     template <class Type>
     void write(Type t) {
-        mayor.log << "Write " << t.asString() << std::endl;
         client.write(t);
     }
 };

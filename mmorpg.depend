@@ -1316,10 +1316,10 @@
 
 1391981267 c:\development\ennovia-client\include\misc\registry_forw.hpp
 
-1415876776 source:c:\development\ennovia-client\src\network\connection.cpp
+1415883166 source:c:\development\ennovia-client\src\network\connection.cpp
 	"network/connection.hpp"
 
-1415877699 c:\development\ennovia-client\include\network\connection.hpp
+1415882445 c:\development\ennovia-client\include\network\connection.hpp
 	<boost/bind.hpp>
 	<boost/shared_ptr.hpp>
 	<boost/tuple/tuple.hpp>
@@ -1522,7 +1522,7 @@
 	<boost/lexical_cast.hpp>
 	"mayor.hpp"
 
-1415875175 source:c:\development\ennovia-client\src\mayor.cpp
+1415878923 source:c:\development\ennovia-client\src\mayor.cpp
 	"mayor.hpp"
 	"core.hpp"
 	"ui/render.hpp"
@@ -1534,7 +1534,7 @@
 	"world/locatable.hpp"
 	"misc/json/jsoncons.hpp"
 
-1415876899 source:c:\development\ennovia-client\src\network\client.cpp
+1415881802 source:c:\development\ennovia-client\src\network\client.cpp
 	"network/client.hpp"
 	"network/message.hpp"
 	"world/optionlist.hpp"
