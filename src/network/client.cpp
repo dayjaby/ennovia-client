@@ -53,18 +53,18 @@ void Client::start_read()
 
 void Client::finished_read(const boost::system::error_code& e)
 {
+    std::cout << "Read next message" << std::endl;
     if(e)
     {
         std::cerr << e.message() << std::endl;
     }
-    start_read();
+ //   start_read();
 }
 
 void Client::interpret(const Json::Value& in)
 {
     Mayor& mayor = Mayor::get();
-    mayor.log << "Received message: " << in["msg"].asInt() << std::endl;
-    std::cout << "Received message: " << in["msg"].asInt() << std::endl;
+    mayor.log << "Read: " << in.asString() << std::endl;
     switch(in["msg"].asInt())
     {
     case SEND_MESSAGE:

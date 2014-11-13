@@ -19,7 +19,7 @@ struct MayorImpl {
     frame_timer(io_service, boost::posix_time::milliseconds(FRAME)),
     //client(io_service,std::string("djabby.dlinkddns.com"),PORT_S),
     //client(io_service,std::string("djabby.dlinkddns.com"),PORT_S),
-    client(io_service,std::string("192.168.137.86"),PORT_S),
+    client(io_service,std::string("192.168.178.37"),PORT_S),
     connection(client.connection),
     render(1024,768,mayor)
     {
@@ -50,6 +50,7 @@ struct MayorImpl {
 
     template <class Type>
     void write(Type t) {
+        mayor.log << "Write " << t.asString() << std::endl;
         client.write(t);
     }
 };

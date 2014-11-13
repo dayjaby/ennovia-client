@@ -25,6 +25,7 @@
 			<Add option="-Wall" />
 			<Add option="-fexceptions" />
 			<Add directory="include" />
+			<Add directory="src" />
 		</Compiler>
 		<Linker>
 			<Add library="Irrlicht" />
@@ -33,7 +34,6 @@
 			<Add library="mswsock" />
 			<Add library="boost_system-mgw48-mt-1_55" />
 			<Add library="boost_serialization-mgw48-mt-1_55" />
-			<Add library="protobuf" />
 			<Add directory="src" />
 		</Linker>
 		<Unit filename="client.cpp" />
@@ -53,17 +53,11 @@
 		<Unit filename="include/network/connection.hpp" />
 		<Unit filename="include/network/message.hpp" />
 		<Unit filename="include/network/network.hpp" />
-		<Unit filename="include/network/proto/client.pb.cc" />
-		<Unit filename="include/network/proto/client.pb.h" />
 		<Unit filename="include/network/proto/client.proto" />
 		<Unit filename="include/network/proto/db.proto">
 			<Option target="&lt;{~None~}&gt;" />
 		</Unit>
-		<Unit filename="include/network/proto/msg.pb.cc" />
-		<Unit filename="include/network/proto/msg.pb.h" />
 		<Unit filename="include/network/proto/msg.proto" />
-		<Unit filename="include/network/proto/server.pb.cc" />
-		<Unit filename="include/network/proto/server.pb.h" />
 		<Unit filename="include/network/proto/server.proto" />
 		<Unit filename="include/network/server.hpp" />
 		<Unit filename="include/neural/layer.hpp" />
@@ -111,6 +105,10 @@
 		</Unit>
 		<Unit filename="src/mayor.cpp" />
 		<Unit filename="src/misc/CGUITTFont.cpp" />
+		<Unit filename="src/misc/json/json-forwards.h" />
+		<Unit filename="src/misc/json/json.h" />
+		<Unit filename="src/misc/json/jsoncons.hpp" />
+		<Unit filename="src/misc/json/jsoncpp.cpp" />
 		<Unit filename="src/misc/registry.cpp" />
 		<Unit filename="src/network/client.cpp" />
 		<Unit filename="src/network/connection.cpp" />

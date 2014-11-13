@@ -54,6 +54,8 @@ public:
 
 
     void async_read(ErrorHandler errorHandler, Handler handler, boost::shared_ptr<Connection> conn);
+    void handle_read_header(const boost::system::error_code& e, size_t bytes_transferred,
+                            boost::tuple<ErrorHandler,Handler> handler, boost::shared_ptr<Connection> conn);
 
     void handle_read(const boost::system::error_code& e, size_t bytes_transferred,
                             boost::tuple<ErrorHandler,Handler> handler, boost::shared_ptr<Connection> conn);
@@ -68,9 +70,11 @@ private:
     boost::asio::ip::tcp::socket socket_;
 
     /// Holds the outbound data.
+    char outbound_header_[4];
     std::string outbound_data_;
 
     /// Holds the inbound data.
+    char inbound_header_[4];
     std::vector<char> inbound_data_;
 };
 
