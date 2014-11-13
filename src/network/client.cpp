@@ -47,7 +47,7 @@ void Client::start_read()
 {
     connection->async_read(boost::bind(&Client::finished_read, this,
                                  boost::asio::placeholders::error),
-                     boost::bind(&Client::interpret, this,_1,_2),
+                     boost::bind(&Client::interpret, this,_1),
                      connection);
 }
 
@@ -60,38 +60,33 @@ void Client::finished_read(const boost::system::error_code& e)
     start_read();
 }
 
-void Client::interpret(int msgid, std::istream& is)
+void Client::interpret(const Json::Value& in)
 {
     Mayor& mayor = Mayor::get();
-    mayor.log << "Received message: " << msgid << std::endl;
-    std::cout << "Received message: " << msgid << std::endl;
-    switch(msgid)
+    mayor.log << "Received message: " << in["msg"].asInt() << std::endl;
+    std::cout << "Received message: " << in["msg"].asInt() << std::endl;
+    switch(in["msg"].asInt())
     {
     case SEND_MESSAGE:
     {
-        ServerMessage in;
-        in.ParseFromIstream(&is);
-        std::cout << "[MSG from Server]: " << in.text() << std::endl;
-        mayor.log << "[MSG from Server]: " << in.text() << std::endl;
+        std::cout << "[MSG from Server]: " << in["text"].asString() << std::endl;
+        mayor.log << "[MSG from Server]: " << in["text"].asString() << std::endl;
     }
     break;
     case SEND_LOCATABLE_OPTIONLIST:
     {
-        SendLocatableOptionList in;
-        in.ParseFromIstream(&is);
+
         OptionList* optionList = new OptionList();
-        for(int i=0;i<in.options_size();i++) {
-            const OptionRef& option = in.options(i);
-            optionList->add(new OptionProxy(option.description(),option.optionlist(),option.index()));
+        for(Json::ValueIterator i = in["options"].begin(); i!=in["options"].end();++i) {
+            const Json::Value& option = *i;
+            optionList->add(new OptionProxy(option["description"].asString(),option["optionlist"].asInt(),option["index"].asInt()));
         }
-        mayor.receiveLocatableOptionList(in.id(),optionList);
+        mayor.receiveLocatableOptionList(in["id"].asInt(),optionList);
     }
     break;
     case MOVE_TO:
     {
-        MoveTo in;
-        in.ParseFromIstream(&is);
-        mayor.moveTo(in.id(),in.x(),in.y());
+        mayor.moveTo(in["id"].asInt(),in["x"].asFloat(),in["y"].asFloat());
     }
     break;
     case REQUEST_CREDENTIALS:
@@ -121,38 +116,26 @@ void Client::interpret(int msgid, std::istream& is)
     break;
     case YOU_ARE:
     {
-        YouAre id;
-        id.ParseFromIstream(&is);
-        mayor.youAre(id.id());
-        mayor.log << "You are " << id.id();
+        mayor.youAre(in["id"].asInt());
+        mayor.log << "You are " << in["id"].asInt();
     }
     break;
     case LOCATABLE_POSITION:
     {
-        LocatablePosition pos;
-        pos.ParseFromIstream(&is);
-        mayor.setLocatablePosition(pos.id(),pos.map(),pos.x(),pos.y());
-        mayor.log << "Lo" << pos.id() << "@" << pos.map() << "," << pos.x() << "," << pos.y() << std::endl;
+        mayor.setLocatablePosition(in["id"].asInt(),in["map"].asInt(),in["x"].asFloat(),in["y"].asFloat());
     }
     break;
     case INTRODUCE_LOCATABLE:
     {
-        IntroduceLocatable intro;
-        intro.ParseFromIstream(&is);
-        mayor.introduceLocatable(intro.id(),intro.name());
-        mayor.log << "Introduction " << intro.id() << "," << intro.type() << "," << intro.name() << std::endl;
-        if(intro.has_model()) {
-            mayor.log << "Set Model " << intro.model();
-            mayor.setLocatableModel(intro.id(),intro.model(),intro.has_texture() ? intro.texture() : std::string(""));
+        mayor.introduceLocatable(in["id"].asInt(),in["name"].asString());
+        if(in.isMember("model")) {
+            mayor.setLocatableModel(in["id"].asInt(),in["model"].asString(),in.isMember("texture") ? in["texture"].asString() : std::string(""));
         }
     }
     break;
     case SEND_MAP:
     {
-        SendMapData mapData;
-        mapData.ParseFromIstream(&is);
-        mayor.sendMapData(mapData.id(),mapData.path(),mapData.heightmap(),mapData.width(),mapData.height());
-        mayor.log << "Map " << mapData.id() << "=" << mapData.path() << "," << mapData.heightmap() << "," << mapData.width() << "*" << mapData.height();
+        mayor.sendMapData(in["id"].asInt(),in["path"].asString(),in["heightmap"].asString(),in["width"].asInt(),in["height"].asInt());
     }
     break;
     default:
