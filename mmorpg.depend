@@ -1236,7 +1236,7 @@
 
 1391516904 "
 
-1391981267 source:c:\development\ennovia-client\include\network\proto\client.pb.cc
+1391984867 source:c:\development\ennovia-client\include\network\proto\client.pb.cc
 	"client.pb.h"
 	<algorithm>
 	<google/protobuf/stubs/common.h>
@@ -1257,7 +1257,7 @@
 	<google/protobuf/extension_set.h>
 	<google/protobuf/unknown_field_set.h>
 
-1391981267 source:c:\development\ennovia-client\include\network\proto\msg.pb.cc
+1391984867 source:c:\development\ennovia-client\include\network\proto\msg.pb.cc
 	"msg.pb.h"
 	<algorithm>
 	<google/protobuf/stubs/common.h>
@@ -1269,7 +1269,7 @@
 	<google/protobuf/reflection_ops.h>
 	<google/protobuf/wire_format.h>
 
-1391981267 c:\development\ennovia-client\include\network\proto\msg.pb.h
+1391984867 c:\development\ennovia-client\include\network\proto\msg.pb.h
 	<string>
 	<google/protobuf/stubs/common.h>
 	<google/protobuf/generated_message_util.h>
@@ -1278,7 +1278,7 @@
 	<google/protobuf/extension_set.h>
 	<google/protobuf/unknown_field_set.h>
 
-1391981267 source:c:\development\ennovia-client\include\network\proto\server.pb.cc
+1391984867 source:c:\development\ennovia-client\include\network\proto\server.pb.cc
 	"server.pb.h"
 	<algorithm>
 	<google/protobuf/stubs/common.h>
@@ -1316,10 +1316,10 @@
 
 1391981267 c:\development\ennovia-client\include\misc\registry_forw.hpp
 
-1391981268 source:c:\development\ennovia-client\src\network\connection.cpp
+1391984868 source:c:\development\ennovia-client\src\network\connection.cpp
 	"network/connection.hpp"
 
-1393239598 c:\development\ennovia-client\include\network\connection.hpp
+1415866087 c:\development\ennovia-client\include\network\connection.hpp
 	<boost/bind.hpp>
 	<boost/shared_ptr.hpp>
 	<boost/tuple/tuple.hpp>
@@ -1329,8 +1329,7 @@
 	<string>
 	<sstream>
 	<vector>
-	"misc/registry.hpp"
-	"network/proto/msg.pb.h"
+	<misc/json/json.h>
 
 1391981268 source:c:\development\ennovia-client\src\network\proxies.cpp
 	"network/network.hpp"
@@ -1341,15 +1340,13 @@
 	"network/message.hpp"
 	"network/client.hpp"
 
-1391981267 c:\development\ennovia-client\include\network\message.hpp
-	"network/proto/client.pb.h"
-	"network/proto/server.pb.h"
+1415866052 c:\development\ennovia-client\include\network\message.hpp
 
 1391981267 c:\development\ennovia-client\include\network\server.hpp
 	<boost/tuple/tuple.hpp>
 	"network/connection.hpp"
 
-1393279760 c:\development\ennovia-client\include\network\client.hpp
+1415865878 c:\development\ennovia-client\include\network\client.hpp
 	"network/connection.hpp"
 
 1391981268 source:c:\development\ennovia-client\src\ui\graphics.cpp
@@ -1430,7 +1427,7 @@
 	"world/map.hpp"
 	"world/optionlist.hpp"
 
-1393277139 c:\development\ennovia-client\include\world\library.hpp
+1400683870 c:\development\ennovia-client\include\world\library.hpp
 	<boost/bimap.hpp>
 	"core.hpp"
 
@@ -1525,7 +1522,7 @@
 	<boost/lexical_cast.hpp>
 	"mayor.hpp"
 
-1393264999 source:c:\development\ennovia-client\src\mayor.cpp
+1415864879 source:c:\development\ennovia-client\src\mayor.cpp
 	"mayor.hpp"
 	"core.hpp"
 	"ui/render.hpp"
@@ -1535,8 +1532,9 @@
 	"world/map.hpp"
 	"world/actions.hpp"
 	"world/locatable.hpp"
+	"misc/json/jsoncons.hpp"
 
-1393347481 source:c:\development\ennovia-client\src\network\client.cpp
+1415865989 source:c:\development\ennovia-client\src\network\client.cpp
 	"network/client.hpp"
 	"network/message.hpp"
 	"world/optionlist.hpp"
@@ -1594,4 +1592,68 @@
 1392374715 c:\development\ennovia-client\include\ui\useraction.hpp
 	"misc/irrlicht.hpp"
 	<map>
+
+1415787892 c:\development\ennovia-client\src\misc\json\json.h
+	<cpptl/config.h>
+	"config.h"
+	"forwards.h"
+	"forwards.h"
+	<string>
+	<vector>
+	<map>
+	<cpptl/smallmap.h>
+	<cpptl/forwards.h>
+	"features.h"
+	"value.h"
+	<deque>
+	<iosfwd>
+	<stack>
+	<string>
+	"value.h"
+	<vector>
+	<string>
+	<stdlib.h>
+	"config.h"
+	<stdexcept>
+
+1415864619 c:\development\ennovia-client\src\misc\json\jsoncons.hpp
+	<misc/json/json.h>
+
+1415799952 source:c:\development\ennovia-client\src\misc\json\jsoncpp.cpp
+	"json.h"
+	<json/assertions.h>
+	<json/reader.h>
+	<json/value.h>
+	"json_tool.h"
+	<utility>
+	<cstdio>
+	<cassert>
+	<cstring>
+	<istream>
+	<stdlib.h>
+	<assert.h>
+	<json/assertions.h>
+	<json/value.h>
+	<json/writer.h>
+	"json_batchallocator.h"
+	<math.h>
+	<sstream>
+	<utility>
+	<cstring>
+	<cassert>
+	<cpptl/conststring.h>
+	<cstddef>
+	"json_internalarray.inl"
+	"json_internalmap.inl"
+	"json_valueiterator.inl"
+	<json/writer.h>
+	"json_tool.h"
+	<utility>
+	<assert.h>
+	<stdio.h>
+	<string.h>
+	<sstream>
+	<iomanip>
+	<math.h>
+	<float.h>
 
